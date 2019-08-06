@@ -1,0 +1,24 @@
+---
+title: RichText
+date: "2019-08-06"
+---
+
+A paragraph of rich text.
+
+## Example
+
+```dart liveslice=RichText
+RichText(
+  text: TextSpan(
+    text: 'Hello ',
+    style: DefaultTextStyle.of(context).style,
+    children: <TextSpan>[
+      TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
+      TextSpan(text: ' world!'),
+    ],
+  ),
+)
+```
+
+## Related Links
+- https://api.flutter.dev/flutter/material/RichText-class.html

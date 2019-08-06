@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog MDX`,
-    author: `Matt Hagner`,
+    title: `Flutter Widget Live Book`,
+    author: `JianyingLi`,
     description: `An extension of the gatsby starter blog, with support for MDX`,
-    siteUrl: `https://gatsby-starter-blog-mdx-demo.netlify.com/`,
+    siteUrl: `https://flutter-widget-livebook.blankapp.org/`,
     social: {
-      twitter: `mattinthecouch`,
+      twitter: `lijy91`,
     },
   },
   plugins: [

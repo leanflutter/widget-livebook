@@ -1,0 +1,29 @@
+---
+title: IconButton
+date: "2019-08-06"
+---
+
+A material design icon button.
+
+## Example
+
+```dart liveslice=IconButton
+Column(
+  mainAxisSize: MainAxisSize.min,
+  children: <Widget>[
+    IconButton(
+      icon: Icon(Icons.volume_up),
+      tooltip: 'Increase volume by 10',
+      onPressed: () {
+        setState(() {
+          _volume += 10;
+        });
+      },
+    ),
+    Text('Volume : $_volume')
+  ],
+)
+```
+
+## Related Links
+- https://api.flutter.dev/flutter/material/IconButton-class.html

@@ -29,10 +29,10 @@ function Bio() {
             />
             <p>
               Written by <strong>{author}</strong> who lives and works in
-              Minneapolis building silly things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              Shenzhen building useful things.
+              <br/>
+              <a href={`https://github.com/blankapp/flutter-widget-livebook`}>
+                You can star this project on GitHub
               </a>
             </p>
           </div>

@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "flutter-widget-livebook",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "JianyingLi <lijy91@foxmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/blankapp/flutter-widget-livebook/issues"
   },
   "dependencies": {
     "@mdx-js/mdx": "^0.16.6",
@@ -28,7 +28,7 @@
     "gatsby-transformer-remark": "^2.1.6",
     "gatsby-transformer-sharp": "^2.1.3",
     "mdx-utils": "^0.0.2",
-    "prism-react-renderer": "^0.1.5",
+    "prism-react-renderer": "link:../prism-react-renderer",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
@@ -37,14 +37,14 @@
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
     "typography": "^0.16.17",
-    "typography-theme-wordpress-2016": "^0.15.10"
+    "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/blankapp/flutter-widget-livebook",
   "keywords": [
     "gatsby"
   ],
@@ -52,7 +52,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/blankapp/flutter-widget-livebook.git"
   },
   "scripts": {
     "dev": "gatsby develop",

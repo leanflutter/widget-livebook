@@ -1,0 +1,27 @@
+---
+title: CustomPaint
+date: "2019-08-06"
+---
+
+A widget that provides a canvas on which to draw during the paint phase.
+
+## Example
+
+```dart liveslice=CustomPaint
+CustomPaint(
+  painter: Sky(),
+  child: Center(
+    child: Text(
+      'Once upon a time...',
+      style: const TextStyle(
+        fontSize: 40.0,
+        fontWeight: FontWeight.w900,
+        color: Color(0xFFFFFFFF),
+      ),
+    ),
+  ),
+)
+```
+
+## Related Links
+- https://api.flutter.dev/flutter/material/CustomPaint-class.html

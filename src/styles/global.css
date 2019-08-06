@@ -1,0 +1,6 @@
+iframe {
+  overflow: hidden;
+  min-height: 260px;
+  border: none;
+  background-color: #fafafa;
+}
