@@ -7,7 +7,7 @@ English | [简体中文](./README.zh_CN.md)
 
 ## Introduction
 
-*Coming soon*
+*Live preview example for flutter widgets.*
 
 ## Related Links
 
