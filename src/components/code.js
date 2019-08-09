@@ -14,7 +14,7 @@ export const Code = ({ codeString, language, ...props }) => {
             margin: 0,
             ...(height ? { height } : {})
           }}
-          src={`https://mockpad-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
+          src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
           scrolling="no"
         />
         <Highlight {...defaultProps} code={codeString} language={language} theme={undefined}>
