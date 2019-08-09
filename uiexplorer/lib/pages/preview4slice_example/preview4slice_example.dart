@@ -29,6 +29,9 @@ class _Preview4SliceExamplePageState extends State<Preview4SliceExamplePage> {
 
   @override
   Widget build(BuildContext context) {
-    return _build(context);
+    return WillPopScope(
+      onWillPop: () async => false,
+      child: _build(context),
+    );
   }
 }

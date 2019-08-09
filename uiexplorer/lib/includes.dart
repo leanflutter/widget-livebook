@@ -1,4 +1,4 @@
-export 'package:flutter/material.dart';
+export 'package:flutter_web/material.dart';
 
 // 请按文件名排序放置
 export './navigators/navigators.dart';
