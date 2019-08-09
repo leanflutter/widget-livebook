@@ -6,8 +6,12 @@ class SliceTextField extends StatelessWidget implements SliceExample {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      'SliceTextField'
+    return TextField(
+      obscureText: true,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(),
+        labelText: 'Password',
+      ),
     );
   }
 }

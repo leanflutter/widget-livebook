@@ -6,13 +6,13 @@ class SliceContainer extends StatelessWidget implements SliceExample {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.only(left: 10, top: 10, right: 10, bottom: 10),
-      color: Color(0xff000000),
-      width: 10.0,
-      height: 10.0,
-      margin: EdgeInsets.only(left: 10, top: 10, right: 10, bottom: 10),
-      child: Container(),
+    return Center(
+      child: Container(
+        margin: const EdgeInsets.all(10.0),
+        color: Colors.amber[600],
+        width: 48.0,
+        height: 48.0,
+      ),
     );
   }
 }

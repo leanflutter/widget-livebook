@@ -1,8 +1,10 @@
 import '../includes.dart';
 
 List<SliceExample> _sliceExamples = [
+  SliceAlertDialog(),
   SliceAlign(),
   SliceAppBar(),
+  SliceBackdropFilter(),
   SliceBottomAppBar(),
   SliceBottomNavigationBar(),
   SliceBottomSheet(),
@@ -16,6 +18,9 @@ List<SliceExample> _sliceExamples = [
   SliceColumn(),
   SliceCustomPaint(),
   SliceContainer(),
+  SliceCupertinoActionSheet(),
+  SliceCupertinoActivityIndicator(),
+  SliceCupertinoButton(),
   SliceDataTable(),
   SliceDatePicker(),
   SliceDialog(),
@@ -41,11 +46,15 @@ List<SliceExample> _sliceExamples = [
   SliceRow(),
   SliceSafeArea(),
   SliceScaffold(),
+  SliceSimpleDialog(),
+  SliceSizedBox(),
   SliceSwitch(),
   SliceText(),
   SliceTextField(),
   SliceTextFormField(),
   SliceTextSelection(),
+  SliceTransform(),
+  SliceWrap(),
 ];
 
 class _PageExamplePageRoute {}
