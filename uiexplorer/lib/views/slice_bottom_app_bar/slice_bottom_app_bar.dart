@@ -6,8 +6,15 @@ class SliceBottomAppBar extends StatelessWidget implements SliceExample {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      'SliceBottomAppBar'
+    var bottomAppBarContents = Container(
+      child: Text('BottomAppBar'),
+    );
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
+        child: bottomAppBarContents,
+      ),
+      floatingActionButton: FloatingActionButton(onPressed: null),
     );
   }
 }

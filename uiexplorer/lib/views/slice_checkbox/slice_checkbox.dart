@@ -1,18 +1,24 @@
 import '../../includes.dart';
 
-class SliceCheckbox extends StatelessWidget implements SliceExample {
+class SliceCheckbox extends StatefulWidget implements SliceExample {
   @override
   String get name => 'SliceCheckbox';
 
   @override
+  _SliceCheckboxState createState() => _SliceCheckboxState();
+}
+
+class _SliceCheckboxState extends State<SliceCheckbox> {
+  bool _value = true;
+
+  @override
   Widget build(BuildContext context) {
-    bool value = true;
     return Checkbox(
-      value: value,
+      value: _value,
       onChanged: (bool newValue) {
-        // setState(() {
-        //   value = newValue;
-        // });
+        setState(() {
+          _value = newValue;
+        });
       },
     );
   }
