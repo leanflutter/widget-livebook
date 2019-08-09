@@ -1,9 +1,9 @@
 import '../../includes.dart';
 
 class Preview4SliceExamplePage extends StatefulWidget {
-  Widget child;
+  final dynamic example;
 
-  Preview4SliceExamplePage(this.child);
+  Preview4SliceExamplePage(this.example);
 
   @override
   State<StatefulWidget> createState() => _Preview4SliceExamplePageState();
@@ -11,7 +11,7 @@ class Preview4SliceExamplePage extends StatefulWidget {
 
 class _Preview4SliceExamplePageState extends State<Preview4SliceExamplePage> {
   Widget _buildBody(BuildContext context) {
-    return widget.child;
+    return widget.example;
   }
 
   Widget _build(BuildContext context) {

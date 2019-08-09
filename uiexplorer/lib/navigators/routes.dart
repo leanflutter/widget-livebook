@@ -57,9 +57,7 @@ class _SliceExamplePageRoute {
 
   _SliceExamplePageRoute(this.example) {
     this.routeName = this.example.name ?? this.example.runtimeType.toString();
-    this.buildRoute = (BuildContext context) => Preview4SliceExamplePage(
-      this.example,
-    );
+    this.buildRoute = (_) => Preview4SliceExamplePage(this.example);
   }
 }
 
