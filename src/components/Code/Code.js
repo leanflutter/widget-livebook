@@ -6,17 +6,57 @@ import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 export const Code = ({ codeString, language, ...props }) => {
   if (props['liveslice']) {
     const height = props['height'];
+    const mockup = props['mockup'];
     return (
       <div>
-        <iframe
-          style={{
-            width: '100%',
-            margin: 0,
-            ...(height ? { height } : {})
-          }}
-          src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
-          scrolling="no"
-        />
+        {
+          !mockup ? <div /> : <div
+            className="device-wrapper"
+            style={{
+              maxWidth: 400,
+            }}
+          >
+            <div
+              className="device"
+              data-device="iPhone7"
+              data-orientation="portrait"
+              data-color="black"
+              style={{
+                pointerEvents: 'all'
+              }}
+            >
+              <div
+                className="screen"
+                style={{
+                  pointerEvents: 'all'
+                }}
+              >
+                <iframe
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    margin: 0,
+                    // ...(height ? { height } : {})
+                  }}
+                  src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
+                  scrolling="no"
+                />
+              </div>
+            </div>
+          </div>
+        }
+        {
+          mockup ? <div /> : <iframe
+            style={{
+              width: '100%',
+              height: '100%',
+              margin: 0,
+              ...(height ? { height } : {})
+            }}
+            src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
+            scrolling="no"
+          />
+        }
         <Highlight {...defaultProps} code={codeString} language={language} theme={undefined}>
           {({ className, style, tokens, getLineProps, getTokenProps }) => (
             <pre className={className} style={style}>

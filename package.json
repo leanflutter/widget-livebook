@@ -27,6 +27,7 @@
     "gatsby-source-filesystem": "^2.0.2",
     "gatsby-transformer-remark": "^2.1.6",
     "gatsby-transformer-sharp": "^2.1.3",
+    "html5-device-mockups": "^3.2.1",
     "mdx-utils": "^0.0.2",
     "prism-react-renderer": "link:../prism-react-renderer",
     "react": "^16.5.1",
