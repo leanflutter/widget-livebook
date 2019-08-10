@@ -18,9 +18,9 @@ class _Preview4SliceExamplePageState extends State<Preview4SliceExamplePage> {
     return Scaffold(
       body: Center(
         child: Container(
-        // height: double.infinity,
-        alignment: Alignment.center,
-        width: 375,
+          alignment: Alignment.center,
+          width: 375,
+          // height: double.infinity,
           child: _buildBody(context),
         ),
       )
@@ -29,9 +29,10 @@ class _Preview4SliceExamplePageState extends State<Preview4SliceExamplePage> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: _build(context),
-    );
+    return _build(context);
+    // return WillPopScope(
+    //   onWillPop: () async => false,
+    //   child: _build(context),
+    // );
   }
 }
