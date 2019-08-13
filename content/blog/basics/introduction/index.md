@@ -1,6 +1,7 @@
 ---
 id: 'introduction'
 title: 'Introduction'
+date: '2019-08-13'
 ---
 
 *Live preview example for flutter widgets.*

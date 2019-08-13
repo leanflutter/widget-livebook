@@ -8,7 +8,6 @@ SyntaxHighlighter.registerLanguage('dart', dart);
 SyntaxHighlighter.registerLanguage('json', json);
 
 const Code = ({ codeString, language, ...props }) => {
-  console.log(language);
   if (props['liveslice']) {
     const height = props['height'];
     const mockup = props['mockup'];
