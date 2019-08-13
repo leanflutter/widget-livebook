@@ -15,6 +15,9 @@ module.exports = {
       widgets: [
         '/widgets/AlertDialog/',
         '/widgets/Align/',
+        '/widgets/AnimatedAlign/',
+        '/widgets/AnimatedOpacity/',
+        '/widgets/AnimatedPadding/',
         '/widgets/AppBar/',
         '/widgets/BottomNavigationBar/',
         '/widgets/Card/',
@@ -30,6 +33,7 @@ module.exports = {
         '/widgets/CupertinoActivityIndicator/',
         '/widgets/CupertinoButton/',
         '/widgets/CustomPaint/',
+        '/widgets/DatePicker/',
         '/widgets/FlatButton/',
         '/widgets/FloatingActionButton/',
         '/widgets/FlutterLogo/',
@@ -105,7 +109,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: "UA-61561013-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
       },
     },
     {

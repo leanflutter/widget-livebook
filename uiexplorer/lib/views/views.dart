@@ -1,6 +1,9 @@
 // 请按文件名排序放置
 export './slice_alert_dialog/slice_alert_dialog.dart';
 export './slice_align/slice_align.dart';
+export './slice_animated_align/slice_animated_align.dart';
+export './slice_animated_opacity/slice_animated_opacity.dart';
+export './slice_animated_padding/slice_animated_padding.dart';
 export './slice_app_bar/slice_app_bar.dart';
 export './slice_backdrop_filter/slice_backdrop_filter.dart';
 export './slice_bottom_app_bar/slice_bottom_app_bar.dart';

@@ -3,6 +3,9 @@ import '../includes.dart';
 List<SliceExample> _sliceExamples = [
   SliceAlertDialog(),
   SliceAlign(),
+  SliceAnimatedAlign(),
+  SliceAnimatedOpacity(),
+  SliceAnimatedPadding(),
   SliceAppBar(),
   SliceBackdropFilter(),
   SliceBottomAppBar(),

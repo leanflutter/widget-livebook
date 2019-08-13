@@ -9,8 +9,7 @@ const { color, typography, spacing, breakpoint } = styles;
 const { metadata, url } = site;
 
 export const navLinks = [
-  { title: 'Home', href: url.home, isGatsby: false },
-  { title: 'Support', href: url.support, isGatsby: false },
+  { title: 'Donate', href: url.donate, isGatsby: false },
 ];
 
 const LogotypeWrapper = styled.a`

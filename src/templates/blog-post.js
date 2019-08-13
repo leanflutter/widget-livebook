@@ -5,9 +5,17 @@ import capitalize from 'lodash/capitalize';
 
 import Layout from '../components/Layout'
 import Nav from '../components/Nav'
+import NavDropdown from '../components/Nav/dropdown'
 import SEO from '../components/seo'
 import './blog-post.css'
 
+const getEditUrl = (fileAbsolutePath) => {
+  const gitHubRepoUrl = 'https://github.com/blankapp/flutter-widget-livebook';
+  const docPath = fileAbsolutePath.substr(fileAbsolutePath.indexOf('/content') + 1);
+
+
+  return `${gitHubRepoUrl}/blob/master/${docPath}`;
+};
 
 const getSections = (sections, edges) =>
   Object.keys(sections).map(key => ({
@@ -32,10 +40,9 @@ class BlogPostTemplate extends React.Component {
     const post = mdx
 
     const { docSections } = site.siteMetadata
+    const sections = getSections(docSections, allMdx.edges);
     const selectedSection = getSelectedSection(docSections, mdx.fields.slug)
     const selectedItemId = post.frontmatter.id || (post.fields.slug.replace('/widgets', ''))
-
-    console.log(getSections(docSections, allMdx.edges))
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -43,18 +50,25 @@ class BlogPostTemplate extends React.Component {
         <div id="docs-container" className="row">
           <div className="nav col-lg-3 col-md-3 d-none d-md-block">
             <Nav
-              sections={getSections(docSections, allMdx.edges)}
+              sections={sections}
               selectedItem={post}
               selectedSectionId={selectedSection}
               selectedItemId={selectedItemId}
             />
           </div>
           <div className="content col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <div className="nav-dropdown">
+              <NavDropdown
+                sections={sections}
+                selectedSection={selectedSection}
+                selectedItem={selectedItemId}
+              />
+            </div>
             <div id="docs-content">
               <div className="content">
                 <h2 className="title">{post.frontmatter.title}</h2>
                 <p>
-                  <a className="edit-link" href="#" target="_blank" rel="noopener noreferrer">
+                  <a className="edit-link" href={getEditUrl(post.fileAbsolutePath)} target="_blank" rel="noopener noreferrer">
                     Edit this page
                   </a>
                 </p>
@@ -62,6 +76,13 @@ class BlogPostTemplate extends React.Component {
                   <MDXRenderer>{post.code.body}</MDXRenderer>
                 </div>
               </div>
+            </div>
+            <div className="nav-dropdown">
+              <NavDropdown
+                sections={sections}
+                selectedSection={selectedSection}
+                selectedItem={selectedItemId}
+              />
             </div>
           </div>
         </div>
@@ -99,6 +120,7 @@ export const pageQuery = graphql`
     }
     mdx(fields: { slug: { eq: $slug } }) {
       id
+      fileAbsolutePath
       excerpt(pruneLength: 160)
       fields {
         slug

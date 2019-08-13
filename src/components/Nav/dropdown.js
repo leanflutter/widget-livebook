@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import React from 'react';
-import { Redirect } from 'react-router';
+import React, { useEffect } from 'react';
+import { navigate } from 'gatsby';
+
 import './style.css';
 
 class Nav extends React.Component {
@@ -25,7 +26,9 @@ class Nav extends React.Component {
 
   changeRoute(selectedSectionId, selectedItemId) {
     const url = `/${selectedSectionId}/${selectedItemId}/`;
-    this.setState({ redirect: url });
+    this.setState({ redirect: url }, () => {
+      navigate(url);
+    });
   }
 
   renderNavOpts(nav) {
@@ -53,9 +56,11 @@ class Nav extends React.Component {
     const selectedSectionData = sections.find(section => section.id === selectedSectionId);
     const navs = selectedSectionData.items;
 
-    return redirect ? (
-      <Redirect to={redirect} />
-    ) : (
+    if (redirect) {
+      return null;
+    }
+
+    return (
       <div>
         <div>
           <select

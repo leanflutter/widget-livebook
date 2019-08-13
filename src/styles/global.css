@@ -2,7 +2,7 @@ iframe {
   overflow: hidden;
   min-height: 260px;
   border: none;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 
 .github-corner:hover .octo-arm {
