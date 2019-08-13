@@ -1,0 +1,177 @@
+#docs-container {
+  border-top: 1px solid #F4F4F4;
+  border-bottom: 1px solid #F4F4F4;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#docs-container ul.top-nav {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+#docs-container ul.top-nav li {
+  display: inline-block;
+  background-color: #eee;
+  margin-right: 10px;
+  padding: 6px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+#docs-container ul.top-nav li.selected {
+  background-color: #eb5d88;
+  color: #FFF;
+}
+
+#docs-container ul.top-nav li a {
+  font-size: 13px;
+}
+
+#docs-container .nav-dropdown {
+  display: none;
+}
+
+#docs-container .nav-dropdown select {
+  width: 100%;
+}
+
+#docs-container .nav-dropdown div {
+  margin: 0 0 5px;
+}
+
+@media only screen and (max-width: 998px) {
+  #docs-container .content {
+    border-left: none;
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  #docs-container .nav-dropdown {
+    display: block;
+  }
+}
+
+#docs-content .content {
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  margin: 40px 0;
+  max-width: 700px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#docs-content .title {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0;
+  line-height: 28px;
+  font-weight: 800;
+}
+
+#docs-content a.edit-link {
+  color: #6478D3 !important;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#docs-content .markdown div,
+#docs-content .markdown p,
+#docs-content .markdown li,
+#docs-content .markdown a {
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333;
+}
+
+#docs-content .markdown img {
+  max-width: 100%;
+}
+
+#docs-content .markdown h2 {
+  font-size: 28px;
+  margin: 30px 0 10px 0;
+}
+
+#docs-content .markdown h3 {
+  font-size: 18px;
+  margin: 30px 0 10px 0;
+  font-weight: 500;
+}
+
+#docs-content .markdown a,
+#docs-content .markdown a:visited,
+#docs-content .markdown a:hover,
+#docs-content .markdown a:active {
+  text-decoration: none;
+  color: #1E88E5;
+}
+
+#docs-content .markdown a:hover {
+  text-decoration: underline;
+}
+
+#docs-content .markdown blockquote {
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-left: 5px solid #B2CDA9;
+  color: #444;
+}
+
+#docs-content .markdown blockquote p {
+  margin: 0px;
+}
+
+#docs-content .markdown code {
+  display: block;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 2px 5px;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 2px;
+  color: #333;
+}
+
+
+#docs-content .markdown > div {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#docs-content .markdown pre {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  background-color: none;
+}
+
+#docs-content .markdown pre code {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  background: none;
+  background-color: #f7f7f7;
+  padding: 10px 12px;
+}
+
+#docs-content .markdown .header-anchor {
+  display: none;
+  line-height: 1px;
+  font-size: 10px;
+}
+
+#docs-content .markdown h1:hover .header-anchor,
+#docs-content .markdown h2:hover .header-anchor,
+#docs-content .markdown h3:hover .header-anchor,
+#docs-content .markdown h4:hover .header-anchor,
+#docs-content .markdown h5:hover .header-anchor,
+#docs-content .markdown h6:hover .header-anchor {
+  display: inline;
+}

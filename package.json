@@ -1,8 +1,7 @@
 {
   "name": "flutter-widget-livebook",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
+  "description": "Live preview example for flutter widgets.",
+  "version": "1.0.0",
   "author": "JianyingLi <lijy91@foxmail.com>",
   "bugs": {
     "url": "https://github.com/blankapp/flutter-widget-livebook/issues"
@@ -10,16 +9,17 @@
   "dependencies": {
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.22",
     "gatsby-mdx": "^0.3.5",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
     "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-mdx": "^1.0.23",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.6",
-    "gatsby-plugin-typography": "^2.2.0",
     "gatsby-remark-copy-linked-files": "^2.0.5",
     "gatsby-remark-images": "^2.0.4",
     "gatsby-remark-responsive-iframe": "^2.0.5",
@@ -27,18 +27,17 @@
     "gatsby-source-filesystem": "^2.0.2",
     "gatsby-transformer-remark": "^2.1.6",
     "gatsby-transformer-sharp": "^2.1.3",
+    "html-react-parser": "^0.9.1",
     "html5-device-mockups": "^3.2.1",
     "mdx-utils": "^0.0.2",
-    "prism-react-renderer": "link:../prism-react-renderer",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "polished": "^3.4.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
-    "react-live": "^1.12.0",
-    "react-typography": "^0.16.13",
-    "typeface-merriweather": "0.0.43",
-    "typeface-montserrat": "0.0.43",
-    "typography": "^0.16.17",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "react-popper-tooltip": "^2.8.3",
+    "react-router": "^5.0.1",
+    "react-syntax-highlighter": "^11.0.2",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -50,10 +49,9 @@
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blankapp/flutter-widget-livebook.git"
+    "url": "https://github.com/blankapp/flutter-widget-livebook"
   },
   "scripts": {
     "dev": "gatsby develop",

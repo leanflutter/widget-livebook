@@ -1,9 +1,14 @@
 import React from 'react'
-import { render } from 'react-dom'
-import Highlight, { defaultProps } from 'prism-react-renderer'
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import dart from 'react-syntax-highlighter/dist/esm/languages/hljs/dart';
+import json from 'react-syntax-highlighter/dist/esm/languages/hljs/json';
 
-export const Code = ({ codeString, language, ...props }) => {
+SyntaxHighlighter.registerLanguage('dart', dart);
+SyntaxHighlighter.registerLanguage('json', json);
+
+const Code = ({ codeString, language, ...props }) => {
+  console.log(language);
   if (props['liveslice']) {
     const height = props['height'];
     const mockup = props['mockup'];
@@ -57,44 +62,18 @@ export const Code = ({ codeString, language, ...props }) => {
             scrolling="no"
           />
         }
-        <Highlight {...defaultProps} code={codeString} language={language} theme={undefined}>
-          {({ className, style, tokens, getLineProps, getTokenProps }) => (
-            <pre className={className} style={style}>
-              {tokens.map((line, i) => (
-                <div {...getLineProps({ line, key: i })}>
-                  {line.map((token, key) => (
-                    <span {...getTokenProps({ token, key })} />
-                  ))}
-                </div>
-              ))}
-            </pre>
-          )}
-        </Highlight>
+        <SyntaxHighlighter copyable language={`${language}`}>
+          {codeString}
+        </SyntaxHighlighter>
       </div>
     );
-  } else if (props['react-live']) {
-    return (
-      <LiveProvider code={codeString} noInline={true}>
-        <LiveEditor />
-        <LiveError />
-        <LivePreview />
-      </LiveProvider>
-    )
   } else {
     return (
-      <Highlight {...defaultProps} code={codeString} language={language} theme={undefined}>
-        {({ className, style, tokens, getLineProps, getTokenProps }) => (
-          <pre className={className} style={style}>
-            {tokens.map((line, i) => (
-              <div {...getLineProps({ line, key: i })}>
-                {line.map((token, key) => (
-                  <span {...getTokenProps({ token, key })} />
-                ))}
-              </div>
-            ))}
-          </pre>
-        )}
-      </Highlight>
+      <SyntaxHighlighter copyable language={`${language}`}>
+        {codeString}
+      </SyntaxHighlighter>
     )
   }
 }
+
+export default Code;
