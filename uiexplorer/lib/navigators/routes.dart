@@ -32,6 +32,7 @@ List<SliceExample> _sliceExamples = [
   SliceDivider(),
   SliceDrawer(),
   SliceDropdownButton(),
+  SliceExpansionPanelList(),
   SliceFlatButton(),
   SliceFloatingActionButton(),
   SliceFlutterLogo(),

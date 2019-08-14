@@ -30,6 +30,7 @@ export './slice_date_picker/slice_date_picker.dart';
 export './slice_divider/slice_divider.dart';
 export './slice_drawer/slice_drawer.dart';
 export './slice_dropdown_button/slice_dropdown_button.dart';
+export './slice_expansion_panel_list/slice_expansion_panel_list.dart';
 export './slice_flat_button/slice_flat_button.dart';
 export './slice_floating_action_button/slice_floating_action_button.dart';
 export './slice_flutter_logo/slice_flutter_logo.dart';
