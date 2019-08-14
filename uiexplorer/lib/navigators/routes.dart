@@ -4,6 +4,7 @@ List<SliceExample> _sliceExamples = [
   SliceAlertDialog(),
   SliceAlign(),
   SliceAnimatedAlign(),
+  SliceAnimatedBuilder(),
   SliceAnimatedOpacity(),
   SliceAnimatedPadding(),
   SliceAppBar(),
@@ -42,6 +43,8 @@ List<SliceExample> _sliceExamples = [
   SliceInkWell(),
   SliceLinearProgressIndicator(),
   SliceListTile(),
+  SliceOutlineButton(),
+  SlicePadding(),
   SlicePopupMenuButton(),
   SliceProgressIndicator(),
   SliceRadio(),
@@ -61,6 +64,7 @@ List<SliceExample> _sliceExamples = [
   SliceTextFormField(),
   SliceTextSelection(),
   SliceTransform(),
+  SliceVerticalDivider(),
   SliceWrap(),
 ];
 

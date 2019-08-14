@@ -9,10 +9,10 @@ class SliceAnimatedPadding extends StatefulWidget implements SliceExample {
 }
 
 class _SliceAnimatedPaddingState extends State<SliceAnimatedPadding> {
-  EdgeInsetsGeometry _padding = EdgeInsets.zero;
+  EdgeInsets _padding = EdgeInsets.zero;
   void _changePadding() {
     setState(() {
-      if (_padding.left == 100) {
+      if (_padding.top == 100) {
         _padding = EdgeInsets.only(top: 100, bottom: 100);
       } else {
         _padding = EdgeInsets.only(left: 100, right: 100);
