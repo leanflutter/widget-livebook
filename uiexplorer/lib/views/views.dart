@@ -3,6 +3,7 @@ export './slice_alert_dialog/slice_alert_dialog.dart';
 export './slice_align/slice_align.dart';
 export './slice_animated_align/slice_animated_align.dart';
 export './slice_animated_builder/slice_animated_builder.dart';
+export './slice_animated_cross_fade/slice_animated_cross_fade.dart';
 export './slice_animated_opacity/slice_animated_opacity.dart';
 export './slice_animated_padding/slice_animated_padding.dart';
 export './slice_app_bar/slice_app_bar.dart';

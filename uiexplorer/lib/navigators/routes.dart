@@ -5,6 +5,7 @@ List<SliceExample> _sliceExamples = [
   SliceAlign(),
   SliceAnimatedAlign(),
   SliceAnimatedBuilder(),
+  SliceAnimatedCrossFade(),
   SliceAnimatedOpacity(),
   SliceAnimatedPadding(),
   SliceAppBar(),
