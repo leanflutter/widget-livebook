@@ -21,6 +21,13 @@ class SliceSliverAppBar extends StatelessWidget implements SliceExample {
               ),
             ],
           ),
+          SliverPadding(
+            padding: EdgeInsets.zero,
+            sliver: Container(
+              height: 400,
+              child: Text(''),
+            )
+          ),
         ],
       ),
     );
