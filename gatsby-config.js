@@ -17,6 +17,7 @@ module.exports = {
         '/widgets/Align/',
         '/widgets/AnimatedAlign/',
         '/widgets/AnimatedBuilder/',
+        '/widgets/AnimatedCrossFade/',
         '/widgets/AnimatedOpacity/',
         '/widgets/AnimatedPadding/',
         '/widgets/AppBar/',
