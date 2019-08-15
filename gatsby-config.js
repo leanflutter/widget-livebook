@@ -39,6 +39,7 @@ module.exports = {
         '/widgets/CustomPaint/',
         '/widgets/CustomScrollView/',
         '/widgets/DatePicker/',
+        '/widgets/Dismissible/',
         '/widgets/Divider/',
         '/widgets/Drawer/',
         '/widgets/DropdownButton/',
