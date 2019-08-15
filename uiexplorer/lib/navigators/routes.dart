@@ -32,6 +32,7 @@ List<SliceExample> _sliceExamples = [
   SliceCustomScrollView(),
   SliceDataTable(),
   SliceDatePicker(),
+  SliceDismissible(),
   SliceDivider(),
   SliceDrawer(),
   SliceDropdownButton(),

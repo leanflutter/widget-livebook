@@ -30,6 +30,7 @@ export './slice_custom_paint/slice_custom_paint.dart';
 export './slice_custom_scroll_view/slice_custom_scroll_view.dart';
 export './slice_data_table/slice_data_table.dart';
 export './slice_date_picker/slice_date_picker.dart';
+export './slice_dismissible/slice_dismissible.dart';
 export './slice_divider/slice_divider.dart';
 export './slice_drawer/slice_drawer.dart';
 export './slice_dropdown_button/slice_dropdown_button.dart';
