@@ -21,6 +21,7 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-embed-video": "^1.7.1",
     "gatsby-remark-images": "^2.0.4",
     "gatsby-remark-responsive-iframe": "^2.0.5",
     "gatsby-remark-smartypants": "^2.0.5",

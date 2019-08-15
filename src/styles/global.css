@@ -5,6 +5,17 @@ iframe {
   background-color: #f7f7f7;
 }
 
+.embedVideo-container {
+  height: 394px;
+}
+
+@media (max-width: 500px) {
+  .embedVideo-container {
+    height: 260px;
+  }
+}
+
+
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
