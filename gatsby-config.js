@@ -21,6 +21,8 @@ module.exports = {
         '/widgets/AnimatedCrossFade/',
         '/widgets/AnimatedOpacity/',
         '/widgets/AnimatedPadding/',
+        '/widgets/AnimatedPhysicalModel/',
+        '/widgets/AnimatedSwitcher/',
         '/widgets/AppBar/',
         '/widgets/BottomNavigationBar/',
         '/widgets/Card/',
@@ -60,6 +62,7 @@ module.exports = {
         '/widgets/Opacity/',
         '/widgets/OutlineButton/',
         '/widgets/Padding/',
+        '/widgets/PhysicalModel/',
         '/widgets/PopupMenuButton/',
         '/widgets/Radio/',
         '/widgets/RadioListTile/',
@@ -70,10 +73,12 @@ module.exports = {
         '/widgets/SimpleDialog/',
         '/widgets/SingleChildScrollView/',
         '/widgets/SizedBox/',
+        '/widgets/Slider/',
         '/widgets/SliverAppBar/',
         '/widgets/Switch/',
         '/widgets/Text/',
         '/widgets/TextField/',
+        '/widgets/TimePicker/',
         '/widgets/Transform/',
         '/widgets/VerticalDivider/',
         '/widgets/Wrap/',
@@ -215,5 +220,11 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `flutter-widget-livebook`
+      }
+    },
   ],
 }
