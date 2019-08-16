@@ -2,11 +2,13 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import capitalize from 'lodash/capitalize';
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import NavDropdown from '../components/Nav/dropdown'
 import SEO from '../components/seo'
+import * as siteConfig from '../new-components/basics/shared/site';
 import './blog-post.css'
 
 const getEditUrl = (fileAbsolutePath) => {
@@ -34,6 +36,7 @@ const getSelectedSection = (sections, path) =>
 
 class BlogPostTemplate extends React.Component {
   render() {
+    const { location } = this.props;
     const { site, allMdx, mdx } = this.props.data;
     const siteTitle = site.siteMetadata.title
 
@@ -43,6 +46,12 @@ class BlogPostTemplate extends React.Component {
     const sections = getSections(docSections, allMdx.edges);
     const selectedSection = getSelectedSection(docSections, mdx.fields.slug)
     const selectedItemId = post.frontmatter.id || (post.fields.slug.replace('/widgets', ''))
+
+    let disqusConfig = {
+      url: `${siteConfig.metadata.homepageUrl}${location.pathname}`,
+      identifier: post.frontmatter.id || (post.fields.slug),
+      title: post.frontmatter.title,
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -75,6 +84,7 @@ class BlogPostTemplate extends React.Component {
                 <div className="markdown">
                   <MDXRenderer>{post.code.body}</MDXRenderer>
                 </div>
+                <Disqus config={disqusConfig} />
               </div>
             </div>
             <div className="nav-dropdown">

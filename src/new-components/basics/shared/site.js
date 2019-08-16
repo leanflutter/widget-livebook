@@ -8,6 +8,7 @@ export const metadata = {
   description: `Live preview example for flutter widgets.`,
   googleSiteVerification: '',
   latestVersion: 'v1.0',
+  homepageUrl,
 };
 
 export const url = {

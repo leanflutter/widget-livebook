@@ -9,10 +9,12 @@
   "dependencies": {
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
+    "add": "^2.0.6",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.22",
     "gatsby-mdx": "^0.3.5",
+    "gatsby-plugin-disqus": "^1.1.2",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.1.7",
     "gatsby-plugin-manifest": "^2.0.5",
@@ -38,7 +40,8 @@
     "react-popper-tooltip": "^2.8.3",
     "react-router": "^5.0.1",
     "react-syntax-highlighter": "^11.0.2",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "yarn": "^1.17.3"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

@@ -5,6 +5,15 @@ iframe {
   background-color: #f7f7f7;
 }
 
+#disqus_thread {
+  width: 100% !important;
+  margin-top: 32px !important;
+}
+
+#disqus_thread iframe {
+  background-color: #ffffff;
+}
+
 .embedVideo-container {
   height: 394px;
 }
@@ -14,7 +23,6 @@ iframe {
     height: 260px;
   }
 }
-
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
