@@ -53,9 +53,23 @@ class BlogPostTemplate extends React.Component {
       title: post.frontmatter.title,
     }
 
+    let keywords = [];
+
+    if (location.pathname.indexOf('/widgets/') >= 0) {
+      keywords = [
+        'flutter',
+        'flutter widget',
+        `flutter ${post.frontmatter.title} example`,
+        `flutter ${post.frontmatter.title} sample`,
+        post.frontmatter.title,
+        `${post.frontmatter.title} example`,
+        `${post.frontmatter.title} sample`,
+      ]
+    }
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <SEO title={post.frontmatter.title} description={post.excerpt} keywords={keywords} />
         <div id="docs-container" className="row">
           <div className="nav col-lg-3 col-md-3 d-none d-md-block">
             <Nav
