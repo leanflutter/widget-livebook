@@ -7,10 +7,19 @@ An iOS-style button.
 ### Example
 
 ```dart liveslice=CupertinoButton
-return CupertinoButton(
-  child: Text('Button'),
-  onPressed: () { /** */ },
-);
+Column(
+  mainAxisSize: MainAxisSize.min,
+  children: <Widget>[
+    CupertinoButton(
+      child: Text('Button'),
+      onPressed: () { /** */ },
+    ),
+    CupertinoButton.filled(
+      child: Text('Button'),
+      onPressed: () { /** */ },
+    ),
+  ],
+)
 ```
 
 ### Related Links
