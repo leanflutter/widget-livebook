@@ -1,5 +1,13 @@
 [
   {
+    "family": "CupertinoIcons",
+    "fonts": [
+      {
+        "asset": "fonts/CupertinoIcons.ttf"
+      }
+    ]
+  },
+  {
     "family": "MaterialIcons",
     "fonts": [
       {

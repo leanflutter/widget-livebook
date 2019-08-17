@@ -13,7 +13,9 @@ class _SliceCupertinoPageScaffoldState extends State<SliceCupertinoPageScaffold>
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
         backgroundColor: Colors.white,
-        leading: CupertinoNavigationBarBackButton(),
+        leading: CupertinoNavigationBarBackButton(
+          color: CupertinoColors.activeBlue,
+        ),
         middle: const Text('Sample'),
       ),
       child: Center(

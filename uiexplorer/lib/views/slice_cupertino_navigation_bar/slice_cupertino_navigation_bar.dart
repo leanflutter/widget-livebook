@@ -10,7 +10,9 @@ class SliceCupertinoNavigationBar extends StatelessWidget implements SliceExampl
       height: kToolbarHeight + (context != null ? MediaQuery.of(context).padding.top : 0),
       child: CupertinoNavigationBar(
         backgroundColor: Colors.white,
-        leading: CupertinoNavigationBarBackButton(),
+        leading: CupertinoNavigationBarBackButton(
+          color: CupertinoColors.activeBlue,
+        ),
         middle: const Text('CupertinoNavigationBar Sample'),
       ),
     );
