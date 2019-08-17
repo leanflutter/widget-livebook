@@ -24,7 +24,7 @@ class _SliceTimePickerState extends State<SliceTimePicker> {
         _handleClickMe();
       },
       child: Text(
-        "Click Me!",
+        "Click me!",
       ),
     );
   }

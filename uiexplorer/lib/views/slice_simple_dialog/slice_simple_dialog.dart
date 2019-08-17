@@ -50,7 +50,7 @@ class _SliceSimpleDialogState extends State<SliceSimpleDialog> {
         _askedToLead();
       },
       child: Text(
-        "Click Me!",
+        "Click me!",
       ),
     );
   }

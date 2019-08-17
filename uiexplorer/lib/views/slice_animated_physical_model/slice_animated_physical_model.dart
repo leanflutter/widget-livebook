@@ -37,7 +37,7 @@ class _SliceAnimatedPhysicalModelState extends State<SliceAnimatedPhysicalModel>
         ),
         SizedBox(height: 20,),
         RaisedButton(
-          child: const Text('Click Me!'),
+          child: const Text('Click me!'),
           onPressed: () {
             setState(() {
               _first = !_first;

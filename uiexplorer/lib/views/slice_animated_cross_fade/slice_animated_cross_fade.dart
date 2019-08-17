@@ -31,7 +31,7 @@ class _SliceAnimatedCrossFadeState extends State<SliceAnimatedCrossFade> with Si
             });
           },
           child: Text(
-            "Click Me!",
+            "Click me!",
           ),
         )
       ],

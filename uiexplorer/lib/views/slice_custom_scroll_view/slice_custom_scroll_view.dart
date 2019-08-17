@@ -12,7 +12,7 @@ class SliceCustomScrollView extends StatelessWidget implements SliceExample {
           pinned: true,
           expandedHeight: 250.0,
           flexibleSpace: FlexibleSpaceBar(
-            title: Text('Demo'),
+            title: Text('Sample'),
           ),
         ),
         SliverGrid(

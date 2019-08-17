@@ -9,7 +9,7 @@ class SliceAppBar extends StatelessWidget implements SliceExample {
     return Container(
       height: kToolbarHeight + (context != null ? MediaQuery.of(context).padding.top : 0),
       child: AppBar(
-        title: const Text('AppBar Demo'),
+        title: const Text('AppBar Sample'),
         automaticallyImplyLeading: false,
         actions: <Widget>[
           IconButton(
