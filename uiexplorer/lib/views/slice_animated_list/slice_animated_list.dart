@@ -77,7 +77,7 @@ class _SliceAnimatedListState extends State<SliceAnimatedList> {
               ),
             )
           ],
-        )
+        ),
       ],
     );
   }

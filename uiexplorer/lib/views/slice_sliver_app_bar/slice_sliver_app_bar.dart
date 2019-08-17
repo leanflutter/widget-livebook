@@ -11,7 +11,7 @@ class SliceSliverAppBar extends StatelessWidget implements SliceExample {
           SliverAppBar(
             expandedHeight: 150.0,
             flexibleSpace: const FlexibleSpaceBar(
-              title: Text('Available seats'),
+              title: Text('SliverAppBar Sample'),
             ),
             actions: <Widget>[
               IconButton(
@@ -21,12 +21,12 @@ class SliceSliverAppBar extends StatelessWidget implements SliceExample {
               ),
             ],
           ),
-          SliverPadding(
-            padding: EdgeInsets.zero,
-            sliver: Container(
-              height: 400,
-              child: Text(''),
-            )
+          SliverList(
+            delegate: SliverChildListDelegate(
+              <Widget>[
+                Container(height: 1200.0, color: Colors.teal),
+              ],
+            ),
           ),
         ],
       ),
