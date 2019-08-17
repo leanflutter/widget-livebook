@@ -32,7 +32,7 @@ class _SliceDatePickerState extends State<SliceDatePicker> {
         _handleClickMe();
       },
       child: Text(
-        "Click Me!",
+        "Click me!",
       ),
     );
   }

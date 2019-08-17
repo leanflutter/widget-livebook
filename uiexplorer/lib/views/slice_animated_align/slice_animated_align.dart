@@ -40,7 +40,7 @@ class _SliceAnimatedAlignState extends State<SliceAnimatedAlign> {
             _changeAlignment();
           },
           child: Text(
-            "Click Me!",
+            "Click me!",
           ),
         )
       ],

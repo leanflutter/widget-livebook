@@ -83,7 +83,7 @@ class _SliceDecoratedBoxTransitionState extends State<SliceDecoratedBoxTransitio
             _first = !_first;
           },
           child: Text(
-            "Click Me!",
+            "Click me!",
           ),
         )
       ],

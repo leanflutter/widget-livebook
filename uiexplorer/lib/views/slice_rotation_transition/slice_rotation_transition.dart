@@ -56,7 +56,7 @@ class _SliceRotationTransitionState extends State<SliceRotationTransition>
             _first = !_first;
           },
           child: Text(
-            "Click Me!",
+            "Click me!",
           ),
         )
       ],

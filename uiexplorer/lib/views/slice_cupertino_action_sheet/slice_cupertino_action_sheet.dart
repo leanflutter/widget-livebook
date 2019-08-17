@@ -47,7 +47,7 @@ class _SliceCupertinoActionSheetState extends State<SliceCupertinoActionSheet> {
         _handleClickMe();
       },
       child: Text(
-        "Click Me!",
+        "Click me!",
       ),
     );
   }

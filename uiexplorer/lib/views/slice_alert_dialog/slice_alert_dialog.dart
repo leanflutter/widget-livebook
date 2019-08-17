@@ -44,7 +44,7 @@ class _SliceAlertDialogState extends State<SliceAlertDialog> {
         _neverSatisfied();
       },
       child: Text(
-        "Click Me!",
+        "Click me!",
       ),
     );
   }
