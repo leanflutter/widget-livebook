@@ -1,4 +1,4 @@
-import 'package:flutter_web/scheduler.dart' show timeDilation;
+import 'package:flutter/scheduler.dart' show timeDilation;
 
 import '../../includes.dart';
 
