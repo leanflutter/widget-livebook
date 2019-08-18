@@ -1,11 +1,34 @@
 # Flutter Widget Livebook
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lijy91%40live.com&currency_code=USD&source=url)
 
 [English](./README.md) | 简体中文
 
 ## 简介
 
-*Flutter 小部件的实时预览示例。*
+[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) 是一个使用 Flutter for web 构建的可在线实时预览 Widget 示例的网站。
+
+## 文档
+
+要查看实时示例，请访问 [flutter-widget-livebook.blankapp.org](https://flutter-widget-livebook.blankapp.org).
+
+## 示例
+
+#### AlertDialog
+
+![](/screenshots/AlertDialog.gif)
+
+#### AnimatedDefaultTextStyle
+
+![](/screenshots/AnimatedDefaultTextStyle.gif)
+
+#### AnimatedDefaultTextStyle
+
+![](/screenshots/AnimatedPhysicalModel.gif)
+
+#### NestedScrollView
+
+![](/screenshots/NestedScrollView.gif)
 
 ## 相关链接
 
