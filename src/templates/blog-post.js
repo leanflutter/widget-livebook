@@ -7,6 +7,7 @@ import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Layout from '../components/Layout'
 import Nav from '../components/Nav'
 import NavDropdown from '../components/Nav/dropdown'
+import Search from '../components/Search'
 import SEO from '../components/seo'
 import * as siteConfig from '../new-components/basics/shared/site';
 import './blog-post.css'
@@ -87,6 +88,7 @@ class BlogPostTemplate extends React.Component {
                 selectedItem={selectedItemId}
               />
             </div>
+            <Search />
             <div id="docs-content">
               <div className="content">
                 <h2 className="title">{post.frontmatter.title}</h2>

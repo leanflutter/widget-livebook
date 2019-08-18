@@ -10,10 +10,13 @@
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
     "add": "^2.0.6",
+    "algoliasearch": "^3.33.0",
     "bootstrap": "^4.3.1",
+    "dotenv": "^8.0.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.22",
     "gatsby-mdx": "^0.3.5",
+    "gatsby-plugin-algolia": "^0.3.3",
     "gatsby-plugin-disqus": "^1.1.2",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.1.7",
@@ -37,11 +40,12 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
+    "react-instantsearch-dom": "^5.7.0",
     "react-popper-tooltip": "^2.8.3",
     "react-router": "^5.0.1",
     "react-syntax-highlighter": "^11.0.2",
     "styled-components": "^4.3.2",
-    "yarn": "^1.17.3"
+    "styled-icons": "^8.3.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

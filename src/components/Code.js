@@ -17,6 +17,7 @@ const Code = ({ codeString, language, ...props }) => {
           !mockup ? <div /> : <div
             className="device-wrapper"
             style={{
+              marginTop: '10px',
               maxWidth: 400,
             }}
           >
@@ -54,7 +55,7 @@ const Code = ({ codeString, language, ...props }) => {
             style={{
               width: '100%',
               height: '100%',
-              margin: 0,
+              marginTop: '10px',
               ...(height ? { height } : {})
             }}
             src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
