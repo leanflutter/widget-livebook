@@ -22,7 +22,7 @@ To check out live examples and docs, visit [flutter-widget-livebook.blankapp.org
 
 ![](/screenshots/AnimatedDefaultTextStyle.gif)
 
-#### AnimatedDefaultTextStyle
+#### AnimatedPhysicalModel
 
 ![](/screenshots/AnimatedPhysicalModel.gif)
 

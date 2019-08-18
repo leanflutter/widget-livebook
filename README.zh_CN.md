@@ -22,7 +22,7 @@
 
 ![](/screenshots/AnimatedDefaultTextStyle.gif)
 
-#### AnimatedDefaultTextStyle
+#### AnimatedPhysicalModel
 
 ![](/screenshots/AnimatedPhysicalModel.gif)
 
