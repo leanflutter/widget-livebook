@@ -6,6 +6,10 @@ export const Root = styled.div`
   position: absolute;
   top: 10px;
   right: 0;
+
+  @media(max-width: 500px) {
+    display: none;
+  }
 `
 
 const focus = css`
