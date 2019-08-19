@@ -42,6 +42,9 @@ iframe {
   }
 }
 @media (max-width: 500px) {
+  .github-corner {
+    display: none;
+  }
   .github-corner:hover .octo-arm {
     animation: none;
   }

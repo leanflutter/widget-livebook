@@ -9,6 +9,7 @@ const { color, typography, spacing, breakpoint } = styles;
 const { metadata, url } = site;
 
 export const navLinks = [
+  { title: 'GitHub', href: url.gitHub.repo, isGatsby: false },
   { title: 'Donate', href: url.donate, isGatsby: false },
 ];
 
