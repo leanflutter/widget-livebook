@@ -4,7 +4,7 @@ title: 'Introduction'
 date: '2019-08-13'
 ---
 
-[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built using Flutter for web to live preview Widget samples online.
+[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built with Flutter for web to live preview widget samples online.
 
 ### Examples
 

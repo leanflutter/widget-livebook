@@ -6,7 +6,7 @@ English | [简体中文](./README.zh_CN.md)
 
 ## Introduction
 
-[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built using Flutter for web to live preview Widget samples online.
+[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built with Flutter for web to live preview widget samples online.
 
 ## Documentation
 

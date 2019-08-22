@@ -62,14 +62,14 @@ const Code = ({ codeString, language, ...props }) => {
             scrolling="no"
           />
         }
-        <SyntaxHighlighter copyable language={`${language}`}>
+        <SyntaxHighlighter language={`${language}`}>
           {codeString}
         </SyntaxHighlighter>
       </div>
     );
   } else {
     return (
-      <SyntaxHighlighter copyable language={`${language}`}>
+      <SyntaxHighlighter language={`${language}`}>
         {codeString}
       </SyntaxHighlighter>
     )
