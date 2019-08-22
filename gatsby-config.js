@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `Flutter Widget Livebook`,
     author: `JianyingLi`,
-    description: `An extension of the gatsby starter blog, with support for MDX`,
+    description: `An website built using Flutter for web to live preview widget samples online.`,
     siteUrl: `https://flutter-widget-livebook.blankapp.org/`,
     social: {
       twitter: `lijy91`,
