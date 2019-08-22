@@ -12,7 +12,6 @@ class AppNavigator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var materialApp = MaterialApp(
-      home: HomeScreen(),
       routes: _buildRoutes(),
     );
     return materialApp;

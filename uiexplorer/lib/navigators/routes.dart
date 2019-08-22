@@ -1,6 +1,6 @@
 import '../includes.dart';
 
-List<SliceExample> _sliceExamples = [
+List<SliceExample> sliceExamples = [
   SliceAlertDialog(),
   SliceAlign(),
   SliceAnimatedAlign(),
@@ -114,23 +114,44 @@ List<SliceExample> _sliceExamples = [
   SliceWrap(),
 ];
 
-class _PageExamplePageRoute {}
-class _SliceExamplePageRoute {
-  SliceExample example;
-
+class _SimplePageRoute {
   String routeName;
   WidgetBuilder buildRoute;
 
-  _SliceExamplePageRoute(this.example) {
-    this.routeName = this.example.name ?? this.example.runtimeType.toString();
-    this.buildRoute = (_) => Preview4SliceExamplePage(this.example);
+  _SimplePageRoute(this.routeName, this.buildRoute);
+}
+
+class _PageExamplePageRoute {}
+
+class _SliceExamplePageRoute extends _SimplePageRoute {
+  SliceExample example;
+
+  _SliceExamplePageRoute(String routeName, buildRoute)
+      : super(routeName, buildRoute);
+
+  static _SliceExamplePageRoute fromSliceExample(SliceExample example) {
+    String routeName = example.name ?? example.runtimeType.toString();
+    WidgetBuilder buildRoute = (_) => Preview4SliceExamplePage(example);
+
+    _SliceExamplePageRoute pageRoute =
+        _SliceExamplePageRoute(routeName, buildRoute);
+    pageRoute.example = example;
+
+    return pageRoute;
   }
 }
 
+List<_SimplePageRoute> _simplePageRoute = [
+  _SimplePageRoute(
+    '',
+    (_) => HomeScreen(),
+  )
+];
 List<_PageExamplePageRoute> _pageExampleRoutes = [];
 List<_SliceExamplePageRoute> _sliceExampleRoutes = []
-  ..addAll(_sliceExamples.map((v) => _SliceExamplePageRoute(v)));
+  ..addAll(sliceExamples.map((v) => _SliceExamplePageRoute.fromSliceExample(v)));
 
 List<dynamic> routes = []
+  ..addAll(_simplePageRoute)
   ..addAll(_pageExampleRoutes)
   ..addAll(_sliceExampleRoutes);
