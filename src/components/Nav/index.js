@@ -1,33 +1,54 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
+
 import './style.css';
 
-const Nav = ({ sections, selectedSectionId, selectedItemId }) => (
-  <div id="nav">
-    {sections.map(section => (
-      <div key={section.id}>
-        <h3>{section.heading}</h3>
-        <ul>
-          {section.items.map(item => {
-            const cssClass =
-              section.id === selectedSectionId && item.id === selectedItemId ? 'selected' : '';
+class Nav extends React.Component {
+  componentDidMount() {
+    const isDesktopOrLaptop = window.innerWidth >= 1200;
 
-            const url = `/${section.id}/${item.id}/`;
+    if (isDesktopOrLaptop) {
+      let s = document.createElement('script');
+      s.src = "//cdn.carbonads.com/carbon.js?serve=CKYIT23U&placement=blankapporg";
+      s.setAttribute("id", "_carbonads_js");
+      s.async = true;
 
-            return (
-              <li key={item.id}>
-                <Link className={cssClass} to={url}>
-                  {item.title}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+      this.adsElement.appendChild(s);
+    }
+  }
+
+  render() {
+    const { sections, selectedSectionId, selectedItemId } = this.props;
+    return (
+      <div id="nav">
+        <div ref={el => (this.adsElement = el)}></div>
+        {sections.map(section => (
+          <div key={section.id}>
+            <h3>{section.heading}</h3>
+            <ul>
+              {section.items.map(item => {
+                const cssClass =
+                  section.id === selectedSectionId && item.id === selectedItemId ? 'selected' : '';
+
+                const url = `/${section.id}/${item.id}/`;
+
+                return (
+                  <li key={item.id}>
+                    <Link className={cssClass} to={url}>
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-);
+    );
+  }
+}
+
 Nav.propTypes = {
   sections: PropTypes.array, // eslint-disable-line
   selectedSectionId: PropTypes.string.isRequired,

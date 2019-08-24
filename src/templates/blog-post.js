@@ -36,6 +36,19 @@ const getSelectedSection = (sections, path) =>
   Object.keys(sections).find(key => sections[key].indexOf(path) >= 0);
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    const isDesktopOrLaptop = window.innerWidth >= 1200;
+
+    if (!isDesktopOrLaptop) {
+      let s = document.createElement('script');
+      s.src = "//cdn.carbonads.com/carbon.js?serve=CKYIT23U&placement=blankapporg";
+      s.setAttribute("id", "_carbonads_js");
+      s.async = true;
+
+      this.adsElement.appendChild(s);
+    }
+  }
+
   render() {
     const { location } = this.props;
     const { site, allMdx, mdx } = this.props.data;
@@ -97,6 +110,7 @@ class BlogPostTemplate extends React.Component {
                     Edit this page
                   </a>
                 </p>
+                <div ref={el => (this.adsElement = el)}></div>
                 <div className="markdown">
                   <MDXRenderer>{post.code.body}</MDXRenderer>
                 </div>

@@ -7,7 +7,7 @@ export const Root = styled.div`
   top: 10px;
   right: 0;
 
-  @media(max-width: 500px) {
+  @media(max-width: 998px) {
     display: none;
   }
 `
