@@ -14,6 +14,14 @@ enum Department {
 }
 
 class _SliceSimpleDialogState extends State<SliceSimpleDialog> {
+  @override
+  void initState() {
+    Future.delayed(Duration(milliseconds: 1)).then((_) {
+      _askedToLead();
+    });
+    super.initState();
+  }
+
   Future<void> _askedToLead() async {
     switch (await showDialog<Department>(
       context: context,
@@ -50,7 +58,7 @@ class _SliceSimpleDialogState extends State<SliceSimpleDialog> {
         _askedToLead();
       },
       child: Text(
-        "Click me!",
+        "CLICK ME!",
       ),
     );
   }

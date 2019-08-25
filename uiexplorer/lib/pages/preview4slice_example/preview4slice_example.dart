@@ -16,7 +16,7 @@ class _Preview4SliceExamplePageState extends State<Preview4SliceExamplePage> {
 
   Widget _build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff7f7f7),
+      backgroundColor: Colors.white,
       body: Center(
         child: Container(
           alignment: Alignment.center,

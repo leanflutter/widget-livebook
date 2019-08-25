@@ -9,6 +9,14 @@ class SliceCupertinoActionSheet extends StatefulWidget implements SliceExample {
 }
 
 class _SliceCupertinoActionSheetState extends State<SliceCupertinoActionSheet> {
+  @override
+  void initState() {
+    Future.delayed(Duration(milliseconds: 1)).then((_) {
+      _handleClickMe();
+    });
+    super.initState();
+  }
+
   Future<void> _handleClickMe() async {
     return showCupertinoModalPopup<void>(
       context: context,
@@ -47,7 +55,7 @@ class _SliceCupertinoActionSheetState extends State<SliceCupertinoActionSheet> {
         _handleClickMe();
       },
       child: Text(
-        "Click me!",
+        "CLICK ME!",
       ),
     );
   }

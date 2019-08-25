@@ -42,7 +42,7 @@ class _SliceAnimatedDefaultTextStyleState extends State<SliceAnimatedDefaultText
             });
           },
           child: Text(
-            "Click me!",
+            "CLICK ME!",
           ),
         )
       ],

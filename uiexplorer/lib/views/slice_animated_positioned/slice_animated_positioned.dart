@@ -41,7 +41,7 @@ class _SliceAnimatedPositionedState extends State<SliceAnimatedPositioned> {
         ),
         SizedBox(height: 20,),
         RaisedButton(
-          child: const Text('Click me!'),
+          child: const Text('CLICK ME!'),
           onPressed: () {
             setState(() {
               _left   = _first ?  10 : 20;

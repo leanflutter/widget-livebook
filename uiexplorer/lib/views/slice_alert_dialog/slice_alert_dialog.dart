@@ -9,6 +9,14 @@ class SliceAlertDialog extends StatefulWidget implements SliceExample {
 }
 
 class _SliceAlertDialogState extends State<SliceAlertDialog> {
+  @override
+  void initState() {
+    Future.delayed(Duration(milliseconds: 1)).then((_) {
+      _neverSatisfied();
+    });
+    super.initState();
+  }
+
   Future<void> _neverSatisfied() async {
     return showDialog<void>(
       context: context,
@@ -44,7 +52,7 @@ class _SliceAlertDialogState extends State<SliceAlertDialog> {
         _neverSatisfied();
       },
       child: Text(
-        "Click me!",
+        "CLICK ME!",
       ),
     );
   }

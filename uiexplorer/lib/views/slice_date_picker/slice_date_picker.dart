@@ -9,6 +9,13 @@ class SliceDatePicker extends StatefulWidget implements SliceExample {
 }
 
 class _SliceDatePickerState extends State<SliceDatePicker> {
+  @override
+  void initState() {
+    Future.delayed(Duration(milliseconds: 1)).then((_) {
+      _handleClickMe();
+    });
+    super.initState();
+  }
 
   Future<void> _handleClickMe() async {
     showDatePicker(
@@ -32,7 +39,7 @@ class _SliceDatePickerState extends State<SliceDatePicker> {
         _handleClickMe();
       },
       child: Text(
-        "Click me!",
+        "CLICK ME!",
       ),
     );
   }

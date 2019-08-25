@@ -42,7 +42,7 @@ class _SliceAnimatedPaddingState extends State<SliceAnimatedPadding> {
             _changePadding();
           },
           child: Text(
-            "Click me!",
+            "CLICK ME!",
           ),
         )
       ],

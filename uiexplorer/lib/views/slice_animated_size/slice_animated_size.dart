@@ -37,7 +37,7 @@ class _SliceAnimatedSizeState extends State<SliceAnimatedSize>
         ),
         SizedBox(height: 20,),
         RaisedButton(
-          child: const Text('Click me!'),
+          child: const Text('CLICK ME!'),
           onPressed: () {
             setState(() {
               _width  = _first ?  220 : 200;

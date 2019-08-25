@@ -64,7 +64,7 @@ class _SlicePositionedTransitionState extends State<SlicePositionedTransition>
             _first = !_first;
           },
           child: Text(
-            "Click me!",
+            "CLICK ME!",
           ),
         )
       ],

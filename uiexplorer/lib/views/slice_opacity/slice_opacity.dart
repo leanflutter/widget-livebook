@@ -27,7 +27,7 @@ class _SliceOpacityState extends State<SliceOpacity> {
             });
           },
           child: Text(
-            "Click me!",
+            "CLICK ME!",
           ),
         )
       ],
