@@ -1,11 +1,13 @@
 import React from 'react'
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
-// import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import dart from 'react-syntax-highlighter/dist/esm/languages/hljs/dart';
-import json from 'react-syntax-highlighter/dist/esm/languages/hljs/json';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import dart from 'react-syntax-highlighter/dist/esm/languages/prism/dart';
+import json from 'react-syntax-highlighter/dist/esm/languages/prism/json';
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
 
 SyntaxHighlighter.registerLanguage('dart', dart);
 SyntaxHighlighter.registerLanguage('json', json);
+SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 const Code = ({ codeString, language, ...props }) => {
   if (props['liveslice']) {
@@ -51,25 +53,35 @@ const Code = ({ codeString, language, ...props }) => {
           </div>
         }
         {
-          mockup ? <div /> : <iframe
-            style={{
-              width: '100%',
-              height: '100%',
-              marginTop: '10px',
-              ...(height ? { height } : {})
-            }}
-            src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
-            scrolling="no"
-          />
+          mockup ? <div /> : <div className="livesample-container">
+            <iframe
+              id="livesample"
+              style={{
+                width: '100%',
+                height: '100%',
+                ...(height ? { height } : {})
+              }}
+              src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${props['liveslice']}`}
+              scrolling="no"
+            />
+          </div>
         }
-        <SyntaxHighlighter language={`${language}`}>
+        <SyntaxHighlighter
+          language={`${language}`}
+          // showLineNumbers
+          style={tomorrow}
+        >
           {codeString}
         </SyntaxHighlighter>
       </div>
     );
   } else {
     return (
-      <SyntaxHighlighter language={`${language}`}>
+        <SyntaxHighlighter
+          language={`${language}`}
+          // showLineNumbers
+          style={tomorrow}
+        >
         {codeString}
       </SyntaxHighlighter>
     )

@@ -134,7 +134,7 @@
   margin: 0px;
 }
 
-#docs-content .markdown code {
+/* #docs-content .markdown code {
   display: block;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   padding: 2px 5px;
@@ -143,7 +143,7 @@
   background-color: rgba(0,0,0,0.04);
   border-radius: 2px;
   color: #333;
-}
+} */
 
 
 #docs-content .markdown > div {
@@ -159,14 +159,14 @@
   background-color: none;
 }
 
-#docs-content .markdown pre code {
+/* #docs-content .markdown pre code {
   display: block;
   font-size: 14px;
   line-height: 20px;
   background: none;
   background-color: #f7f7f7;
   padding: 10px 12px;
-}
+} */
 
 #docs-content .markdown .header-anchor {
   display: none;

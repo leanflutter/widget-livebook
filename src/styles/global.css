@@ -2,7 +2,7 @@ iframe {
   overflow: hidden;
   min-height: 260px;
   border: none;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 
 #disqus_thread {
@@ -51,6 +51,18 @@ iframe {
   .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
+}
+
+.livesample-container {
+  display: flex;
+  border-style: solid;
+  border-color: #ececec;
+  border-width: .2rem .2rem 0 .2rem;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: -0.4em;
+}
+#livesample {
+  border-radius: 6px 6px 0 0;
 }
 
 #carbonads {
