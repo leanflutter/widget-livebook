@@ -4,6 +4,12 @@
   "engines": {
     "node": ">=0.8.0"
   },
+  "scripts": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "watch": "gulp watch",
+    "package": "gulp package"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/polyfill": "7.2.5",

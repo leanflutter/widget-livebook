@@ -9,8 +9,6 @@ chrome.runtime.onInstalled.addListener(details => {
   console.log('previousVersion', details.previousVersion);
 });
 
-console.log('\'Allo \'Allo! Event Page');
-
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) =>{
   if (request.contentScriptQuery == 'queryDb') {
     fetch(`${livebookUIExplorerUrl}/assets/db.json`)
@@ -32,4 +30,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) =>{
 
     return true;  // Will respond asynchronously.
   }
+});
+
+chrome.browserAction.onClicked.addListener((_) =>{
+  chrome.tabs.create({ url: livebookUrl });
 });
