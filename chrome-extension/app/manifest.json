@@ -17,14 +17,14 @@
   },
   "permissions": [
     "tabs",
-    "http://*/*",
-    "https://*/*"
+    // "http://*/*",
+    // "https://*/*",
+    "*://*.flutter.dev/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://api.flutter.dev/*"
       ],
       "js": [
         "scripts/contentscript.js"

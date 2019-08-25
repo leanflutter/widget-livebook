@@ -4,6 +4,9 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import del from 'del';
 import runSequence from 'run-sequence';
 import {stream as wiredep} from 'wiredep';
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
+import es from 'event-stream';
 
 const $ = gulpLoadPlugins();
 
@@ -85,12 +88,24 @@ gulp.task('chromeManifest', () => {
 });
 
 gulp.task('babel', () => {
-  return gulp.src('app/scripts.babel/**/*.js')
-      .pipe($.plumber())
-      .pipe($.babel({
-        presets: ['@babel/env']
-      }))
-      .pipe(gulp.dest('app/scripts'));
+  const files = [
+    'background.js',
+    'chromereload.js',
+    'contentscript.js',
+    'globals.js'
+  ];
+
+  const tasks = files.map(file => (
+    browserify({
+      entries: `./app/scripts.babel/${file}`,
+      debug: true
+    }).transform('babelify', { presets: ['@babel/env'] })
+      .bundle()
+      .pipe(source(file))
+      .pipe(gulp.dest('app/scripts'))
+  ));
+
+  return es.merge.apply(null, tasks);
 });
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
