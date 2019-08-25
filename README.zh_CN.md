@@ -8,6 +8,13 @@
 
 [Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) 是一个使用 Flutter for web 构建的可在线实时预览 Widget 示例的网站。
 
+## 模块
+
+| 模块 | 描述 |
+|--------|-----|
+| [chrome-extension](./chrome-extension/) | - |
+| [uiexplorer](./uiexplorer/) | -  |
+
 ## 文档
 
 要查看实时示例，请访问 [flutter-widget-livebook.blankapp.org](https://flutter-widget-livebook.blankapp.org).
@@ -29,6 +36,33 @@
 #### NestedScrollView
 
 ![](/screenshots/NestedScrollView.gif)
+
+
+## 快速开始
+
+### 必备条件
+
+开始之前确保你已安装：
+
+- 已安装 [Yarn](https://yarnpkg.com/)
+
+### 安装
+
+```bash
+$ yarn install
+```
+
+### 开始开发
+
+```bash
+$ yarn start
+```
+
+### 构建生产
+
+```
+$ yarn build
+```
 
 ## 相关链接
 
