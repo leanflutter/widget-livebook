@@ -23,6 +23,7 @@ List<SliceExample> sliceExamples = [
   SliceBottomAppBar(),
   SliceBottomNavigationBar(),
   SliceBottomSheet(),
+  SliceButtonBar(),
   SliceCard(),
   SliceCenter(),
   SliceCheckbox(),

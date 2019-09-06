@@ -21,6 +21,7 @@ export './slice_baseline/slice_baseline.dart';
 export './slice_bottom_app_bar/slice_bottom_app_bar.dart';
 export './slice_bottom_navigation_bar/slice_bottom_navigation_bar.dart';
 export './slice_bottom_sheet/slice_bottom_sheet.dart';
+export './slice_button_bar/slice_button_bar.dart';
 export './slice_card/slice_card.dart';
 export './slice_center/slice_center.dart';
 export './slice_checkbox/slice_checkbox.dart';
