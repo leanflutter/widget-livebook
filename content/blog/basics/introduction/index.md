@@ -6,6 +6,8 @@ date: '2019-08-13'
 
 [Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built with Flutter for web to live preview widget samples online.
 
+> Now we created a Chrome extension. Let your flutter docs support live samples. [Get It](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf)
+
 ### Examples
 
 #### Card
@@ -18,6 +20,12 @@ date: '2019-08-13'
 
 ```dart liveslice=AnimatedBuilder height=400px
 // See: https://flutter-widget-livebook.blankapp.org/widgets/AnimatedBuilder/
+```
+
+#### AnimatedPhysicalModel
+
+```dart liveslice=AnimatedPhysicalModel
+// See: https://flutter-widget-livebook.blankapp.org/widgets/AnimatedPhysicalModel/
 ```
 
 #### NestedScrollView
