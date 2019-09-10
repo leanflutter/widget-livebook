@@ -6,14 +6,14 @@ English | [简体中文](./README.zh_CN.md)
 
 ## Introduction
 
-[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built with Flutter for web to live preview widget samples online.
+[Flutter Widget Livebook](<](https://flutter-widget-livebook.blankapp.org)>) is a website built with Flutter for web to live preview widget samples online.
 
 ## Modules
 
-| Module | Description |
-|--------|-----|
-| [chrome-extension](./chrome-extension/) | - |
-| [uiexplorer](./uiexplorer/) | -  |
+| Module                                  | Description                                 | &nbsp;                                                                                                       |
+| --------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [chrome-extension](./chrome-extension/) | Let your flutter docs support live samples. | [Get It](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf) |
+| [uiexplorer](./uiexplorer/)             | -                                           | -                                                                                                            |
 
 ## Documentation
 

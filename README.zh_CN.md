@@ -10,10 +10,10 @@
 
 ## 模块
 
-| 模块 | 描述 |
-|--------|-----|
-| [chrome-extension](./chrome-extension/) | - |
-| [uiexplorer](./uiexplorer/) | -  |
+| 模块                                    | 描述                                        | &nbsp;                                                                                                       |
+| --------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [chrome-extension](./chrome-extension/) | Let your flutter docs support live samples. | [Get It](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf) |
+| [uiexplorer](./uiexplorer/)             | -                                           | -                                                                                                            |
 
 ## 文档
 
