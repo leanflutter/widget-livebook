@@ -114,6 +114,7 @@ export './slice_text/slice_text.dart';
 export './slice_text_field/slice_text_field.dart';
 export './slice_text_form_field/slice_text_form_field.dart';
 export './slice_time_picker/slice_time_picker.dart';
+export './slice_toggle_buttons/slice_toggle_buttons.dart';
 export './slice_tooltip/slice_tooltip.dart';
 export './slice_transform/slice_transform.dart';
 export './slice_vertical_divider/slice_vertical_divider.dart';

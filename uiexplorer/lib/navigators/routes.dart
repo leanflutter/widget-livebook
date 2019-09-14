@@ -113,6 +113,7 @@ List<SliceExample> sliceExamples = [
   SliceText(),
   SliceTextField(),
   SliceTimePicker(),
+  SliceToggleButtons(),
   SliceTooltip(),
   SliceTransform(),
   SliceVerticalDivider(),
