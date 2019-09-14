@@ -24,7 +24,7 @@ class Nav extends React.Component {
       <div
         id="nav"
         style={{
-          height: window.innerHeight,
+          height: '700px',
         }}
       >
         <div ref={el => (this.adsElement = el)}></div>
