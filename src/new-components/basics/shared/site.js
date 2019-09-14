@@ -21,5 +21,6 @@ export const url = {
 
   // Navigation
   home: `${homepageUrl}/basics/introduction/`,
+  examples: `${homepageUrl}/examples/`,
   donate: `${homepageUrl}/basics/donate/`,
 };

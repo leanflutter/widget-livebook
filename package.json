@@ -41,11 +41,14 @@
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
     "react-instantsearch-dom": "^5.7.0",
+    "react-modal": "^3.10.1",
     "react-popper-tooltip": "^2.8.3",
     "react-router": "^5.0.1",
+    "react-stack-grid": "^0.7.1",
     "react-syntax-highlighter": "^11.0.2",
     "styled-components": "^4.3.2",
-    "styled-icons": "^8.3.0"
+    "styled-icons": "^8.3.0",
+    "yarn": "^1.17.3"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

@@ -1,0 +1,47 @@
+charts_flutter:
+  thumbnail: https://flutter.github.io/samples/charts/assets/assets/preview.png
+  title: charts
+  description: Examples of the charts_flutter package running on the web.
+  demo: https://flutter.github.io/samples/charts/
+  source: https://github.com/google/charts
+flutter_gallery:
+  thumbnail: https://flutter.github.io/samples/gallery/assets/assets/preview.png
+  title: Gallery
+  description: A gallery of Flutter widgets and UX studies.
+  demo: https://flutter.github.io/samples/gallery/
+  source: https://github.com/flutter/flutter/tree/master/examples/flutter_gallery
+simple_animations:
+  thumbnail: https://flutter.github.io/samples/particle_background/assets/assets/preview.png
+  title: Particle Background
+  description: Flutter app demonstrating simple_animations in action.
+  source: https://pub.dev/packages/simple_animations
+  demo: https://flutter.github.io/samples/particle_background
+slide_puzzle:
+  thumbnail: https://flutter.github.io/samples/slide_puzzle/assets/assets/preview.png
+  title: Slide Puzzle
+  description: Get the numbers in order by clicking tiles next to the open space.
+  source: https://github.com/kevmoo/slide_puzzle
+  demo: https://flutter.github.io/samples/slide_puzzle
+spinning_square:
+  thumbnail: https://flutter.github.io/samples/spinning_square/assets/assets/preview.png
+  title: Spinning Square
+  description: Just a spinning square. That's it. Super exciting.
+  source: https://github.com/flutter/flutter_web/tree/master/examples/spinning_square
+  demo: https://flutter.github.io/samples/spinning_square
+timeflow:
+  thumbnail: https://flutter.github.io/samples/timeflow/assets/assets/preview.png
+  title: Timeflow
+  description: A gentle animation that provides a calming experience to stressed developers.
+  source: https://github.com/Fabian-Stein/timeflow
+  demo: https://flutter.github.io/samples/timeflow
+vision_challenge:
+  thumbnail: https://flutter.github.io/samples/vision_challenge/assets/assets/preview.png
+  title: Vision Challenge
+  description: A fun game to test your color perception abilities.
+  demo: https://flutter.github.io/samples/vision_challenge
+flutter_go:
+  thumbnail: https://img.alicdn.com/tfs/TB1MoiNExTpK1RjSZFGXXcHqFXa-362-751.gif
+  title: Flutter Go
+  description: 一个帮助开发者快速上手的 APP
+  source: https://github.com/alibaba/flutter-go
+  demo: https://flutter-go.pub/flutter_go_web/
