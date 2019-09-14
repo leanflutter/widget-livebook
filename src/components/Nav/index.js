@@ -21,7 +21,12 @@ class Nav extends React.Component {
   render() {
     const { sections, selectedSectionId, selectedItemId } = this.props;
     return (
-      <div id="nav">
+      <div
+        id="nav"
+        style={{
+          height: window.innerHeight,
+        }}
+      >
         <div ref={el => (this.adsElement = el)}></div>
         {sections.map(section => (
           <div key={section.id}>

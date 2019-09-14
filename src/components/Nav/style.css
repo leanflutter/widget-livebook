@@ -4,6 +4,11 @@
   padding: 0 15px 0 0;
   border-right: 1px solid #ececec;
   -webkit-font-smoothing: antialiased;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 26px;
+  overflow: scroll;
 }
 
 #nav .col-xs-12 {
