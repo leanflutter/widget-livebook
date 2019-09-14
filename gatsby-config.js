@@ -130,6 +130,7 @@ module.exports = {
         '/widgets/Text/',
         '/widgets/TextField/',
         '/widgets/TimePicker/',
+        '/widgets/ToggleButtons/',
         '/widgets/Tooltip/',
         '/widgets/Transform/',
         '/widgets/VerticalDivider/',

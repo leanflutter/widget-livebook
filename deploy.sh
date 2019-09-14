@@ -10,8 +10,10 @@ export LIVEBOOK_UIEXPLORER_ROOT=${FLUTTER_WIDGET_LIVEBOOK_UIEXPLORER_ROOT}
 # Deploy uiexplorer
 cd uiexplorer
 rm -rf build
-webdev build
-rsync -az build/ "${LIVEBOOK_UIEXPLORER_USER}"@"${LIVEBOOK_UIEXPLORER_HOST}":"${LIVEBOOK_UIEXPLORER_ROOT}" --verbose
+flutter build web
+flutter test gendb.dart
+mv db.json build/web/assets
+rsync -az build/web/ "${LIVEBOOK_UIEXPLORER_USER}"@"${LIVEBOOK_UIEXPLORER_HOST}":"${LIVEBOOK_UIEXPLORER_ROOT}" --verbose
 cd ../
 
 # Deploy website
