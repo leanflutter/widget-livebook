@@ -99,6 +99,7 @@ export './slice_rotation_transition/slice_rotation_transition.dart';
 export './slice_row/slice_row.dart';
 export './slice_scaffold/slice_scaffold.dart';
 export './slice_scrollbar/slice_scrollbar.dart';
+export './slice_selectable_text/slice_selectable_text.dart';
 export './slice_simple_dialog/slice_simple_dialog.dart';
 export './slice_single_child_scroll_view/slice_single_child_scroll_view.dart';
 export './slice_sized_box/slice_sized_box.dart';

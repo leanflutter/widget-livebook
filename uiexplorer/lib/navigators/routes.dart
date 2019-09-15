@@ -99,6 +99,7 @@ List<SliceExample> sliceExamples = [
   SliceRow(),
   SliceScaffold(),
   SliceScrollbar(),
+  SliceSelectableText(),
   SliceSimpleDialog(),
   SliceSingleChildScrollView(),
   SliceSizedBox(),

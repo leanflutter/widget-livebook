@@ -116,6 +116,7 @@ module.exports = {
         '/widgets/Row/',
         '/widgets/Scaffold/',
         '/widgets/Scrollbar/',
+        '/widgets/SelectableText/',
         '/widgets/SimpleDialog/',
         '/widgets/SingleChildScrollView/',
         '/widgets/SizedBox/',
