@@ -5,6 +5,8 @@ iframe {
   /* background-color: #f7f7f7; */
 }
 
+iframe[src*="ads-iframe"] { display: none; }
+
 #disqus_thread {
   width: 100% !important;
   margin-top: 32px !important;
