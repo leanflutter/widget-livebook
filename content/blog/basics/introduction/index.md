@@ -6,7 +6,9 @@ date: '2019-08-13'
 
 [Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) is a website built with Flutter for web to live preview widget samples online.
 
-> Now we created a Chrome extension. Let your flutter docs support live samples. [Get It](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf)
+> Now we created a Chrome extension. Let your flutter docs support live samples.
+
+[![](../../../assets/chrome-web-store.svg)](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf)
 
 ### Examples
 
