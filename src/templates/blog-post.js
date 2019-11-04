@@ -82,51 +82,58 @@ class BlogPostTemplate extends React.Component {
     }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={post.frontmatter.title} description={post.excerpt} keywords={keywords} />
-        <div id="docs-container" className="row">
-          <div className="nav col-lg-3 col-md-3 d-none d-md-block">
-            <Nav
-              sections={sections}
-              selectedItem={post}
-              selectedSectionId={selectedSection}
-              selectedItemId={selectedItemId}
-            />
+      <div>
+        <a href="https://github.com/wordway/wordway-app">
+          <div class="wordway-promotion-block">
+            <div class="wordway-promotion-block-text">🙌🏻 立即获取「wordway」，由社区驱动的背单词应用，基于 Flutter 开发。🙌🏻</div>
           </div>
-          <div className="content col-xs-12 col-sm-12 col-md-9 col-lg-9">
-            <div className="nav-dropdown">
-              <NavDropdown
+        </a>
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO title={post.frontmatter.title} description={post.excerpt} keywords={keywords} />
+          <div id="docs-container" className="row">
+            <div className="nav col-lg-3 col-md-3 d-none d-md-block">
+              <Nav
                 sections={sections}
-                selectedSection={selectedSection}
-                selectedItem={selectedItemId}
+                selectedItem={post}
+                selectedSectionId={selectedSection}
+                selectedItemId={selectedItemId}
               />
             </div>
-            <Search />
-            <div id="docs-content">
-              <div className="content">
-                <h2 className="title">{post.frontmatter.title}</h2>
-                <p>
-                  <a className="edit-link" href={getEditUrl(post.fileAbsolutePath)} target="_blank" rel="noopener noreferrer">
-                    Edit this page
-                  </a>
-                </p>
-                <div ref={el => (this.adsElement = el)}></div>
-                <div className="markdown">
-                  <MDXRenderer>{post.code.body}</MDXRenderer>
+            <div className="content col-xs-12 col-sm-12 col-md-9 col-lg-9">
+              <div className="nav-dropdown">
+                <NavDropdown
+                  sections={sections}
+                  selectedSection={selectedSection}
+                  selectedItem={selectedItemId}
+                />
+              </div>
+              <Search />
+              <div id="docs-content">
+                <div className="content">
+                  <h2 className="title">{post.frontmatter.title}</h2>
+                  <p>
+                    <a className="edit-link" href={getEditUrl(post.fileAbsolutePath)} target="_blank" rel="noopener noreferrer">
+                      Edit this page
+                    </a>
+                  </p>
+                  <div ref={el => (this.adsElement = el)}></div>
+                  <div className="markdown">
+                    <MDXRenderer>{post.code.body}</MDXRenderer>
+                  </div>
+                  <Disqus config={disqusConfig} />
                 </div>
-                <Disqus config={disqusConfig} />
+              </div>
+              <div className="nav-dropdown">
+                <NavDropdown
+                  sections={sections}
+                  selectedSection={selectedSection}
+                  selectedItem={selectedItemId}
+                />
               </div>
             </div>
-            <div className="nav-dropdown">
-              <NavDropdown
-                sections={sections}
-                selectedSection={selectedSection}
-                selectedItem={selectedItemId}
-              />
-            </div>
           </div>
-        </div>
-      </Layout>
+        </Layout>
+      </div>
     )
   }
 }

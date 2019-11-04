@@ -10,9 +10,7 @@ const { metadata, url } = site;
 
 export const navLinks = [
   { title: 'Live Examples', href: url.examples, isGatsby: false },
-  { title: 'Flutter Debugger', href: 'https://flutter-debugger.blankapp.org', isGatsby: false },
   { title: 'Chrome Extension', href: 'https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf?hl=en', isGatsby: false },
-  { title: 'Donate', href: url.donate, isGatsby: false },
   { title: 'GitHub', href: url.gitHub.repo, isGatsby: false },
 ];
 

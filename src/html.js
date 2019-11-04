@@ -22,6 +22,17 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <div
+            style={{
+              position: 'fixed',
+              right: '20px',
+              bottom: '20px',
+              zIndex: 1000000,
+              fontWeight: 'bold',
+            }}
+          >
+            <a href="https://t.me/flutterwidgetlivebook">CHAT ON TELEGRAM</a>
+          </div>
         </body>
       </html>
     )

@@ -131,3 +131,37 @@ iframe[src*="ads-iframe"] { display: none; }
   font-size: 9px;
   line-height: 1;
 }
+
+
+
+.wordway-promotion-block {
+  /* position: fixed; */
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 200;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#34a944), to(#52d262));
+  background-image: linear-gradient(90deg, #34a944, #52d262);
+}
+
+.wordway-promotion-block-text {
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
