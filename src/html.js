@@ -31,7 +31,9 @@ export default class HTML extends React.Component {
               fontWeight: 'bold',
             }}
           >
-            <a href="https://t.me/flutterwidgetlivebook">CHAT ON TELEGRAM</a>
+            <a href="https://t.me/flutterwidgetlivebook">
+              <img alt="" src="https://img.shields.io/badge/chat%20on-telegram-blue.svg?style=for-the-badge&labelColor=000000&logo=telegram"></img>
+            </a>
           </div>
         </body>
       </html>
