@@ -1,0 +1,31 @@
+---
+title: Positioned
+---
+
+A widget that controls where a child of a Stack is positioned.
+
+## Example
+
+```dart liveslice=Positioned height=400px
+Container(
+  color: Colors.blue[50],
+  height: 300,
+  child: Stack(
+    children: <Widget>[
+      Positioned(
+        left: 10,
+        top: 70,
+        right: 10,
+        bottom: 70,
+        child: Container(
+          color: Colors.blue,
+        ),
+      ),
+    ],
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/Positioned-class.html

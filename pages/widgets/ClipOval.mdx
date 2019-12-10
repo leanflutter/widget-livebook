@@ -1,0 +1,24 @@
+---
+title: ClipOval
+---
+
+A widget that clips its child using an oval.
+
+## Example
+
+
+```dart liveslice=ClipOval
+String _imageUrl = 'https://images.unsplash.com/photo-1565898835704-3d6be4a2c98c?fit=crop&w=200&q=60';
+
+ClipOval(
+  child: SizedBox(
+    width: 120,
+    height: 100,
+    child: Image.network(_imageUrl, fit: BoxFit.cover,),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/ClipOval-class.html

@@ -1,0 +1,17 @@
+@import '~@duik/core/_vars.scss';
+
+@media screen and (max-width: 768px) {
+  .main {
+    .content {
+      padding: 20px !important;
+
+      &>h1 {
+        font-size: 2rem !important;
+      }
+
+      .video-container {
+        height: 260px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '~@duik/core/_vars.scss';
+
+.code-wrapper {
+  position: relative;
+  display: flex;
+  flex: 1;
+  overflow: scroll;
+}
+
+.button-copy {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  color: rgb(128, 128, 128) !important;
+  opacity: .3;
+
+  &:hover {
+    opacity: 7;
+  }
+}
+
+
+/* Code blocks */
+pre {
+  font-family: monospace,monospace !important;
+  font-weight: 400;
+  font-size: .8rem !important;
+}
+pre[class*="language-"] {
+  border: none !important;
+  background-color: var(--bg-base) !important;
+}
+
+.language-dart .token.function {
+	color: #2B91AF;
+}

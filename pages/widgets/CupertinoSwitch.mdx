@@ -1,0 +1,24 @@
+---
+title: CupertinoSwitch
+---
+
+An iOS-style switch.
+
+## Example
+
+```dart liveslice=CupertinoSwitch
+MergeSemantics(
+  child: ListTile(
+    title: Text('Lights'),
+    trailing: CupertinoSwitch(
+      value: _lights,
+      onChanged: (bool value) { setState(() { _lights = value; }); },
+    ),
+    onTap: () { setState(() { _lights = !_lights; }); },
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoSwitch-class.html

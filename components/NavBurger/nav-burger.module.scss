@@ -1,0 +1,16 @@
+@import '~@duik/core/_vars.scss';
+@import '~@animated-burgers/burger-squeeze/dist/styles.css';
+
+.navigation-burger {
+  :global {
+    font-size: 8px;
+
+    .burger-lines {
+      &,
+      &:after,
+      &:before {
+        background-color: $text-main;
+      }
+    }
+  }
+}

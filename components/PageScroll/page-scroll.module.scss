@@ -1,0 +1,11 @@
+.pagescroll {
+  flex-grow: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-left: 100vw;
+  padding-right: 100vw;
+  margin-left: -100vw;
+  margin-right: -100vw;
+  width: 100%;
+}

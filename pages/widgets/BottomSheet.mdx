@@ -1,0 +1,35 @@
+---
+title: BottomSheet
+---
+
+A material design bottom sheet.
+
+## Example
+
+```dart liveslice=BottomSheet
+Center(
+  child: RaisedButton(
+    child: const Text('SHOW BOTTOM SHEET'),
+    onPressed: () {
+      showModalBottomSheet<void>(context: context, builder: (BuildContext context) {
+        return Container(
+          child: Padding(
+            padding: const EdgeInsets.all(32.0),
+            child: Text('This is the modal bottom sheet. Slide down to dismiss.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Theme.of(context).accentColor,
+                fontSize: 24.0,
+              ),
+            ),
+          ),
+        );
+      });
+    },
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/BottomSheet-class.html

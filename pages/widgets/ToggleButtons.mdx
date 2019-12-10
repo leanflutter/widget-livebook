@@ -1,0 +1,30 @@
+---
+title: ToggleButtons
+---
+
+A horizontal set of toggle buttons.
+
+`youtube: https://youtu.be/kVEguaQWGAY`
+
+## Example
+
+```dart liveslice=ToggleButtons
+ToggleButtons(
+  children: <Widget>[
+    Icon(Icons.ac_unit),
+    Icon(Icons.call),
+    Icon(Icons.cake),
+  ],
+  onPressed: (int index) {
+    setState(() {
+      isSelected[index] = !isSelected[index];
+    });
+  },
+  isSelected: isSelected,
+),
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/ToggleButtons-class.html
+- https://youtu.be/kVEguaQWGAY

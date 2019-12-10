@@ -1,0 +1,52 @@
+---
+title: CupertinoAlertDialog
+---
+
+An iOS-style alert dialog.
+
+## Example
+
+```dart liveslice=CupertinoAlertDialog height=400px
+Future<void> _handleClickMe() async {
+  return showDialog<void>(
+    context: context,
+    barrierDismissible: false, // user must tap button!
+    builder: (BuildContext context) {
+      return CupertinoAlertDialog(
+        title: Text('Allow "Maps" to access your location while you use the app?'),
+        content: Text('Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.'),
+        actions: <Widget>[
+          CupertinoDialogAction(
+            child: Text('Don\'t Allow'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+          CupertinoDialogAction(
+            child: Text('Allow'),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
+}
+
+@override
+Widget build(BuildContext context) {
+  return FlatButton(
+    onPressed: () {
+      _handleClickMe();
+    },
+    child: Text(
+      "CLICK ME!",
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoAlertDialog-class.html
