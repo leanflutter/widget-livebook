@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Flutter Widget Livebook",
+    "description": ""
+  },
+  "appDescription": {
+    "message": "A website built with Flutter for web to live preview widget samples online.",
+    "description": ""
+  }
+}
