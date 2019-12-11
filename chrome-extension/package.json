@@ -8,7 +8,7 @@
     "build": "gulp build",
     "clean": "gulp clean",
     "watch": "gulp watch",
-    "package": "gulp package"
+    "package": "yarn clean && yarn build && gulp package"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

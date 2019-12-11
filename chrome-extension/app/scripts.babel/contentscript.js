@@ -45,7 +45,7 @@ const injectLiveSample = (widgetName) => {
         This sample shows a basic ${widgetName}.
       </p>
       <iframe
-        src='${livebookUIExplorerUrl}/#/Slice${widgetName}'
+        src='${livebookUIExplorerUrl}/index.html#/Slice${widgetName}'
         scrolling="no"
       ></iframe>
       <footer>
