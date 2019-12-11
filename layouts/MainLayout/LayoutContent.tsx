@@ -67,6 +67,13 @@ const components = {
       }
     }
 
+    let disqusConfig = {
+      shortname: `${siteConfig.disqus.shortname}`,
+      url: `${siteConfig.metadata.homepageUrl}/${router.pathname}/`,
+      identifier: `${frontMatter.id || (router.pathname)}/`,
+      title: `${frontMatter.title}`
+    }
+
     let keywords = [
       'Flutter',
       'Flutter Widget',
@@ -173,10 +180,7 @@ const components = {
             />
             <div {...props} />
             <ReactDisqusComments
-              shortname={siteConfig.disqus.shortname}
-              url={`${siteConfig.metadata.homepageUrl}/${router.pathname}`}
-              identifier={frontMatter.id || (router.pathname)}
-              title={frontMatter.title}
+              {...disqusConfig}
             />
           </>
         </>
@@ -223,6 +227,13 @@ const components = {
     let codeProps = preToCodeBlock(props);
 
     if (codeProps.liveslice) {
+      let livesliceUrl = '/uiexplorer/index.html#/Slice';
+      let livesliceHeight = codeProps.height || '260px';
+
+      if (codeProps.mockup) {
+        livesliceHeight = '667px'
+      }
+
       return (
         <CodeExample
           data={[
@@ -239,10 +250,9 @@ const components = {
                     className="livesample"
                     style={{
                       width: '100%',
-                      height: '260px',
-                      ...(codeProps.height ? { height: codeProps.height } : {})
+                      height: livesliceHeight,
                     }}
-                    src={`https://flutter-widget-livebook-uiexplorer.blankapp.org/#/Slice${codeProps.liveslice}`}
+                    src={`${livesliceUrl}${codeProps.liveslice}`}
                     scrolling="no"
                   />
                 </div>

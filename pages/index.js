@@ -1,17 +1,23 @@
-import React, { Component } from "react"
-import Router from "next/router"
+import React from "react";
+import Router, { withRouter } from "next/router";
 
-class HomePage extends Component {
+class HomePage extends React.PureComponent {
   componentDidMount() {
-    const { pathname } = Router
-    if (pathname == "/") {
-      Router.push("/basics/introduction")
-    }
+    const { router } = this.props;
+    setTimeout(() => {
+      if (router.pathname == "/") {
+        Router.push("/basics/introduction")
+      }
+    }, 1);
   }
 
   render() {
-    return <div>&nbsp;</div>
+    return (
+      <>
+        <p>&nbsp;</p>
+      </>
+    );
   }
 }
 
-export default HomePage
+export default withRouter(HomePage)

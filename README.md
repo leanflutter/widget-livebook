@@ -6,7 +6,7 @@ English | [简体中文](./README.zh_CN.md)
 
 ## Introduction
 
-[Flutter Widget Livebook](<](https://flutter-widget-livebook.blankapp.org)>) is a website built with Flutter for web to live preview widget samples online.
+[Flutter Widget Livebook](https://flutter-widget.live) is a website built with Flutter for web to live preview widget samples online.
 
 ## Modules
 
@@ -17,7 +17,7 @@ English | [简体中文](./README.zh_CN.md)
 
 ## Documentation
 
-To check out live examples and docs, visit [flutter-widget-livebook.blankapp.org](https://flutter-widget-livebook.blankapp.org).
+To check out live examples and docs, visit [flutter-widget.live](https://flutter-widget.live).
 
 ## Examples
 
@@ -48,13 +48,13 @@ Before starting make sure you have:
 ### Installation
 
 ```bash
-$ yarn install
+$ yarn
 ```
 
 ### Starting Development
 
 ```bash
-$ yarn start
+$ yarn dev
 ```
 
 ### Building for Production

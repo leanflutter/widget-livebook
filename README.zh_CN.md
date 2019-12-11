@@ -6,7 +6,7 @@
 
 ## 简介
 
-[Flutter Widget Livebook](](https://flutter-widget-livebook.blankapp.org)) 是一个使用 Flutter for web 构建的可在线实时预览 Widget 示例的网站。
+[Flutter Widget Livebook](](https://flutter-widget.live)) 是一个使用 Flutter for web 构建的可在线实时预览 Widget 示例的网站。
 
 ## 模块
 
@@ -17,7 +17,7 @@
 
 ## 文档
 
-要查看实时示例，请访问 [flutter-widget-livebook.blankapp.org](https://flutter-widget-livebook.blankapp.org).
+要查看实时示例，请访问 [flutter-widget.live](https://flutter-widget.live).
 
 ## 示例
 
@@ -49,13 +49,13 @@
 ### 安装
 
 ```bash
-$ yarn install
+$ yarn
 ```
 
 ### 开始开发
 
 ```bash
-$ yarn start
+$ yarn dev
 ```
 
 ### 构建生产

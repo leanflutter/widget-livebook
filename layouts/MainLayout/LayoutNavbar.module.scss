@@ -1,7 +1,7 @@
 @import '~@duik/core/_vars.scss';
 
 .main-top-bar {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1400px) {
     padding-left: 80px !important;
     position: relative;
   }
@@ -23,7 +23,7 @@
   justify-content: center !important;
   align-items: center !important;
   flex-grow: 0;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1400px) {
     display: flex !important;
   }
   border-right: $border-default-base !important;

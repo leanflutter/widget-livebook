@@ -1,6 +1,6 @@
 const siteConfing = {
   metadata: {
-    homepageUrl: 'https://flutter-widget-livebook.blankapp.org',
+    homepageUrl: 'https://flutter-widget.live',
     githubRepoUrl: 'https://github.com/blankapp/flutter-widget-livebook',
     chromePluginUrl: 'https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf?hl=en',
     title: `Flutter Widget Livebook`,

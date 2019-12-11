@@ -5,15 +5,30 @@ const withFonts = require('next-fonts')
 const withMDX = require('./plugins/mdx')({
   extension: /\.(md|mdx)$/,
 })
+const withOffline = require('next-offline')
+
 
 module.exports = withPlugins(
   [withCSS, withSass, withFonts, withMDX],
   {
+    pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
     target: 'serverless',
     enableSvg: true,
     webpack (config) {
       return config
     },
-    pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+    workboxOpts: {
+      swDest: 'static/service-worker.js',
+    },
+    experimental: {
+      async rewrites() {
+        return [
+          {
+            source: '/service-worker.js',
+            destination: '/_next/static/service-worker.js',
+          },
+        ]
+      },
+    },
   }
 )

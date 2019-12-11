@@ -1,8 +1,8 @@
 import React from 'react'
 import App from 'next/app'
-import Router from 'next/router'
+import Router, { withRouter } from 'next/router'
 
-import { MainLayout } from '../layouts'
+import { MainLayout, BlankLayout } from '../layouts'
 import * as gtag from '../utils/gtag'
 
 import '@duik/icon/dist/styles.css'
@@ -27,13 +27,19 @@ class MyApp extends App {
   // }
 
   render() {
-    const { Component, pageProps } = this.props
+    const { router, Component, pageProps } = this.props
+
+    let LayoutComponent = MainLayout;
+
+    if (router.pathname == '/') {
+      LayoutComponent = BlankLayout;
+    }
 
     return (
       <>
-        <MainLayout>
+        <LayoutComponent>
           <Component {...pageProps} />
-        </MainLayout>
+        </LayoutComponent>
         <style global jsx>{`
           #__next {
             height: 100vh;
@@ -48,4 +54,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp
+export default withRouter(MyApp)
