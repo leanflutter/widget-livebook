@@ -1,0 +1,47 @@
+---
+title: AnimatedOpacity
+---
+
+Animated version of Opacity which automatically transitions the child's opacity over a given duration whenever the given opacity changes.
+
+`youtube: https://youtu.be/QZAvjqOqiLY`
+
+## Example
+
+```dart liveslice=AnimatedOpacity
+double opacityLevel = 1.0;
+
+void _changeOpacity() {
+  setState(() => opacityLevel = opacityLevel == 0 ? 1.0 : 0.0);
+}
+
+@override
+Widget build(BuildContext context) {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Container(
+        height: 120.0,
+        width: 120.0,
+        color: Colors.blue[50],
+        child: AnimatedOpacity(
+          opacity: opacityLevel,
+          duration: Duration(seconds: 3),
+          child: FlutterLogo(
+            size: 60,
+          ),
+        ),
+      ),
+      RaisedButton(
+        child: Text('Fade Logo'),
+        onPressed: _changeOpacity,
+      ),
+    ],
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html
+- https://youtu.be/QZAvjqOqiLY
