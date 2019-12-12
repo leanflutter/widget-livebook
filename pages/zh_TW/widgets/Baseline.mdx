@@ -1,0 +1,31 @@
+---
+title: Baseline
+---
+
+A widget that positions its child according to the child's baseline.
+
+## Example
+
+```dart liveslice=Baseline
+Center(
+  child: Container(
+    color: Colors.blue,
+    height: 120.0,
+    width: 120.0,
+    child: Baseline(
+      child: Container(
+        color: Colors.red,
+        height: 60.0,
+        width: 60.0,
+      ),
+      baseline: 20.0,
+      baselineType: TextBaseline.alphabetic,
+    ),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/Baseline-class.html
+- https://inducesmile.com/google-flutter/how-to-use-baseline-widget-in-flutter-2/
