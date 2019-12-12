@@ -1,0 +1,24 @@
+---
+title: Scrollbar
+---
+
+A material design scrollbar.
+
+## Example
+
+```dart liveslice=Scrollbar mockup=iPhone7
+Scrollbar(
+  child: ListView.builder(
+    itemCount: 100,
+    itemBuilder: (context, index) {
+      return ListTile(
+        title: Text('Item $index'),
+      );
+    },
+  ),
+),
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/Scrollbar-class.html
