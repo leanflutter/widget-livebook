@@ -1,0 +1,39 @@
+---
+title: BackdropFilter
+---
+
+A widget that applies a filter to the existing painted content and then paints child.
+
+`youtube: https://youtu.be/dYRs7Q1vfYI`
+
+## Example
+
+```dart liveslice=BackdropFilter
+Stack(
+  fit: StackFit.expand,
+  children: <Widget>[
+    Text('0' * 10000),
+    Center(
+      child: ClipRect(  // <-- clips to the 200x200 [Container] below
+        child: BackdropFilter(
+          filter: ImageFilter.blur(
+            sigmaX: 5.0,
+            sigmaY: 5.0,
+          ),
+          child: Container(
+            alignment: Alignment.center,
+            width: 200.0,
+            height: 200.0,
+            child: Text('Hello World'),
+          ),
+        ),
+      ),
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/BackdropFilter-class.html
+- https://youtu.be/dYRs7Q1vfYI
