@@ -1,0 +1,32 @@
+---
+title: AppBar
+---
+
+A material design app bar.
+
+## Example
+
+```dart liveslice=AppBar
+AppBar(
+  title: const Text('AppBar Demo'),
+  automaticallyImplyLeading: false,
+  actions: <Widget>[
+    IconButton(
+      icon: const Icon(Icons.add_alert),
+      tooltip: 'Show Snackbar',
+      onPressed: () {
+      },
+    ),
+    IconButton(
+      icon: const Icon(Icons.navigate_next),
+      tooltip: 'Next page',
+      onPressed: () {
+      },
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/AppBar-class.html
