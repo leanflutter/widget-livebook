@@ -1,0 +1,42 @@
+---
+title: CupertinoDatePicker
+---
+
+A date picker widget in iOS style.
+
+## Example
+
+```dart liveslice=CupertinoDatePicker mockup=iPhone6
+Future<void> _handleClickMe() async {
+  showModalBottomSheet(
+    context: context,
+    builder: (context) {
+      return Container(
+        height: 300,
+        child: CupertinoDatePicker(
+          mode: CupertinoDatePickerMode.dateAndTime,
+          onDateTimeChanged: (dateTime) {
+
+          }
+        ),
+      );
+    },
+  );
+}
+
+@override
+Widget build(BuildContext context) {
+  return FlatButton(
+    onPressed: () {
+      _handleClickMe();
+    },
+    child: Text(
+      "CLICK ME!",
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoDatePicker-class.html
