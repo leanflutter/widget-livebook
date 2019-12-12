@@ -1,0 +1,36 @@
+---
+title: InkWell
+---
+
+A rectangular area of a Material that responds to touch.
+
+## Example
+
+```dart liveslice=InkWell
+double sideLength = 50;
+
+Widget build(BuildContext context) {
+  return Center(
+    child: AnimatedContainer(
+      height: sideLength,
+      width: sideLength,
+      duration: Duration(seconds: 2),
+      curve: Curves.easeIn,
+      child: Material(
+        color: Colors.yellow,
+        child: InkWell(
+          onTap: () {
+            setState(() {
+              sideLength == 50 ? sideLength = 100 : sideLength = 50;
+            });
+          },
+        ),
+      ),
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/InkWell-class.html
