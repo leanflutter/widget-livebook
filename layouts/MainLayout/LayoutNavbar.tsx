@@ -1,12 +1,17 @@
 import React from 'react';
 import {
+  Button,
+  Divider,
+  TextField,
   TopBar,
   TopBarSection,
   TopBarTitle,
-  Button,
 } from '@duik/it';
+import Icon from '@duik/icon';
 import Link from 'next/link';
-import { NavBurger } from '../../components'
+import { useRouter } from 'next/router';
+import { NavBurger, SelectLanguage } from '../../components'
+import { useCurrentLanguage, useLocalStorage } from '../../utils';
 import siteConfing from '../../site.config';
 
 import './LayoutNavbar.module.scss'
@@ -15,6 +20,9 @@ const LayoutNavbar = ({
   menuIsVisible,
   menuHandleToggle,
 }: any) => {
+  const router = useRouter();
+  const {currentLanguage, setCurrentLanguage} = useCurrentLanguage();
+
   return (
     <TopBar className="main-top-bar">
       <Button
@@ -41,13 +49,31 @@ const LayoutNavbar = ({
         </TopBarTitle>
       </TopBarSection>
       <TopBarSection  className="main-top-bar-right-section">
-        <Button
-          Component="a"
-          href="/examples"
-          clear
+        {/* <TextField
+          leftEl={<Icon>search_left</Icon>}
+          placeholder="Type to search..."
+        /> */}
+        <div
+          style={{
+            margin: 0,
+            width: '20px'
+          }}
         >
-          Live Examples
-        </Button>
+        </div>
+        <SelectLanguage
+          currentLanguage={currentLanguage}
+          onOptionClick={({ value: language}) => {
+            setCurrentLanguage(language);
+          }}
+        />
+        <div
+          style={{
+            margin: 0,
+            height: '36px'
+          }}
+        >
+          <Divider vertical margin />
+        </div>
         <Button
           Component="a"
           href={siteConfing.metadata.githubRepoUrl}

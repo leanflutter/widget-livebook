@@ -1,23 +1,23 @@
-import React from "react";
-import Router, { withRouter } from "next/router";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useCurrentLanguage } from '../utils'
 
-class HomePage extends React.PureComponent {
-  componentDidMount() {
-    const { router } = this.props;
-    setTimeout(() => {
-      if (router.pathname == "/") {
-        Router.push("/basics/introduction")
-      }
-    }, 1);
-  }
+const HomePage = () => {
+  const router = useRouter();
+  const {currentLanguage} = useCurrentLanguage();
 
-  render() {
-    return (
-      <>
-        <p>&nbsp;</p>
-      </>
-    );
-  }
+  useEffect(() => {
+    const patchnameLanguage = currentLanguage == 'en' ? '' : `${currentLanguage}/`;
+    if (router.pathname == "/") {
+      router.push(`/${patchnameLanguage}basics/introduction`)
+    }
+  })
+
+  return (
+    <>
+      <p>&nbsp;</p>
+    </>
+  );
 }
 
-export default withRouter(HomePage)
+export default HomePage

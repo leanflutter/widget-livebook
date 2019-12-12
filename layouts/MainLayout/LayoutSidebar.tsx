@@ -4,22 +4,29 @@ import { NavSection, NavLink, NavSectionTitle, NavPanel } from "@duik/it";
 import Icon from "@duik/icon";
 import classNames from "classnames";
 import NProgress from "nprogress";
+import { useCurrentLanguage } from '../../utils';
 
 import links4basics from "../../pages/basics/_links.json";
 import links4widgets from "../../pages/widgets/_links.json";
+import links4zhCNbasics from "../../pages/zh_CN/basics/_links.json";
+import links4zhCNwidgets from "../../pages/zh_CN/widgets/_links.json";
 
 import './LayoutSidebar.module.scss'
 
-const generateMenuLinks = () => [
-  {
-    title: "Basics",
-    links: links4basics
-  },
-  {
-    title: "Widgets",
-    links: links4widgets
-  }
-];
+const generateMenuLinks = () => {
+  const {currentLanguage} = useCurrentLanguage();
+
+  return [
+    {
+      title: "Basics",
+      links: currentLanguage == 'zh_CN' ? links4zhCNbasics : links4basics
+    },
+    {
+      title: "Widgets",
+      links: currentLanguage == 'zh_CN' ? links4zhCNwidgets : links4widgets
+    }
+  ]
+};
 
 Router.events.on("routeChangeComplete", url => {
   NProgress.done();
