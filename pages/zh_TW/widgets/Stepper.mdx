@@ -1,0 +1,71 @@
+---
+title: Stepper
+---
+
+A material stepper widget that displays progress through a sequence of steps. Steppers are particularly useful in the case of forms where one step requires the completion of another one, or where multiple steps need to be completed in order to submit the whole form.
+
+## Example
+
+```dart liveslice=Stepper height=600px
+int _currentStep = 0;
+
+@override
+Widget build(BuildContext context) {
+  return Stepper(
+    currentStep: _currentStep,
+    onStepContinue: () {
+      if (_currentStep >= 4) return;
+      setState(() {
+        _currentStep += 1;
+      });
+    },
+    onStepCancel: () {
+      if (_currentStep <= 0) return;
+      setState(() {
+        _currentStep -= 1;
+      });
+    },
+    steps: const <Step>[
+      Step(
+        title: Text('Step 1'),
+        content: SizedBox(
+          width: 100.0,
+          height: 100.0,
+        ),
+      ),
+      Step(
+        title: Text('Step 2'),
+        content: SizedBox(
+          width: 100.0,
+          height: 100.0,
+        ),
+      ),
+      Step(
+        title: Text('Step 3'),
+        content: SizedBox(
+          width: 100.0,
+          height: 100.0,
+        ),
+      ),
+      Step(
+        title: Text('Step 4'),
+        content: SizedBox(
+          width: 100.0,
+          height: 100.0,
+        ),
+      ),
+      Step(
+        title: Text('Step 5'),
+        content: SizedBox(
+          width: 100.0,
+          height: 100.0,
+        ),
+      ),
+    ],
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/Stepper-class.html
