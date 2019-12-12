@@ -1,0 +1,27 @@
+---
+title: RichText
+---
+
+A paragraph of rich text.
+
+`youtube: https://youtu.be/rykDVh-QFfw`
+
+## Example
+
+```dart liveslice=RichText
+RichText(
+  text: TextSpan(
+    text: 'Hello ',
+    style: DefaultTextStyle.of(context).style,
+    children: <TextSpan>[
+      TextSpan(text: 'bold', style: TextStyle(fontWeight: FontWeight.bold)),
+      TextSpan(text: ' world!'),
+    ],
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/RichText-class.html
+- https://youtu.be/rykDVh-QFfw
