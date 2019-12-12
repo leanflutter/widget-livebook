@@ -1,0 +1,48 @@
+---
+title: Radio
+---
+
+A material design radio button.
+
+## Example
+
+```dart liveslice=Radio
+enum SingingCharacter { lafayette, jefferson }
+
+// ...
+
+SingingCharacter _character = SingingCharacter.lafayette;
+
+Widget build(BuildContext context) {
+  return Center(
+    child: Column(
+      children: <Widget>[
+        ListTile(
+          title: const Text('Lafayette'),
+          leading: Radio(
+            value: SingingCharacter.lafayette,
+            groupValue: _character,
+            onChanged: (SingingCharacter value) {
+              setState(() { _character = value; });
+            },
+          ),
+        ),
+        ListTile(
+          title: const Text('Thomas Jefferson'),
+          leading: Radio(
+            value: SingingCharacter.jefferson,
+            groupValue: _character,
+            onChanged: (SingingCharacter value) {
+              setState(() { _character = value; });
+            },
+          ),
+        ),
+      ],
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/Radio-class.html

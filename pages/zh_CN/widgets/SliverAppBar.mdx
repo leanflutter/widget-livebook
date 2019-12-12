@@ -1,0 +1,43 @@
+---
+title: SliverAppBar
+---
+
+A material design app bar that integrates with a CustomScrollView.
+
+`youtube: https://youtu.be/R9C5KMJKluE`
+
+## Example
+
+```dart liveslice=SliverAppBar mockup=iPhone7
+Scaffold(
+  body: CustomScrollView(
+    slivers: <Widget>[
+      SliverAppBar(
+        expandedHeight: 150.0,
+        flexibleSpace: const FlexibleSpaceBar(
+          title: Text('SliverAppBar Sample'),
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.add_circle),
+            tooltip: 'Add new entry',
+            onPressed: () {/* ... */},
+          ),
+        ],
+      ),
+      SliverList(
+        delegate: SliverChildListDelegate(
+          <Widget>[
+            Container(height: 1200.0, color: Colors.teal),
+          ],
+        ),
+      ),
+    ],
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/SliverAppBar-class.html
+- https://youtu.be/R9C5KMJKluE

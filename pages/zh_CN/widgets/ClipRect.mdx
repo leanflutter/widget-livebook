@@ -1,0 +1,24 @@
+---
+title: ClipRect
+---
+
+A widget that clips its child using a rectangle.
+
+## Example
+
+
+```dart liveslice=ClipRect
+String _imageUrl = 'https://images.unsplash.com/photo-1565898835704-3d6be4a2c98c?fit=crop&w=200&q=60';
+
+ClipRect(
+  child: Align(
+    alignment: Alignment.bottomCenter,
+    heightFactor: 0.8,
+    child: Image.network(_imageUrl),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/ClipRect-class.html

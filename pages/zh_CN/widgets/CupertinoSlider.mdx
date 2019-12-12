@@ -1,0 +1,27 @@
+---
+title: CupertinoSlider
+---
+
+An iOS-style slider.
+
+`youtube: https://youtu.be/ufb4gIPDmEs`
+
+## Example
+
+```dart liveslice=CupertinoSlider
+CupertinoSlider(
+  value: _progress,
+  min: 0.0,
+  max: 100.0,
+  onChanged: (value){
+    setState(() {
+      _progress = value.roundToDouble();
+    });
+  },
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoSlider-class.html
+- https://youtu.be/ufb4gIPDmEs

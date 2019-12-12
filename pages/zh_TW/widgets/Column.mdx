@@ -1,0 +1,26 @@
+---
+title: Column
+---
+
+A widget that displays its children in a vertical array.
+
+## Example
+
+```dart liveslice=Column
+Column(
+  children: <Widget>[
+    Text('Deliver features faster'),
+    Text('Craft beautiful UIs'),
+    Expanded(
+      child: FittedBox(
+        fit: BoxFit.contain, // otherwise the logo will be tiny
+        child: const FlutterLogo(),
+      ),
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/Column-class.html

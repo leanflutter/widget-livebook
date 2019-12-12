@@ -1,0 +1,38 @@
+---
+title: Expanded
+---
+
+A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.
+
+`youtube: https://youtu.be/_rnZaagadyo`
+
+## Example
+
+```dart liveslice=Expanded
+Center(
+  child: Column(
+  children: <Widget>[
+    Container(
+      color: Colors.red,
+      height: 100,
+      width: 100,
+    ),
+    Expanded(
+      child: Container(
+        color: Colors.blue,
+        width: 100,
+      ),
+    ),
+    Container(
+      color: Colors.red,
+      height: 100,
+      width: 100,
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/Expanded-class.html
+- https://youtu.be/_rnZaagadyo

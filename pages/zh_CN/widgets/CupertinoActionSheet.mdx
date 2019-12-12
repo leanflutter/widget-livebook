@@ -1,0 +1,44 @@
+---
+title: CupertinoActionSheet
+---
+
+A convenience widget that combines common painting, positioning, and sizing widgets.
+
+## Example
+
+```dart liveslice=CupertinoActionSheet mockup=iPhone7
+Future<void> _handleClickMe() async {
+  return showCupertinoModalPopup<void>(
+    context: context,
+    builder: (BuildContext context) {
+      return CupertinoActionSheet(
+        title: Text('Favorite Dessert'),
+        message: Text('Please select the best dessert from the options below.'),
+        actions: <Widget>[
+          CupertinoActionSheetAction(
+            child: Text('Profiteroles'),
+            onPressed: () { /** */ },
+          ),
+          CupertinoActionSheetAction(
+            child: Text('Cannolis'),
+            onPressed: () { /** */ },
+          ),
+          CupertinoActionSheetAction(
+            child: Text('Trifie'),
+            onPressed: () { /** */ },
+          ),
+        ],
+        cancelButton: CupertinoActionSheetAction(
+          isDefaultAction: true,
+          child: Text('Cancel'),
+          onPressed: () { /** */ },
+        ),
+      );
+    },
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoActionSheet-class.html

@@ -1,0 +1,20 @@
+---
+title: AnimatedCrossFade
+---
+
+A widget that cross-fades between two given children and animates itself between their sizes.
+
+## Example
+
+```dart liveslice=AnimatedCrossFade
+AnimatedCrossFade(
+  duration: const Duration(seconds: 3),
+  firstChild: const FlutterLogo(style: FlutterLogoStyle.horizontal, size: 100.0),
+  secondChild: const FlutterLogo(style: FlutterLogoStyle.stacked, size: 100.0),
+  crossFadeState: _first ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html

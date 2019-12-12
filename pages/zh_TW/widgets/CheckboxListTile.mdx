@@ -1,0 +1,33 @@
+---
+title: CheckboxListTile
+---
+
+A ListTile with a Checkbox. In other words, a checkbox with a label.
+
+
+
+## Example
+
+```dart liveslice=CheckboxListTile
+import 'package:flutter/scheduler.dart' show timeDilation;
+
+// ...
+
+@override
+Widget build(BuildContext context) {
+  return Center(
+    child: CheckboxListTile(
+      title: const Text('Animate Slowly'),
+      value: timeDilation != 1.0,
+      onChanged: (bool value) {
+        setState(() { timeDilation = value ? 10.0 : 1.0; });
+      },
+      secondary: const Icon(Icons.hourglass_empty),
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/SliceCheckboxListTile-class.html
