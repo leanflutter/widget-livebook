@@ -1,0 +1,41 @@
+---
+title: AnimatedContainer
+---
+
+A container that gradually changes its values over a period of time.
+
+`youtube: https://youtu.be/yI-8QHpGIP4`
+
+## Example
+
+```dart liveslice=AnimatedContainer
+bool selected = false;
+
+@override
+Widget build(BuildContext context) {
+  return GestureDetector(
+    onTap: () {
+      setState(() {
+        selected = !selected;
+      });
+    },
+    child: Center(
+      child: AnimatedContainer(
+        width: selected ? 200.0 : 100.0,
+        height: selected ? 100.0 : 200.0,
+        color: selected ? Colors.red : Colors.blue,
+        alignment:
+            selected ? Alignment.center : AlignmentDirectional.topCenter,
+        duration: Duration(seconds: 2),
+        curve: Curves.fastOutSlowIn,
+        child: FlutterLogo(size: 75),
+      ),
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html
+- https://youtu.be/yI-8QHpGIP4
