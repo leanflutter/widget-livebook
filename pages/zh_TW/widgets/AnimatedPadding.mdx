@@ -1,0 +1,56 @@
+---
+title: AnimatedPadding
+---
+
+Animated version of Padding which automatically transitions the indentation over a given duration whenever the given inset changes.
+
+`youtube: https://youtu.be/PY2m0fhGNz4`
+
+## Example
+
+```dart liveslice=AnimatedPadding height=500px
+EdgeInsetsGeometry _padding = EdgeInsets.zero;
+void _changePadding() {
+  setState(() {
+    if (_padding.left == 100) {
+      _padding = EdgeInsets.only(top: 100, bottom: 100);
+    } else {
+      _padding = EdgeInsets.only(left: 100, right: 100);
+    }
+  });
+}
+
+@override
+Widget build(BuildContext context) {
+  return Column(
+    mainAxisSize: MainAxisSize.min,
+    children: <Widget>[
+      Container(
+        height: 300.0,
+        width: 300.0,
+        child: AnimatedPadding(
+          padding: _padding,
+          curve: Curves.ease,
+          duration: Duration(seconds: 1),
+          child: Container(
+            color: Colors.blue,
+          ),
+        ),
+      ),
+      FlatButton(
+        onPressed: () {
+          _changePadding();
+        },
+        child: Text(
+          "Click Me!",
+        ),
+      )
+    ],
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html
+- https://youtu.be/PY2m0fhGNz4
