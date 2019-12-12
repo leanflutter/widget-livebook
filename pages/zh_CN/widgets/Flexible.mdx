@@ -1,0 +1,33 @@
+---
+title: Flexible
+---
+
+A widget that controls how a child of a Row, Column, or Flex flexes.
+
+`youtube: https://youtu.be/CI7x0mAZiY0`
+
+## Example
+
+```dart liveslice=Flexible height=400px
+Column(
+  children: <Widget>[
+    Flexible(
+      flex: 2,
+      child: Container(color: Colors.cyan,),
+    ),
+    Flexible(
+      flex: 3,
+      child: Container(color: Colors.teal,),
+    ),
+    Flexible(
+      flex: 1,
+      child: Container(color: Colors.indigo,),
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/Flexible-class.html
+- https://youtu.be/CI7x0mAZiY0
