@@ -8,8 +8,10 @@ An iOS-styled navigation bar.
 
 ```dart liveslice=CupertinoNavigationBar
 CupertinoNavigationBar(
-  backgroundColor: Colors.white,
-  leading: CupertinoNavigationBarBackButton(),
+  leading: CupertinoNavigationBarBackButton(
+    previousPageTitle: 'Home',
+    onPressed: () {},
+  ),
   middle: const Text('CupertinoNavigationBar Sample'),
 )
 ```
