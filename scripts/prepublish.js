@@ -25,6 +25,7 @@ const generateLinks = (path) => {
       const { data } = matter(mdData)
 
       links.push({
+        id: data.id,
         title: data.title,
         description: data.description || '',
         path: subpath
@@ -34,6 +35,11 @@ const generateLinks = (path) => {
       })
     }
     if (links.length > 0) {
+      if (path.indexOf('basics') >= 0) {
+        links = links.sort((a, b) => {
+          return(a.id || '').localeCompare((b.id || ''))
+        });
+      }
       fs.writeFileSync(`${path}/_links.json`, JSON.stringify(links, null, 2))
     }
   }

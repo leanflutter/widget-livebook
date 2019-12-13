@@ -74,7 +74,7 @@ const LayoutSidebar = ({
           {generateMenuLinks().map(section => (
             <NavSection key={section.title}>
               <NavSectionTitle>{section.title}</NavSectionTitle>
-              {section.links.map(item => {
+              {(section.links || []).map(item => {
                 return (
                   <NavLink
                     href={`${item.path}`}
