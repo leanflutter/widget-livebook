@@ -1,5 +1,7 @@
 import '../../includes.dart';
 
+export './slice_cupertino_navigation_bar_dark_mode.dart';
+
 class SliceCupertinoNavigationBar extends StatelessWidget implements SliceExample {
   @override
   String get name => 'SliceCupertinoNavigationBar';
@@ -9,9 +11,9 @@ class SliceCupertinoNavigationBar extends StatelessWidget implements SliceExampl
     return Container(
       height: kToolbarHeight + (context != null ? MediaQuery.of(context).padding.top : 0),
       child: CupertinoNavigationBar(
-        backgroundColor: Colors.white,
         leading: CupertinoNavigationBarBackButton(
-          color: CupertinoColors.activeBlue,
+          previousPageTitle: 'Home',
+          onPressed: () {},
         ),
         middle: const Text('CupertinoNavigationBar Sample'),
       ),

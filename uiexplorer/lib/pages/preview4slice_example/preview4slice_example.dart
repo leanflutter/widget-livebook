@@ -20,8 +20,6 @@ class _Preview4SliceExamplePageState extends State<Preview4SliceExamplePage> {
       body: Center(
         child: Container(
           alignment: Alignment.center,
-          width: 375,
-          // height: double.infinity,
           child: _buildBody(context),
         ),
       )

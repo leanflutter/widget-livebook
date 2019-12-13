@@ -1,5 +1,7 @@
 import '../../includes.dart';
 
+export './slice_cupertino_action_sheet_dark_mode.dart';
+
 class SliceCupertinoActionSheet extends StatefulWidget implements SliceExample {
   @override
   String get name => 'SliceCupertinoActionSheet';

@@ -1,5 +1,7 @@
 import '../../includes.dart';
 
+export './slice_cupertino_button_dark_mode.dart';
+
 class SliceCupertinoButton extends StatelessWidget implements SliceExample {
   @override
   String get name => 'SliceCupertinoButton';

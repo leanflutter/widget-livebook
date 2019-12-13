@@ -1,5 +1,7 @@
 import '../../includes.dart';
 
+export './slice_cupertino_page_scaffold_dark_mode.dart';
+
 class SliceCupertinoPageScaffold extends StatefulWidget implements SliceExample {
   @override
   String get name => 'SliceCupertinoPageScaffold';
@@ -12,9 +14,9 @@ class _SliceCupertinoPageScaffoldState extends State<SliceCupertinoPageScaffold>
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        backgroundColor: Colors.white,
         leading: CupertinoNavigationBarBackButton(
-          color: CupertinoColors.activeBlue,
+          previousPageTitle: 'Home',
+          onPressed: () {},
         ),
         middle: const Text('Sample'),
       ),

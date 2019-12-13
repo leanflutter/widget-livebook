@@ -1,5 +1,7 @@
 import '../../includes.dart';
 
+export './slice_cupertino_alert_dialog_dark_mode.dart';
+
 class SliceCupertinoAlertDialog extends StatefulWidget implements SliceExample {
   @override
   String get name => 'SliceCupertinoAlertDialog';
