@@ -9,8 +9,10 @@ Implements a single iOS application page's layout.
 ```dart liveslice=CupertinoPageScaffold mockup=iPhone7
 CupertinoPageScaffold(
   navigationBar: CupertinoNavigationBar(
-    backgroundColor: Colors.white,
-    leading: CupertinoNavigationBarBackButton(),
+    leading: CupertinoNavigationBarBackButton(
+      previousPageTitle: 'Home',
+      onPressed: () {},
+    ),
     middle: const Text('Sample'),
   ),
   child: Center(
