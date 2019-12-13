@@ -1,10 +1,12 @@
 [
   {
+    "id": "001-introduction",
     "title": "介绍",
     "description": "",
     "path": "/zh_CN/basics/introduction"
   },
   {
+    "id": "002-faq",
     "title": "常见问题",
     "description": "",
     "path": "/zh_CN/basics/faq"
