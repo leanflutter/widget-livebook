@@ -205,6 +205,11 @@
     "path": "/widgets/CupertinoButton"
   },
   {
+    "title": "CupertinoContextMenu",
+    "description": "",
+    "path": "/widgets/CupertinoContextMenu"
+  },
+  {
     "title": "CupertinoDatePicker",
     "description": "",
     "path": "/widgets/CupertinoDatePicker"
@@ -228,6 +233,16 @@
     "title": "CupertinoSwitch",
     "description": "",
     "path": "/widgets/CupertinoSwitch"
+  },
+  {
+    "title": "CupertinoTabBar",
+    "description": "",
+    "path": "/widgets/CupertinoTabBar"
+  },
+  {
+    "title": "CupertinoTimerPicker",
+    "description": "",
+    "path": "/widgets/CupertinoTimerPicker"
   },
   {
     "title": "CustomPaint",

@@ -22,26 +22,12 @@ export type CodeProps = JSX.IntrinsicElements['div'] & {
 };
 
 export class Code extends React.Component<CodeProps> {
-  codeRef = React.createRef<HTMLPreElement>();
-
-  componentDidMount() {
-    this.highlightCode();
-  }
-
-  componentDidUpdate() {
-    this.highlightCode();
-  }
-
-  highlightCode() {
-    if (this.codeRef && this.codeRef.current) {
-      prism.highlightElement(this.codeRef.current);
-    }
-  }
-
   render() {
     const { language, codeString, className, ...rest } = this.props;
 
     const handleCopy = () => copyToClipboard(codeString as string);
+
+    let html = prism.highlight(codeString, prism.languages[language], language);
 
     return (
       <div className={'code-wrapper'} {...rest}>
@@ -54,14 +40,13 @@ export class Code extends React.Component<CodeProps> {
           <Icon>multitasking</Icon>
         </Button>
         <pre
-          ref={this.codeRef}
           className={classnames(
             'react-prism',
             `language-${language}`,
             className
           )}
+          dangerouslySetInnerHTML={{ __html: html }}
         >
-          <code>{codeString}</code>
         </pre>
       </div>
     );

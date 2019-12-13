@@ -18,7 +18,7 @@ const getEditUrl = (pathname) => {
   return `${gitHubRepoUrl}/blob/master/${docPath}`;
 };
 
-const preToCodeBlock = preProps => {
+const preToCodeBlock = (preProps: any) => {
   if (
     // children is code element
     preProps.children &&
@@ -48,24 +48,8 @@ const preToCodeBlock = preProps => {
 
 const components = {
   wrapper: props => {
-    const { frontMatter, tableOfContents } = props;
+    const { frontMatter, tocTree, ...rest } = props;
     const router = useRouter();
-
-    const tocTree = [];
-    for (let i = 0; i < tableOfContents.length; i++) {
-      const element = tableOfContents[i];
-      if (element.lvl == 2) {
-        tocTree.push(Object.assign(
-          element, {
-            children: [],
-          }
-        ));
-      } else if (element.lvl == 3) {
-        if (tocTree[tocTree.length - 1]) {
-          tocTree[tocTree.length - 1].children.push(element);
-        }
-      }
-    }
 
     let disqusConfig = {
       shortname: `${siteConfig.disqus.shortname}`,
@@ -178,7 +162,7 @@ const components = {
                 el.appendChild(s);
               }}
             />
-            <div {...props} />
+            <div {...rest} />
             <ReactDisqusComments
               {...disqusConfig}
             />
