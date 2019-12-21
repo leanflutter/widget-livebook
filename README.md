@@ -4,6 +4,29 @@
 
 English | [简体中文](./README.zh_CN.md)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Introduction](#introduction)
+- [Modules](#modules)
+- [Documentation](#documentation)
+- [Examples](#examples)
+    - [AlertDialog](#alertdialog)
+    - [AnimatedDefaultTextStyle](#animateddefaulttextstyle)
+    - [AnimatedPhysicalModel](#animatedphysicalmodel)
+    - [NestedScrollView](#nestedscrollview)
+- [Quick Start](#quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Starting Development](#starting-development)
+  - [Building for Production](#building-for-production)
+- [Related Links](#related-links)
+- [Discussion](#discussion)
+- [Stargazers over time](#stargazers-over-time)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Introduction
 
 [Flutter Widget Livebook](https://flutter-widget.live) is a website built with Flutter for web to live preview widget samples online.
