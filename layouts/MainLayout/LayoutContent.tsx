@@ -71,6 +71,12 @@ const components = {
         `Flutter ${frontMatter.title} Sample`,
         `${frontMatter.title} Example`,
         `${frontMatter.title} Sample`,
+        `Flutter ${frontMatter.title} 示例`,
+        `Flutter ${frontMatter.title} 范例`,
+        `Flutter ${frontMatter.title} 範例`,
+        `${frontMatter.title} 示例`,
+        `${frontMatter.title} 范例`,
+        `${frontMatter.title} 範例`,
       ]
     }
 
