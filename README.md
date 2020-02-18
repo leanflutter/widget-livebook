@@ -1,6 +1,7 @@
 # Flutter Widget Livebook
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=lijy91%40live.com&currency_code=USD&source=url)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fblankapp%2Fflutter-widget-livebook.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fblankapp%2Fflutter-widget-livebook?ref=badge_shield)
 
 English | [简体中文](./README.zh_CN.md)
 
@@ -100,3 +101,7 @@ If you have any suggestions or questions about this project, you can discuss it 
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/blankapp/flutter-widget-livebook.svg)](https://starchart.cc/blankapp/flutter-widget-livebook)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fblankapp%2Fflutter-widget-livebook.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fblankapp%2Fflutter-widget-livebook?ref=badge_large)
