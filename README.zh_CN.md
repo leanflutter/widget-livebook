@@ -101,3 +101,4 @@ $ yarn build
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/blankapp/flutter-widget-livebook.svg)](https://starchart.cc/blankapp/flutter-widget-livebook)
+[![Run on Repl.it](https://repl.it/badge/github/blankapp/flutter-widget-livebook)](https://repl.it/github/blankapp/flutter-widget-livebook)
