@@ -1,0 +1,28 @@
+---
+title: GestureDetector
+---
+
+A widget that detects gestures.
+
+## Example
+
+```dart liveslice=GestureDetector
+bool _lights = false;
+
+@override
+Widget build(BuildContext context) {
+  return GestureDetector(
+    onTap: () {
+      setState(() { _lights = true; });
+    },
+    child: Container(
+      color: _lights ? Colors.yellow : Colors.grey,
+      child: Text('TURN LIGHTS ${_lights ? 'ON' : 'OFF'}'),
+    ),
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/GestureDetector-class.html
