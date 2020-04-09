@@ -1,0 +1,37 @@
+---
+title: ListView
+---
+
+A scrollable list of widgets arranged linearly.
+
+`youtube: https://youtu.be/KJpkjHGiI5A`
+
+## Example
+
+```dart liveslice=ListView
+ListView(
+  padding: const EdgeInsets.all(8.0),
+  children: <Widget>[
+    Container(
+      height: 50,
+      color: Colors.amber[600],
+      child: const Center(child: Text('Entry A')),
+    ),
+    Container(
+      height: 50,
+      color: Colors.amber[500],
+      child: const Center(child: Text('Entry B')),
+    ),
+    Container(
+      height: 50,
+      color: Colors.amber[100],
+      child: const Center(child: Text('Entry C')),
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/ListView-class.html
+- https://youtu.be/KJpkjHGiI5A
