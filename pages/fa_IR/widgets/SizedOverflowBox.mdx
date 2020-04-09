@@ -1,0 +1,22 @@
+---
+title: SizedOverflowBox
+---
+
+A widget that is a specific size but passes its original constraints through to its child, which may then overflow.
+
+## Example
+
+```dart liveslice=SizedOverflowBox
+Container(
+  color: Colors.blue[50],
+  child: SizedOverflowBox(
+    size: const Size(100.0, 100.0),
+    alignment: AlignmentDirectional.bottomStart,
+    child: Container(height: 50.0, width: 150.0, color: Colors.blue,),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/SizedOverflowBox-class.html

@@ -1,0 +1,26 @@
+---
+title: CupertinoPageScaffold
+---
+
+Implements a single iOS application page's layout.
+
+## Example
+
+```dart liveslice=CupertinoPageScaffold mockup=iPhone7
+CupertinoPageScaffold(
+  navigationBar: CupertinoNavigationBar(
+    leading: CupertinoNavigationBarBackButton(
+      previousPageTitle: 'Home',
+      onPressed: () {},
+    ),
+    middle: const Text('Sample'),
+  ),
+  child: Center(
+    child: Text('Hello!'),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoPageScaffold-class.html

@@ -1,0 +1,28 @@
+---
+title: PhysicalModel
+---
+
+A widget representing a physical layer that clips its children to a shape.
+
+## Example
+
+```dart liveslice=PhysicalModel
+PhysicalModel(
+  elevation: 6.0,
+  shape: BoxShape.rectangle,
+  shadowColor: Colors.black,
+  color: Colors.white,
+  child: Container(
+    height: 120.0,
+    width: 120.0,
+    color: Colors.blue[50],
+    child: FlutterLogo(
+      size: 60,
+    ),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/PhysicalModel-class.html

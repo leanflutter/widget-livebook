@@ -1,0 +1,36 @@
+---
+title: CupertinoContextMenu
+---
+
+A full-screen modal route that opens when the child is long-pressed.
+
+## Example
+
+```dart liveslice=CupertinoContextMenu
+CupertinoContextMenu(
+  child: Container(
+    width: 100,
+    height: 60,
+    color: Colors.red,
+  ),
+  actions: <Widget>[
+    CupertinoContextMenuAction(
+      child: const Text('Action one'),
+      onPressed: () {
+        Navigator.pop(context);
+      },
+    ),
+    CupertinoContextMenuAction(
+      child: const Text('Action two'),
+      onPressed: () {
+        Navigator.pop(context);
+      },
+    ),
+  ],
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoContextMenu-class.html
+- https://developer.apple.com/design/human-interface-guidelines/ios/controls/context-menus/
