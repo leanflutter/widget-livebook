@@ -1,0 +1,26 @@
+---
+title: DatePicker
+---
+
+Shows a dialog containing a material design date picker.
+
+## Example
+
+```dart liveslice=DatePicker height=400px
+Future<DateTime> selectedDate = showDatePicker(
+  context: context,
+  initialDate: DateTime.now(),
+  firstDate: DateTime(2018),
+  lastDate: DateTime(2030),
+  builder: (BuildContext context, Widget child) {
+    return Theme(
+      data: ThemeData.dark(),
+      child: child,
+    );
+  },
+);
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/showDatePicker.html
