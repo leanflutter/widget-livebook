@@ -1,0 +1,51 @@
+---
+title: AnimatedDefaultTextStyle
+---
+
+Animated version of DefaultTextStyle which automatically transitions the default text style (the text style to apply to descendant Text widgets without explicit style) over a given duration whenever the given style changes.
+
+## Example
+
+```dart liveslice=AnimatedDefaultTextStyle
+bool _first = true;
+
+double _fontSize = 60;
+Color _color = Colors.blue;
+
+@override
+Widget build(BuildContext context) {
+  return Column(
+    mainAxisSize: MainAxisSize.min,
+    children: <Widget>[
+      Container(
+        height: 120,
+        child: AnimatedDefaultTextStyle(
+          duration: const Duration(milliseconds: 300),
+          style: TextStyle(
+            fontSize: _fontSize,
+            color: _color,
+            fontWeight: FontWeight.bold,
+          ),
+          child: Text('Flutter'),
+        ),
+      ),
+      FlatButton(
+        onPressed: () {
+          setState(() {
+            _fontSize = _first ? 90 : 60;
+            _color = _first ? Colors.blue : Colors.red;
+            _first = !_first;
+          });
+        },
+        child: Text(
+          "CLICK ME!",
+        ),
+      )
+    ],
+  );
+}
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html
