@@ -46,5 +46,6 @@ const generateLinks = (path) => {
 }
 
 generateLinks(`${cwd}/pages`);
+generateLinks(`${cwd}/pages/fa_IR`);
 generateLinks(`${cwd}/pages/zh_CN`);
 generateLinks(`${cwd}/pages/zh_TW`);

@@ -2,14 +2,10 @@ import React from 'react';
 import {
   Button,
   Divider,
-  TextField,
   TopBar,
   TopBarSection,
   TopBarTitle,
 } from '@duik/it';
-import Icon from '@duik/icon';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { NavBurger, SelectLanguage } from '../../components'
 import { useCurrentLanguage, useLocalStorage } from '../../utils';
 import siteConfing from '../../site.config';
@@ -20,7 +16,6 @@ const LayoutNavbar = ({
   menuIsVisible,
   menuHandleToggle,
 }: any) => {
-  const router = useRouter();
   const {currentLanguage, setCurrentLanguage} = useCurrentLanguage();
 
   return (

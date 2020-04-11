@@ -1,17 +1,37 @@
 import React from 'react';
-
 import { Select } from '@duik/it';
-import optionsCountries from './optionsCountries';
 
-export const SelectLanguage = props => {
-  const activeOption = optionsCountries.find(v => v.value == props.currentLanguage) || optionsCountries[0];
+import languages from './languages';
+
+import './SelectLanguage.module.scss';
+
+export const SelectLanguage = (props) => {
+  const { currentLanguage, ...restProps } = props;
+  const options = languages.map((v) => {
+    return Object.assign({}, v, {
+      label: (
+        <span className={'select-option-country-content'}>
+          <img alt={v.name} className={'select-option-flag'} src={v.flag} />
+          {v.name}
+        </span>
+      ),
+    });
+  });
+
+  const activeOption =
+    options.find(({ value }) => {
+      return value === currentLanguage.value;
+    }) || options[0];
+
   return (
     <Select
       activeOption={activeOption}
-      options={optionsCountries}
+      options={options}
       placeholder="Action"
       position="bottomRight"
-      {...props}
+      {...restProps}
     />
   );
 };
+
+SelectLanguage.supportedLanguages = languages;

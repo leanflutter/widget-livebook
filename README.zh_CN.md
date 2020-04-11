@@ -23,7 +23,6 @@
   - [构建生产](#%E6%9E%84%E5%BB%BA%E7%94%9F%E4%BA%A7)
 - [相关链接](#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5)
 - [探讨](#%E6%8E%A2%E8%AE%A8)
-- [Stargazers over time](#stargazers-over-time)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -97,7 +96,3 @@ $ yarn build
 如果您对此项目有任何建议或疑问，可以通过 [Telegram](https://t.me/lijy91) 或我的微信进行讨论。
 
 ![](/content/assets/wechat_qrcode.png)
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/blankapp/flutter-widget-livebook.svg)](https://starchart.cc/blankapp/flutter-widget-livebook)

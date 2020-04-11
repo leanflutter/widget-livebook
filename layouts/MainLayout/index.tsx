@@ -1,12 +1,13 @@
-import Router from 'next/router'
-import { ContainerHorizontal, ContainerVertical } from "@duik/it";
-import { useMenuVisibility } from '../../utils'
+import Router from 'next/router';
+import { ContainerHorizontal, ContainerVertical } from '@duik/it';
 
-import LayoutNavbar from "./LayoutNavbar";
-import LayoutSidebar from "./LayoutSidebar";
-import LayoutContent from "./LayoutContent";
+import { useCurrentLanguage, useMenuVisibility } from '../../utils';
 
-import "./index.module.scss";
+import LayoutNavbar from './LayoutNavbar';
+import LayoutSidebar from './LayoutSidebar';
+import LayoutContent from './LayoutContent';
+
+import './index.module.scss';
 
 const MainLayout = ({ children }) => {
   const {
@@ -14,39 +15,40 @@ const MainLayout = ({ children }) => {
     handleClose: menuHandleClose,
     handleToggle: menuHandleToggle,
   } = useMenuVisibility();
+  const { currentLanguage } = useCurrentLanguage();
 
   Router.events.on('routeChangeComplete', (_) => {
-    if (menuIsVisible)
-      menuHandleClose()
-  })
+    if (menuIsVisible) menuHandleClose();
+  });
 
   return (
     <>
-      <div className="main">
+      <div
+        className={`main ${currentLanguage.dir || ''}`}
+        {...(currentLanguage.dir === 'rtl' ? { dir: 'rtl' } : {})}
+      >
         <ContainerVertical>
-          <LayoutNavbar
-            {...{menuIsVisible, menuHandleToggle}}
-          />
-          <ContainerHorizontal style={{ overflow: "hidden" }}>
-            <LayoutSidebar
-              {...{menuIsVisible}}
-            />
+          <LayoutNavbar {...{ menuIsVisible, menuHandleToggle }} />
+          <ContainerHorizontal style={{ overflow: 'hidden' }}>
+            <LayoutSidebar {...{ menuIsVisible }} />
             <LayoutContent children={children} />
           </ContainerHorizontal>
         </ContainerVertical>
-      </div>
-      <div
-        style={{
-          position: 'fixed',
-          right: '40px',
-          bottom: '20px',
-          zIndex: 1000000,
-          fontWeight: 'bold',
-        }}
-      >
-        <a href="https://t.me/flutterwidgetlivebook">
-          <img alt="" src="https://img.shields.io/badge/chat%20on-telegram-blue.svg?style=for-the-badge&labelColor=000000&logo=telegram"></img>
-        </a>
+        <div
+          className="telegram-floating-button"
+          style={{
+            position: 'fixed',
+            zIndex: 1000000,
+            fontWeight: 'bold',
+          }}
+        >
+          <a href="https://t.me/flutterwidgetlivebook">
+            <img
+              alt=""
+              src="https://img.shields.io/badge/chat%20on-telegram-blue.svg?style=for-the-badge&labelColor=000000&logo=telegram"
+            ></img>
+          </a>
+        </div>
       </div>
     </>
   );

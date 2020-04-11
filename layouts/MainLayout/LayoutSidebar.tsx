@@ -1,41 +1,36 @@
-import React from "react";
-import Router, { useRouter } from "next/router";
-import { NavSection, NavLink, NavSectionTitle, NavPanel } from "@duik/it";
-import Icon from "@duik/icon";
-import classNames from "classnames";
-import NProgress from "nprogress";
+import React from 'react';
+import Router, { useRouter } from 'next/router';
+import { NavSection, NavLink, NavSectionTitle, NavPanel } from '@duik/it';
+import Icon from '@duik/icon';
+import classNames from 'classnames';
+import NProgress from 'nprogress';
 import { useCurrentLanguage } from '../../utils';
 
-import links4basics from "../../pages/basics/_links.json";
-import links4widgets from "../../pages/widgets/_links.json";
-import links4zhCNbasics from "../../pages/zh_CN/basics/_links.json";
-import links4zhCNwidgets from "../../pages/zh_CN/widgets/_links.json";
-
-import './LayoutSidebar.module.scss'
+import './LayoutSidebar.module.scss';
 
 const generateMenuLinks = () => {
-  const {currentLanguage} = useCurrentLanguage();
+  const { currentLanguage } = useCurrentLanguage();
 
   return [
     {
-      title: "Basics",
-      links: currentLanguage == 'zh_CN' ? links4zhCNbasics : links4basics
+      title: 'Basics',
+      links: currentLanguage.links.basics,
     },
     {
-      title: "Widgets",
-      links: currentLanguage == 'zh_CN' ? links4zhCNwidgets : links4widgets
-    }
-  ]
+      title: 'Widgets',
+      links: currentLanguage.links.widgets,
+    },
+  ];
 };
 
-Router.events.on("routeChangeComplete", url => {
+Router.events.on('routeChangeComplete', (url) => {
   NProgress.done();
 });
 
-const LayoutSidebarNavLink = ({ children, href, className = "", ...rest }) => {
+const LayoutSidebarNavLink = ({ children, href, className = '', ...rest }) => {
   const router = useRouter();
 
-  const handleClick = e => {
+  const handleClick = (e) => {
     e.preventDefault();
     NProgress.start();
     router.push(href);
@@ -47,7 +42,7 @@ const LayoutSidebarNavLink = ({ children, href, className = "", ...rest }) => {
       onClick={handleClick}
       className={classNames(
         className,
-        router.pathname === href ? "active" : ""
+        router.pathname === href ? 'active' : ''
       )}
       {...rest}
     >
@@ -56,25 +51,20 @@ const LayoutSidebarNavLink = ({ children, href, className = "", ...rest }) => {
   );
 };
 
-const LayoutSidebar = ({
-  menuIsVisible,
-}: any) => {
+const LayoutSidebar = ({ menuIsVisible }: any) => {
   return (
     <>
       <NavPanel
-        className={classNames(
-          "main-side-bar",
-          {
-            ['main-side-bar-open']: menuIsVisible
-          }
-        )}
-        style={{ position: "relative", zIndex: 10 }}
+        className={classNames('main-side-bar', {
+          ['main-side-bar-open']: menuIsVisible,
+        })}
+        style={{ position: 'relative', zIndex: 10 }}
       >
         <NavSection>
-          {generateMenuLinks().map(section => (
+          {generateMenuLinks().map((section) => (
             <NavSection key={section.title}>
               <NavSectionTitle>{section.title}</NavSectionTitle>
-              {(section.links || []).map(item => {
+              {(section.links || []).map((item) => {
                 return (
                   <NavLink
                     href={`${item.path}`}

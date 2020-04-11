@@ -1,15 +1,15 @@
-import Head from "next/head";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { MDXProvider } from "@mdx-js/react";
+import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { MDXProvider } from '@mdx-js/react';
 import ReactDisqusComments from 'react-disqus-comments';
 import * as toc from 'markdown-toc';
 
-import { PageScroll, Code, CodeExample } from "../../components";
+import { PageScroll, Code, CodeExample } from '../../components';
 import siteConfig from '../../site.config';
-import siteConfing from "../../site.config";
+import siteConfing from '../../site.config';
 
-import './LayoutContent.module.scss'
+import './LayoutContent.module.scss';
 
 const getEditUrl = (pathname) => {
   const gitHubRepoUrl = siteConfig.metadata.githubRepoUrl;
@@ -25,12 +25,12 @@ const preToCodeBlock = (preProps: any) => {
     // code props
     preProps.children.props &&
     // if children is actually a <code>
-    preProps.children.props.mdxType === "code"
+    preProps.children.props.mdxType === 'code'
   ) {
     // we have a <pre><code> situation
     const {
       children: codeString,
-      className = "",
+      className = '',
       ...props
     } = preProps.children.props;
 
@@ -39,24 +39,24 @@ const preToCodeBlock = (preProps: any) => {
     return {
       codeString: codeString.trim(),
       className,
-      language: match != null ? match[1] : "",
-      ...props
+      language: match != null ? match[1] : '',
+      ...props,
     };
   }
   return undefined;
 };
 
 const components = {
-  wrapper: props => {
+  wrapper: (props) => {
     const { frontMatter, tocTree, ...rest } = props;
     const router = useRouter();
 
     let disqusConfig = {
       shortname: `${siteConfig.disqus.shortname}`,
       url: `${siteConfig.metadata.homepageUrl}/${router.pathname}/`,
-      identifier: `${frontMatter.id || (router.pathname)}/`,
-      title: `${frontMatter.title}`
-    }
+      identifier: `${frontMatter.id || router.pathname}/`,
+      title: `${frontMatter.title}`,
+    };
 
     let keywords = [
       'Flutter',
@@ -77,7 +77,7 @@ const components = {
         `${frontMatter.title} 示例`,
         `${frontMatter.title} 范例`,
         `${frontMatter.title} 範例`,
-      ]
+      ];
     }
 
     return (
@@ -85,10 +85,15 @@ const components = {
         <Head>
           <title>
             {frontMatter.title}
-            {frontMatter.title ? " | " : ""}Flutter Widget Livebook
+            {frontMatter.title ? ' | ' : ''}Flutter Widget Livebook
           </title>
           <meta charSet="utf-8" />
-          <meta name="description" content={`${frontMatter.title}${frontMatter.title ? " | " : ""}Flutter Widget Livebook`} />
+          <meta
+            name="description"
+            content={`${frontMatter.title}${
+              frontMatter.title ? ' | ' : ''
+            }Flutter Widget Livebook`}
+          />
           <meta name="keywords" content={keywords.join(',')} />
           <meta name="author" content="LiJianying<lijy91@foxmail.com>" />
           <meta
@@ -97,8 +102,8 @@ const components = {
           />
         </Head>
         <>
-          <div className={"page-content-list-wrapper"}>
-            <ol className={"page-content-list"}>
+          <div className={'page-content-list-wrapper'}>
+            <ol className={'page-content-list'}>
               <a
                 href={siteConfing.metadata.chromePluginUrl}
                 style={{
@@ -115,18 +120,22 @@ const components = {
                 />
               </a>
               {(tocTree || []).length === 0 ? null : <h4>Table of contents</h4>}
-              {(tocTree || []).map(item => (
+              {(tocTree || []).map((item) => (
                 <li key={item.slug}>
-                  <Link href={`#${item.slug}`}>{item.content}</Link>
-                  {
-                    item.children.length === 0 ? null : <ul>
-                      {(item.children || []).map(childItem => (
+                  <Link href={`#${item.slug}`}>
+                    <a>{item.content}</a>
+                  </Link>
+                  {item.children.length === 0 ? null : (
+                    <ul>
+                      {(item.children || []).map((childItem) => (
                         <li key={childItem.slug}>
-                          <Link href={`#${childItem.slug}`}>{childItem.content}</Link>
+                          <Link href={`#${childItem.slug}`}>
+                            <a>{childItem.content}</a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
-                  }
+                  )}
                 </li>
               ))}
               <div
@@ -134,13 +143,19 @@ const components = {
                   marginTop: '30px',
                   minHeight: '144px',
                 }}
-                ref={el => {
-                  if (!el || typeof window === 'undefined' || window.innerWidth < 1400) return;
+                ref={(el) => {
+                  if (
+                    !el ||
+                    typeof window === 'undefined' ||
+                    window.innerWidth < 1400
+                  )
+                    return;
                   if (el.children.length > 0) return;
 
-                  let s = document.createElement("script");
-                  s.src = "//cdn.carbonads.com/carbon.js?serve=CKYIT23U&placement=blankapporg";
-                  s.setAttribute("id", "_carbonads_js");
+                  let s = document.createElement('script');
+                  s.src =
+                    '//cdn.carbonads.com/carbon.js?serve=CKYIT23U&placement=blankapporg';
+                  s.setAttribute('id', '_carbonads_js');
                   s.async = true;
 
                   el.appendChild(s);
@@ -151,69 +166,78 @@ const components = {
           <>
             <h1>{frontMatter.title}</h1>
             <p>
-              <a className="edit-link" href={getEditUrl(router.pathname)} target="_blank" rel="noopener noreferrer">
+              <a
+                className="edit-link"
+                href={getEditUrl(router.pathname)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Edit this page
               </a>
             </p>
             <div
-              ref={el => {
-                if (!el || typeof window === 'undefined' || window.innerWidth >= 1400) return;
+              ref={(el) => {
+                if (
+                  !el ||
+                  typeof window === 'undefined' ||
+                  window.innerWidth >= 1400
+                )
+                  return;
                 if (el.children.length > 0) return;
 
-                let s = document.createElement("script");
-                s.src = "//cdn.carbonads.com/carbon.js?serve=CKYIT23U&placement=blankapporg";
-                s.setAttribute("id", "_carbonads_js");
+                let s = document.createElement('script');
+                s.src =
+                  '//cdn.carbonads.com/carbon.js?serve=CKYIT23U&placement=blankapporg';
+                s.setAttribute('id', '_carbonads_js');
                 s.async = true;
 
                 el.appendChild(s);
               }}
             />
             <div {...rest} />
-            <ReactDisqusComments
-              {...disqusConfig}
-            />
+            <ReactDisqusComments {...disqusConfig} />
           </>
         </>
       </div>
     );
   },
-  h2: props => {
-    const slug = toc.slugify(props.children)
+  h2: (props) => {
+    const slug = toc.slugify(props.children);
     return (
       <>
         <a id={slug} href={`#${slug}`}></a>
         <h2 {...props} />
       </>
-    )
+    );
   },
-  h3: props => {
-    const slug = toc.slugify(props.children)
+  h3: (props) => {
+    const slug = toc.slugify(props.children);
     return (
       <>
         <a id={slug} href={`#${slug}`}></a>
         <h3 {...props} />
       </>
-    )
+    );
   },
-  h4: props => {
-    const slug = toc.slugify(props.children)
+  h4: (props) => {
+    const slug = toc.slugify(props.children);
     return (
       <>
         <a id={slug} href={`#${slug}`}></a>
         <h4 {...props} />
       </>
-    )
+    );
   },
-  h5: props => {
-    const slug = toc.slugify(props.children)
+  h5: (props) => {
+    const slug = toc.slugify(props.children);
     return (
       <>
         <a id={slug} href={`#${slug}`}></a>
         <h5 {...props} />
       </>
-    )
+    );
   },
-  pre: props => {
+  pre: (props) => {
     let codeProps = preToCodeBlock(props);
 
     if (codeProps.liveslice) {
@@ -221,7 +245,7 @@ const components = {
       let livesliceHeight = codeProps.height || '260px';
 
       if (codeProps.mockup) {
-        livesliceHeight = '667px'
+        livesliceHeight = '667px';
       }
 
       return (
@@ -247,14 +271,14 @@ const components = {
                   />
                 </div>
               ),
-            }
+            },
           ]}
         />
       );
     }
     return <Code {...codeProps} />;
   },
-  inlineCode: props => {
+  inlineCode: (props) => {
     if (props.children.indexOf('youtube:') >= 0) {
       return (
         <div
@@ -267,13 +291,20 @@ const components = {
           <iframe
             width="100%"
             height="100%"
-            src={`${props.children.replace('youtube: https://youtu.be/', 'https://www.youtube.com/embed/')}?rel=0`}
+            src={`${props.children.replace(
+              'youtube: https://youtu.be/',
+              'https://www.youtube.com/embed/'
+            )}?rel=0`}
           ></iframe>
         </div>
-      )
+      );
     }
-    return <p><code {...props} /></p>;
-  }
+    return (
+      <p>
+        <code {...props} />
+      </p>
+    );
+  },
 };
 
 const LayoutContent = ({ children }) => {
