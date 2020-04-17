@@ -2,30 +2,30 @@
 title: flutter_flipperkit
 ---
 
-## Introduction
+## معرفی
 
-[Flipper](https://fbflipper.com) (Extensible mobile app debugger) for flutter.
+[Flipper](https://fbflipper.com) (پکیج اشکال زادی)برای فلاتر.
 
 ![](./images/flipper.png)
 
-### Features
+### امکانات
 
-- Network inspector
-- Shared preferences inspector
-- Redux inspector
-- Database Browser
+-برسی اینترنت
+-برسی شیرد پریفرنسس(Shared preferences)
+-برسی ریداکس(Redux)
+برسی دیتابیس
 
-## Quick Start
+## شروع سریع
 
-### Prerequisites
+## پیش‌نیازها
 
-Before starting make sure you have:
+قبل از شروع اطمینان حاصل کنید که:
 
-- Installed [Flipper Desktop](https://fbflipper.com/docs/getting-started.html)
+[Flipper Desktop](https://fbflipper.com/docs/getting-started.html) نصب شده است
 
-### Installation
+### نصب و راه‌اندازی
 
-Add this to your package's pubspec.yaml file:
+پکیج های زیر را به فایل pubspec.yaml اضافه کنید:
 
 ```yaml
 dependencies:
@@ -42,9 +42,9 @@ dependencies:
       ref: master
 ```
 
-#### Android
+#### اندروید
 
-Change your project files according to the example:
+فایل های زیر را در پروژه خود تغییر دهید برای مثال فایل:
 
 `android/app/build.gradle`:
 
@@ -89,9 +89,9 @@ plugins.each { name, path ->
 
 #### iOS
 
-> Open `ios/Runner.xcworkspace` Add a empty Swift file (e.g `Runner-Noop.swift`) into `Runner` Group And make sure the `Runner-Bridging-Header.h` file is created. 
+فایل ios/Runner.xcworkspace را باز کرده یک فایل سوئیفت(Wsift) خالی در `Runner` ایجاد کنید برای مثال (`Runner-Noop.swift`) مطمعا شوید که فایل `Runner-Bridging-Header.h` نیز ایجاد شده است. 
 
-Change your project `ios/Podfile` file according to the example:
+فایل `ios/Podfile` تغییر دهید طبق مثال زیر:
 
 ```diff
 # Uncomment this line to define a global platform for your project
@@ -224,7 +224,7 @@ post_install do |installer|
 end
 ```
 
-### Usage
+### بکار گیری در بروژه
 
 ```dart
 import 'package:flutter_flipperkit/flutter_flipperkit.dart';
