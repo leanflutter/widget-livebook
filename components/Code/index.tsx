@@ -14,6 +14,9 @@ import 'prismjs/components/prism-markup'
 import 'prismjs/components/prism-css'
 import 'prismjs/components/prism-json'
 import 'prismjs/components/prism-dart'
+import 'prismjs/components/prism-yaml'
+import 'prismjs/components/prism-diff'
+import 'prismjs/components/prism-bash'
 
 export type CodeProps = JSX.IntrinsicElements['div'] & {
   codeString?: string;

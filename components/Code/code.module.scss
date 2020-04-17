@@ -5,6 +5,9 @@
   display: flex;
   flex: 1;
   overflow: scroll;
+  pre {
+    width: 100%;
+  }
 }
 
 .button-copy {

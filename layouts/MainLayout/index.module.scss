@@ -12,9 +12,9 @@
     margin-right: 320px;
     min-height: 100vh;
 
-    // p {
-    //   max-width: 760px;
-    // }
+    p {
+      display: inline;
+    }
 
     img {
       max-width: 100%;
@@ -30,6 +30,7 @@
 
     blockquote p {
       margin: 0px;
+      display: inline;
     }
 
     & > * + p {
