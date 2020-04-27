@@ -3,6 +3,8 @@ import Document, { Head, Main, NextScript } from 'next/document';
 
 import { GA_TRACKING_ID } from '../utils/gtag';
 
+const GOOGLE_ADSENSE_DATA_AD_CLIENT = 'ca-pub-6049036475236211';
+
 export default class extends Document {
   render() {
     return (
@@ -24,6 +26,11 @@ export default class extends Document {
           `,
             }}
           />
+          <script
+            data-ad-client={GOOGLE_ADSENSE_DATA_AD_CLIENT}
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
         </Head>
         <body>
           <Main />

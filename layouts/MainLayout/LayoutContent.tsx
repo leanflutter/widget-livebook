@@ -9,6 +9,8 @@ import { PageScroll, Code, CodeExample } from '../../components';
 import siteConfig from '../../site.config';
 import siteConfing from '../../site.config';
 
+import GoogleAds1 from './GoogleAds1';
+import GoogleAds2 from './GoogleAds2';
 import './LayoutContent.module.scss';
 
 const getEditUrl = (pathname) => {
@@ -161,6 +163,7 @@ const components = {
                   el.appendChild(s);
                 }}
               />
+              <GoogleAds1 />
             </ol>
           </div>
           <>
@@ -195,6 +198,7 @@ const components = {
               }}
             />
             <div {...rest} />
+            <GoogleAds2 />
             <ReactDisqusComments {...disqusConfig} />
           </>
         </>
