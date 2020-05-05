@@ -2,13 +2,13 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { MDXProvider } from '@mdx-js/react';
-import ReactDisqusComments from 'react-disqus-comments';
 import * as toc from 'markdown-toc';
 
 import { PageScroll, Code, CodeExample } from '../../components';
 import siteConfig from '../../site.config';
 import siteConfing from '../../site.config';
 
+import AmazonAd1 from './AmazonAd1';
 import GoogleAds1 from './GoogleAds1';
 import GoogleAds2 from './GoogleAds2';
 import './LayoutContent.module.scss';
@@ -163,7 +163,7 @@ const components = {
                   el.appendChild(s);
                 }}
               />
-              <GoogleAds1 />
+              {/* <GoogleAds1 /> */}
             </ol>
           </div>
           <>
@@ -178,7 +178,7 @@ const components = {
                 Edit this page
               </a>
             </p>
-            <div
+            {/* <div
               ref={(el) => {
                 if (
                   !el ||
@@ -196,10 +196,11 @@ const components = {
 
                 el.appendChild(s);
               }}
-            />
+            /> */}
             <div {...rest} />
             <GoogleAds2 />
-            <ReactDisqusComments {...disqusConfig} />
+            <AmazonAd1 />
+            {/* <ReactDisqusComments {...disqusConfig} /> */}
           </>
         </>
       </div>

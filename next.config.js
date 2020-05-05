@@ -13,6 +13,7 @@ module.exports = withPlugins(
   {
     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
     target: 'serverless',
+    compress: true,
     enableSvg: true,
     webpack (config) {
       return config

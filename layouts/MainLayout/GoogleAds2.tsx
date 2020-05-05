@@ -4,8 +4,13 @@ declare let window: any;
 
 const GoogleAds2 = () => {
   useEffect(() => {
-    let adsbygoogle = window.adsbygoogle || [];
-    adsbygoogle.push({});
+    let timer = setInterval(() => {
+      let adsbygoogle = window.adsbygoogle || [];
+
+      if (typeof adsbygoogle === 'undefined') return;
+      adsbygoogle.push({});
+      clearInterval(timer);
+    }, 500);
   });
 
   return (
