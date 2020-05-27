@@ -8,7 +8,7 @@ import { PageScroll, Code, CodeExample } from '../../components';
 import siteConfig from '../../site.config';
 import siteConfing from '../../site.config';
 
-import AmazonAd1 from './AmazonAd1';
+// import AmazonAd1 from './AmazonAd1';
 import GoogleAds1 from './GoogleAds1';
 import GoogleAds2 from './GoogleAds2';
 import './LayoutContent.module.scss';
@@ -199,7 +199,7 @@ const components = {
             /> */}
             <div {...rest} />
             <GoogleAds2 />
-            <AmazonAd1 />
+            {/* <AmazonAd1 /> */}
             {/* <ReactDisqusComments {...disqusConfig} /> */}
           </>
         </>
