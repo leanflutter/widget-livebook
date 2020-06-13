@@ -12,5 +12,6 @@ cd ../
 rm -rf public/uiexplorer
 cp -R uiexplorer/build/web public/uiexplorer
 
+node ./scripts/prepare.js
 # deploy to now.sh
 now --prod

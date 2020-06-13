@@ -8,7 +8,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const patchnameLanguage =
-      currentLanguage.value === 'en' ? '' : `${currentLanguage.value}/`;
+      currentLanguage.key === 'en' ? '' : `${currentLanguage.key}/`;
     if (router.pathname == '/') {
       router.push(`/${patchnameLanguage}basics/introduction`);
     }

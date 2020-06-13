@@ -1,31 +1,25 @@
-import { useRouter } from 'next/router';
-import { SelectLanguage } from '../components';
+import { useRouter, NextRouter } from 'next/router';
+import siteConfig from './siteConfig';
 
-const supportedLanguages = SelectLanguage.supportedLanguages;
+const { supportedLanguages } = siteConfig;
 
-export const useCurrentLanguage = () => {
-  const router = useRouter();
+export const useCurrentLanguage = (router?: NextRouter) => {
+  if (!router) router = useRouter();
 
   const currentLanguage =
-    supportedLanguages.find((v) => router.pathname.split('/')[1] === v.value) ||
-    supportedLanguages[0];
+    supportedLanguages[router.pathname.split('/')[1]] ||
+    supportedLanguages['en'];
 
-  let setCurrentLanguage = (value) => {
-    if (currentLanguage.value === value) return;
+  let setCurrentLanguage = (key) => {
+    if (currentLanguage.key === key) return;
 
     let pathname = router.pathname;
-    if (currentLanguage.value !== 'en' && value === 'en') {
-      pathname = router.pathname.replace(`/${currentLanguage.value}`, '');
-    } else if (
-      currentLanguage.value !== 'en' &&
-      currentLanguage.value !== value
-    ) {
-      pathname = router.pathname.replace(
-        `/${currentLanguage.value}`,
-        `/${value}`
-      );
+    if (currentLanguage.key !== 'en' && key === 'en') {
+      pathname = router.pathname.replace(`/${currentLanguage.key}`, '');
+    } else if (currentLanguage.key !== 'en' && currentLanguage.key !== key) {
+      pathname = router.pathname.replace(`/${currentLanguage.key}`, `/${key}`);
     } else {
-      pathname = `/${value}${router.pathname}`;
+      pathname = `/${key}${router.pathname}`;
     }
 
     router.push(pathname);

@@ -1,7 +1,7 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 
-import { GA_TRACKING_ID } from '../utils/gtag';
+import { gtag } from '../utils';
 
 const GOOGLE_ADSENSE_DATA_AD_CLIENT = 'ca-pub-6049036475236211';
 
@@ -13,7 +13,7 @@ export default class extends Document {
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -22,7 +22,7 @@ export default class extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '${GA_TRACKING_ID}');
+            gtag('config', '${gtag.GA_TRACKING_ID}');
           `,
             }}
           />

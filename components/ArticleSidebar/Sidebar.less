@@ -1,0 +1,52 @@
+@import '../../styles/antd-custom.less';
+
+.sidebar {
+  background-color: #ffffff;
+  width: 270px;
+  height: calc(100vh - 64px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 64px;
+
+  .section-item {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    & > label {
+      padding-left: 30px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #9ea0a5;
+    }
+  }
+
+  .section-item-subpaths {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subpath-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: unset;
+    & > label {
+      cursor: pointer;
+      flex: 1;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  .subpath-item:hover {
+    color: @primary-color;
+    background-color: rgba(84, 147, 245, 0.05);
+  }
+  .subpath-item.active {
+    color: @primary-color;
+    background-color: rgba(84, 147, 245, 0.05);
+    box-shadow: inset 3px 0 0 0 @primary-color;
+  }
+}

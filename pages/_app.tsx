@@ -1,19 +1,28 @@
-import React from 'react'
-import App from 'next/app'
-import Router, { withRouter } from 'next/router'
+import React from 'react';
+import App from 'next/app';
+import Router, { withRouter } from 'next/router';
+import { ConfigProvider } from 'antd';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { Layout, ArticleContent, ArticleSidebar } from '../components';
+import { configuredStore } from '../redux';
+import { gtag, useCurrentLanguage } from '../utils';
 
-import { MainLayout, BlankLayout } from '../layouts'
-import * as gtag from '../utils/gtag'
-
-import '@duik/icon/dist/styles.css'
-import '@duik/it/dist/styles.css'
-import 'nprogress/nprogress.css'
-import 'prism-themes/themes/prism-vs.css'
+// import '@duik/icon/dist/styles.css';
+// import '@duik/it/dist/styles.css';
+import 'nprogress/nprogress.css';
+import 'prism-themes/themes/prism-vs.css';
 // import 'prism-themes/themes/prism-atom-dark.css'
 
-Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
+import '../styles/global.less';
 
-class MyApp extends App {
+Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));
+
+const antdCustomConfig = {
+  autoInsertSpaceInButton: false,
+};
+
+class MyApp extends App<any> {
   // Only uncomment this method if you have blocking data requirements for
   // every single page in your application. This disables the ability to
   // perform automatic static optimization, causing every page in your app to
@@ -26,32 +35,42 @@ class MyApp extends App {
   //   return { ...appProps }
   // }
 
-  render() {
-    const { router, Component, pageProps } = this.props
-
-    let LayoutComponent = MainLayout;
-
-    if (router.pathname == '/') {
-      LayoutComponent = BlankLayout;
+  _renderPageComponent() {
+    const { Component, pageProps } = this.props;
+    if (Component?.isMDXComponent) {
+      return (
+        <Layout>
+          <div style={{ display: 'flex', width: '100vw' }}>
+            <ArticleSidebar />
+            <ArticleContent>
+              <Component {...pageProps} />
+            </ArticleContent>
+          </div>
+        </Layout>
+      );
     }
 
+    return <Component {...pageProps} />;
+  }
+
+  render() {
+    const { router } = this.props;
+    const { store, persistor } = configuredStore;
+    const { currentLanguage } = useCurrentLanguage(router);
+
     return (
-      <>
-        <LayoutComponent>
-          <Component {...pageProps} />
-        </LayoutComponent>
-        <style global jsx>{`
-          #__next {
-            height: 100vh;
-          }
-          iframe {
-            border: none !important;
-            background-color: var(--bg-base) !important;
-          }
-        `}</style>
-      </>
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <ConfigProvider
+            direction={currentLanguage.dir || 'ltr'}
+            {...antdCustomConfig}
+          >
+            {this._renderPageComponent()}
+          </ConfigProvider>
+        </PersistGate>
+      </Provider>
     );
   }
 }
 
-export default withRouter(MyApp)
+export default withRouter(MyApp);
