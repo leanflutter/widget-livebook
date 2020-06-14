@@ -37,6 +37,7 @@ export class Code extends React.Component<CodeProps> {
       <div className={'code-wrapper'} {...rest}>
         <Button
           onClick={handleCopy}
+          type="text"
           className={'button-copy'}
           icon={<CopyOutlined />}
         />

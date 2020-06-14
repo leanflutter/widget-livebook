@@ -1,7 +1,7 @@
-import * as React from "react";
-import { Code } from "../";
+import * as React from 'react';
+import { Code } from '../';
 
-import "./index.less";
+import './index.less';
 
 export type CodeExampleProps = {
   fixed?: boolean;
@@ -15,44 +15,38 @@ export const CodeExample = (props: CodeExampleProps) => {
   const { data, fixed } = props;
 
   return (
-    <div className={"example-table-container"}>
-      <table
-        className={"example-table"}
-        style={{ tableLayout: fixed ? "fixed" : "inherit" }}
-      >
-        <tbody>
-          {data &&
-            data.map((item, index) => {
-              return (
-                <tr
-                  key={index}
-                  style={{
-                    display: 'flex',
-                  }}
-                >
-                  <td
-                    style={{
-                      backgroundColor: '#ffffff',
-                      display: 'flex',
-                    }}
-                  >
-                    {item.content}
-                  </td>
-                  <td
-                    style={{
-                      display: 'flex',
-                      overflow: 'scroll'
-                    }}
-                  >
-                    <Code
-                      {...item.codeProps}
-                    />
-                  </td>
-                </tr>
-              );
-            })}
-        </tbody>
-      </table>
+    <div className="code-example">
+      {data &&
+        data.map((item, index) => {
+          return (
+            <div
+              key={index}
+              style={{
+                width: '100%',
+                display: 'flex',
+              }}
+            >
+              <div
+                className="liveslice"
+                style={{
+                  backgroundColor: '#ffffff',
+                  display: 'flex',
+                }}
+              >
+                {item.content}
+              </div>
+              <div
+                className="code"
+                style={{
+                  display: 'flex',
+                  overflow: 'scroll',
+                }}
+              >
+                <Code {...item.codeProps} />
+              </div>
+            </div>
+          );
+        })}
     </div>
   );
 };

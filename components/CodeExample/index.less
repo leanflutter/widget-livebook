@@ -1,77 +1,24 @@
-.example-table-container {
+.code-example {
   margin-left: -60px;
   margin-right: -60px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 
-  & + p {
-    margin-top: 2rem !important;
+  .liveslice {
+    margin-left: 60px;
+    min-width: 375px;
+    align-items: center;
+    margin-right: 20px;
   }
-}
-
-.example-table {
-  display: flex;
-  width: 100%;
-  border-collapse: collapse;
-  background: #f9f9f9;
-  border-top: 1px solid #f0f0f0 !important;
-  border-bottom: 1px solid #f0f0f0 !important;
-
-  tbody {
-    display: flex;
-    width: 100%;
-  }
-
-  tr {
-    display: flex;
-    width: 100%;
-  }
-
-  td {
+  .code {
+    flex: 1;
+    overflow: hidden;
     pre {
-      border-radius: 0;
-    }
-  }
-
-  td:first-child {
-    min-width: 465px;
-    padding-left: 60px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  td:last-child {
-    width: 100%;
-  }
-
-  td:not(:last-child) {
-    border-right: 1px solid #f0f0f0;
-  }
-
-  tr:not(:last-child) {
-    td {
-      border-bottom: 1px solid #f0f0f0 !important;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .example-table-container {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .example-table {
-    tr {
-      display: flex;
-      flex-direction: column;
-    }
-
-    td:first-child {
-      min-width: 100%;
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
-  }
 }
