@@ -10,6 +10,7 @@ import { Ad, Code, CodeExample } from '..';
 import TableOfContents from './TableOfContents';
 
 import './index.less';
+import { useRouter } from 'next/router';
 // import './github-markdown.less';
 
 const { Title } = Typography;
@@ -49,15 +50,51 @@ interface ArticleContentProps {
 const ArticleContent: React.FunctionComponent<ArticleContentProps> = ({
   children,
 }) => {
+  const router = useRouter();
   return (
     <MDXProvider
       components={{
         wrapper: (props: any) => {
           const { frontMatter, tocTree, ...restProps } = props;
+
+          let keywords = [
+            'Flutter',
+            'Flutter Widget',
+            'Flutter Widget Livebook',
+            'Flutter Widget Example',
+            'Flutter Widget Sample',
+          ];
+          if (router.pathname.indexOf('/widgets/') >= 0) {
+            keywords = [
+              `Flutter ${frontMatter.title} Example`,
+              `Flutter ${frontMatter.title} Sample`,
+              `${frontMatter.title} Example`,
+              `${frontMatter.title} Sample`,
+              `Flutter ${frontMatter.title} 示例`,
+              `Flutter ${frontMatter.title} 范例`,
+              `Flutter ${frontMatter.title} 範例`,
+              `${frontMatter.title} 示例`,
+              `${frontMatter.title} 范例`,
+              `${frontMatter.title} 範例`,
+            ];
+          }
           return (
             <>
               <Head>
                 <title>{`${frontMatter.title} - ${siteConfig.title}`}</title>
+                <meta charSet="utf-8" />
+                <meta
+                  name="description"
+                  content={`${frontMatter.title}${
+                    frontMatter.title ? ' | ' : ''
+                  }Flutter Widget Livebook`}
+                />
+                <meta name="keywords" content={keywords.join(',')} />
+                <meta name="author" content="LiJianying<lijy91@foxmail.com>" />
+                <meta
+                  name="viewport"
+                  content="initial-scale=1.0, width=device-width"
+                />
               </Head>
               <div className="article-content">
                 <div className="article-body">

@@ -8,8 +8,6 @@ import { Layout, ArticleContent, ArticleSidebar } from '../components';
 import { configuredStore } from '../redux';
 import { gtag, useCurrentLanguage } from '../utils';
 
-// import '@duik/icon/dist/styles.css';
-// import '@duik/it/dist/styles.css';
 import 'nprogress/nprogress.css';
 import 'prism-themes/themes/prism-vs.css';
 // import 'prism-themes/themes/prism-atom-dark.css'
