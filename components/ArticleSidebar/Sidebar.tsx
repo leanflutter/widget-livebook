@@ -11,6 +11,7 @@ import './Sidebar.less';
 
 Router.events.on('routeChangeComplete', (url) => {
   NProgress.done();
+  window.scrollTo(0, 0);
 });
 
 const SidebarSubPathItem = ({ children, href, className = '', ...rest }) => {

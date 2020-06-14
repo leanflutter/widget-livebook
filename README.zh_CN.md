@@ -93,6 +93,4 @@ $ yarn build
 
 ## 探讨
 
-如果您对此项目有任何建议或疑问，可以通过 [Telegram](https://t.me/lijy91) 或我的微信进行讨论。
-
-![](/content/assets/wechat_qrcode.png)
+如果您对此项目有任何建议或疑问，可以通过 [Telegram](https://t.me/lijy91) 进行讨论。

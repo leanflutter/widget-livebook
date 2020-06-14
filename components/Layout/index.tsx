@@ -6,9 +6,8 @@ import { Button, Divider, Input, Layout as LayoutComp } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
 
-import { siteConfig, useCurrentLanguage } from '../../utils';
-import Container from '../Container';
-import SelectLanguage from '../SelectLanguage';
+import { siteConfig, useCurrentLanguage, useMenuVisibility } from '../../utils';
+import { Container, SelectLanguage } from '..'
 
 import './index.less';
 
@@ -23,6 +22,11 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
   title = '',
   titleTrailing = ` - ${siteConfig.title}`,
 }) => {
+  const {
+    isVisible: menuIsVisible,
+    handleClose: menuHandleClose,
+    handleToggle: menuHandleToggle,
+  } = useMenuVisibility();
   const { currentLanguage } = useCurrentLanguage();
   const router = useRouter();
   const user: any = null;

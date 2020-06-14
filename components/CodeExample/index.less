@@ -1,4 +1,4 @@
-@import '~@duik/core/_vars.scss';
+@border-default-base: 1px solid rgba(0, 0, 0, 0.02);
 
 .example-table-container {
   margin-left: -60px;
@@ -13,9 +13,9 @@
   display: flex;
   width: 100%;
   border-collapse: collapse;
-  background: $bg-base;
-  border-top: $border-default-base;
-  border-bottom: $border-default-base;
+  // background: $bg-base;
+  border-top: @border-default-base !important;
+  border-bottom: @border-default-base !important;
 
   tbody {
     display: flex;
@@ -46,13 +46,12 @@
   }
 
   td:not(:last-child) {
-    // border-right: $border-default-base;
     border-right: 1px solid rgba(0, 0, 0, 0.02);
   }
 
   tr:not(:last-child) {
     td {
-      border-bottom: $border-default-base;
+      border-bottom: @border-default-base !important;
     }
   }
 }
@@ -78,4 +77,3 @@
     }
   }
 }
-

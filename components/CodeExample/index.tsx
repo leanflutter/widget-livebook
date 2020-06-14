@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Code } from "../";
 
-import "./index.module.scss";
+import "./index.less";
 
 export type CodeExampleProps = {
   fixed?: boolean;

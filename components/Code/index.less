@@ -1,5 +1,3 @@
-@import '~@duik/core/_vars.scss';
-
 .code-wrapper {
   position: relative;
   display: flex;
@@ -15,25 +13,24 @@
   top: 0;
   right: 0;
   color: rgb(128, 128, 128) !important;
-  opacity: .3;
+  opacity: 0.3;
 
   &:hover {
     opacity: 7;
   }
 }
 
-
 /* Code blocks */
 pre {
-  font-family: monospace,monospace !important;
+  font-family: monospace, monospace !important;
   font-weight: 400;
-  font-size: .8rem !important;
+  font-size: 0.8rem !important;
 }
-pre[class*="language-"] {
+pre[class*='language-'] {
   border: none !important;
-  background-color: var(--bg-base) !important;
+  background-color: #f9f9f9 !important;
 }
 
 .language-dart .token.function {
-	color: #2B91AF;
+  color: #2b91af;
 }
