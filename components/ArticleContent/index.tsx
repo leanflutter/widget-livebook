@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import { Typography, Divider } from 'antd';
 import { MDXProvider } from '@mdx-js/react';
 import * as toc from 'markdown-toc';
@@ -10,7 +10,6 @@ import { Ad, Code, CodeExample } from '..';
 import TableOfContents from './TableOfContents';
 
 import './index.less';
-import { useRouter } from 'next/router';
 // import './github-markdown.less';
 
 const { Title } = Typography;

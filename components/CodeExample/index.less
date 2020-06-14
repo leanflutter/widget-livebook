@@ -1,10 +1,8 @@
-@border-default-base: 1px solid rgba(0, 0, 0, 0.02);
-
 .example-table-container {
   margin-left: -60px;
   margin-right: -60px;
 
-  &+p {
+  & + p {
     margin-top: 2rem !important;
   }
 }
@@ -13,9 +11,9 @@
   display: flex;
   width: 100%;
   border-collapse: collapse;
-  // background: $bg-base;
-  border-top: @border-default-base !important;
-  border-bottom: @border-default-base !important;
+  background: #f9f9f9;
+  border-top: 1px solid #f0f0f0 !important;
+  border-bottom: 1px solid #f0f0f0 !important;
 
   tbody {
     display: flex;
@@ -46,12 +44,12 @@
   }
 
   td:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 0.02);
+    border-right: 1px solid #f0f0f0;
   }
 
   tr:not(:last-child) {
     td {
-      border-bottom: @border-default-base !important;
+      border-bottom: 1px solid #f0f0f0 !important;
     }
   }
 }
