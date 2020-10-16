@@ -31,8 +31,6 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
   const router = useRouter();
   const user: any = null;
 
-  console.log(currentLanguage);
-
   return (
     <>
       <Head>
@@ -49,12 +47,12 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
                 <img src="/images/logo.png" alt={`${title}${titleTrailing}`} />
               </div>
             </Link>
-            <div style={{ width: '64px' }} />
+            {/* <div style={{ width: '64px' }} />
             <Input.Search
               placeholder="Search or jump to..."
               onSearch={(value) => console.log(value)}
               style={{ width: '280px' }}
-            />
+            /> */}
             <div style={{ flex: 1 }} />
             {!user && (
               <>
@@ -70,7 +68,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
                 <Button type="primary">
                   <a
                     target="__blank"
-                    href="https://github.com/blankapp/flutter-widget-livebook"
+                    href="https://github.com/leanflutter/flutter-widget-livebook"
                   >
                     GitHub
                   </a>
@@ -79,22 +77,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
             )}
           </Container>
         </LayoutComp.Header>
-        <LayoutComp.Content>{children}</LayoutComp.Content>
-        <LayoutComp.Footer>
-          <Divider style={{ margin: 0 }} />
-          <Container
-            fluid
-            style={{ paddingTop: '20px', paddingBottom: '20px' }}
-          >
-            <div>©2020 LIJIANYING</div>
-            <div style={{ flex: 1 }} />
-            <div>
-              <a href="https://github.com/blankapp/flutter-widget-livebook">
-                <GithubOutlined />
-              </a>
-            </div>
-          </Container>
-        </LayoutComp.Footer>
+        <LayoutComp.Content>{children}</LayoutComp.Content>        
       </LayoutComp>
     </>
   );

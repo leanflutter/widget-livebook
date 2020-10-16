@@ -15,7 +15,6 @@ const SelectLanguage = () => {
   const { currentLanguage, setCurrentLanguage } = useCurrentLanguage();
 
   const handleMenuClick = ({ key }) => {
-    console.log('click', key);
     setCurrentLanguage(key);
   };
 

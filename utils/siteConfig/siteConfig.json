@@ -2,6 +2,7 @@
   "title": "Flutter Widget Livebook",
   "subtitle": "An website built using Flutter for web to live preview widget samples online.",
   "description": "",
+  "homepage": "https://flutter-widget.live",
   "author": "LiJianying <lijy91@foxmail.com>",
   "language": "en",
   "supportedLanguages": {
