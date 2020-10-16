@@ -55,8 +55,8 @@ Before starting make sure you have:
 
 ```bash
 $ yarn
-$ ./scripts/build_leanflutter_snippets.sh 
-$ ./scripts/build_leanflutter_3rd_snippets.sh 
+$ ./scripts/build_leanflutter_snippets.sh
+$ ./scripts/build_leanflutter_3rd_snippets.sh
 ```
 
 ### Starting Development
