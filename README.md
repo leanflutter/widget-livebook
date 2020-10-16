@@ -21,8 +21,6 @@ Flutter Widget Livebook
 
 ---
 
-English | [简体中文](./README.zh_CN.md)
-
 **Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
