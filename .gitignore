@@ -8,9 +8,5 @@ out/
 .vercel
 
 public/uiexplorer/
-
-leanflutter_snippets/
 public/snippets/
-
-leanflutter_3rd_snippets/
 public/3rd_snippets/
