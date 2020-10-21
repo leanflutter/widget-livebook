@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+git pull --recurse-submodules
+
 # 步骤1：编译示例片段
 cd leanflutter_snippets
-git pull
 flutter clean
 flutter build web --profile
 

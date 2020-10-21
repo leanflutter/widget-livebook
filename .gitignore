@@ -7,6 +7,6 @@ out/
 
 .vercel
 
-public/uiexplorer/
+public/3rd_package_examples/
 public/snippets/
-public/3rd_snippets/
+public/uiexplorer/
