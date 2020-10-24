@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+git pull --recurse-submodules
+
 ./scripts/build_leanflutter_snippets.sh
 ./scripts/build_leanflutter_3rd_snippets.sh
 
