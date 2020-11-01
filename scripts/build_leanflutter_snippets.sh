@@ -2,8 +2,8 @@
 
 # 步骤1：编译示例片段
 cd leanflutter_snippets
-flutter clean
-flutter build web --profile
+$FLUTTER_DEV_PATH/bin/flutter clean
+$FLUTTER_DEV_PATH/bin/flutter build web --profile
 
 cd ../
 rm -rf public/snippets
