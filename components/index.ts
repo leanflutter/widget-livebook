@@ -1,4 +1,4 @@
-export { default as Ad } from './Ad';
+export { default as Ads } from './Ads';
 export { default as ArticleContent } from './ArticleContent';
 export { default as ArticleSidebar } from './ArticleSidebar';
 export * from './Code';

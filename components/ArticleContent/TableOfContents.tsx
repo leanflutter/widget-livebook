@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import { Ad } from '../';
+import { Typography } from 'antd';
+import { Ads } from '../';
 
 import './TableOfContents.less';
 
+const { Text } = Typography;
 const chromePluginUrl = 'https://bit.ly/3e0hCXc';
 
 interface TableOfContentsProps {
@@ -26,15 +28,15 @@ const TableOfContents = ({ tocTree }: TableOfContentsProps) => {
       {(tocTree || []).length === 0 ? null : <label>Table of contents</label>}
       <ol>
         {(tocTree || []).map((item: any) => (
-          <li key={item.slug}>
-            <Link href={`#${item.slug}`}>
+          <li key={item.content}>
+            <Link href={`#${encodeURI(item.content)}`}>
               <a>{item.content}</a>
             </Link>
             {item.children.length === 0 ? null : (
               <ul>
                 {(item.children || []).map((childItem: any) => (
-                  <li key={childItem.slug}>
-                    <Link href={`#${childItem.slug}`}>
+                  <li key={childItem.content}>
+                    <Link href={`#${encodeURI(childItem.content)}`}>
                       <a>{childItem.content}</a>
                     </Link>
                   </li>
@@ -44,7 +46,10 @@ const TableOfContents = ({ tocTree }: TableOfContentsProps) => {
           </li>
         ))}
       </ol>
-      <Ad.CarbonAd />
+      <Ads.CarbonAd />
+      <div className="copyright">
+        <Text type="secondary">© 2020 LiJianying</Text>
+      </div>
     </div>
   );
 };

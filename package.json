@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS=--max_old_space_size=8192 next build",
     "start": "next start",
     "deploy": "sh ./scripts/prebuild.sh && vercel --prod",
     "type-check": "tsc"
