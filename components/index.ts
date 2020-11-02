@@ -4,5 +4,7 @@ export { default as ArticleSidebar } from './ArticleSidebar';
 export * from './Code';
 export * from './CodeExample';
 export { default as Container } from './Container';
+export { default as Image } from './Image';
 export { default as Layout } from './Layout';
+export { default as PagedList } from './PagedList';
 export { default as SelectLanguage } from './SelectLanguage';
