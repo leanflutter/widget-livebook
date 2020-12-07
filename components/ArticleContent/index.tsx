@@ -52,7 +52,6 @@ const ArticleContent: React.FunctionComponent<ArticleContentProps> = ({
       components={{
         wrapper: (props: any) => {
           const { frontMatter, tocTree, ...restProps } = props;
-          console.log(tocTree);
           let keywords = [
             'Flutter',
             'Flutter Widget',

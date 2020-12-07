@@ -1,10 +1,12 @@
-const CarbonAd = () => {
+const CarbonAd = ({ style }: any) => {
   return (
     <div
-      style={{
-        marginTop: '30px',
-        minHeight: '144px',
-      }}
+      style={
+        style || {
+          marginTop: '30px',
+          minHeight: '144px',
+        }
+      }
       ref={(el) => {
         if (!el || typeof window === 'undefined' || window.innerWidth < 1400)
           return;

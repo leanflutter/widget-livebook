@@ -14,6 +14,14 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "exclude": ["node_modules", "chrome-extension"],
+  "exclude": [
+    "node_modules",
+    "chrome-extension",
+    "leanflutter_3rd_snippets",
+    "leanflutter_snippets",
+    "public/3rd_package_examples",
+    "public/snippets",
+    "public/uiexplorer"
+  ],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
 }

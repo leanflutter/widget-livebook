@@ -1,9 +1,5 @@
-import { Pagination } from './Pagination';
-
 export type Result<T> = {
-  status?: string;
+  code?: number;
   message?: string;
-  pagination?: Pagination;
   data?: T;
-  items?: Array<T>;
 };

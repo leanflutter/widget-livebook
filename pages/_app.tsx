@@ -9,6 +9,7 @@ import 'nprogress/nprogress.css';
 // import 'prism-themes/themes/prism-atom-dark.css'
 
 import '../styles/global.less';
+import '../styles/devices.css';
 
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url));
 

@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { Button, Divider, Input, Layout as LayoutComp } from 'antd';
+import { Button, Divider, Input, Layout as LayoutComp, Menu } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
 import classNames from 'classnames';
 
 import { siteConfig, useCurrentLanguage, useMenuVisibility } from '../../utils';
-import { Container, SelectLanguage } from '..'
+import { Container, SelectLanguage } from '..';
 
 import './index.less';
 
@@ -47,8 +47,19 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
                 <img src="/images/logo.png" alt={`${title}${titleTrailing}`} />
               </div>
             </Link>
-            {/* <div style={{ width: '64px' }} />
-            <Input.Search
+            <div style={{ width: '34px' }} />
+            <Menu
+              mode="horizontal"
+              openKeys={[router.pathname]}
+              selectedKeys={[router.pathname]}
+            >
+              <Menu.Item key="/packages">
+                <Link href="/packages">
+                  <a>Packages</a>
+                </Link>
+              </Menu.Item>
+            </Menu>
+            {/* <Input.Search
               placeholder="Search or jump to..."
               onSearch={(value) => console.log(value)}
               style={{ width: '280px' }}
@@ -77,7 +88,7 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
             )}
           </Container>
         </LayoutComp.Header>
-        <LayoutComp.Content>{children}</LayoutComp.Content>        
+        <LayoutComp.Content>{children}</LayoutComp.Content>
       </LayoutComp>
     </>
   );
