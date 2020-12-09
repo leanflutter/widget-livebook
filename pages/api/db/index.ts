@@ -32,7 +32,7 @@ export const getPackages = () => {
     .map((v) => `${path}/${v}`)
     .filter((v) => !fs.lstatSync(v).isDirectory());
 
-  const packages = [];
+  let packages = [];
 
   for (let j = 0; j < filePaths.length; j++) {
     const filePath = filePaths[j];
@@ -60,6 +60,9 @@ export const getPackages = () => {
       );
     }
   }
+  // packages = packages.filter((v) =>
+  //   fs.existsSync(`${cwd}/public/3rd_package_examples/${v.name}`)
+  // );
   return packages;
 };
 
