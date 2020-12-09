@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
+  "homepage_url": "https://flutter-widget.live",
+  "version": "0.0.4",
+  "default_locale": "en",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "scripts": ["static/js/background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["static/css/content_script.css"],
+      "js": ["static/js/content_script.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "background",
+    "tabs",
+    "storage",
+    "*://*.flutter.dev/*",
+    "*://pub.dev/*",
+    "*://pub.flutter-io.cn/*"
+  ],
+  "web_accessible_resources": ["images/*", "static/media/*"]
+}
