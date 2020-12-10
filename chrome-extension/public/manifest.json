@@ -16,7 +16,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
+      "matches": [
+        "https://api.flutter.dev/*",
+        "https://pub.dev/*",
+        "https://pub.flutter-io.cn/*"
+      ],
       "css": ["static/css/content_script.css"],
       "js": ["static/js/content_script.js"],
       "all_frames": true,
@@ -24,10 +28,8 @@
     }
   ],
   "permissions": [
-    "<all_urls>",
-    "background",
     "tabs",
-    "storage",
+    "background",
     "*://*.flutter.dev/*",
     "*://pub.dev/*",
     "*://pub.flutter-io.cn/*"

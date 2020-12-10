@@ -9,7 +9,7 @@ declare var location: any;
 const ELEMENT_ID = '___fwl';
 
 const injectWebDemo4Package = async () => {
-  const { host, pathname } = location;
+  const { host } = location;
 
   if (!['pub.dev', 'pub.flutter-io.cn'].includes(host)) return;
 

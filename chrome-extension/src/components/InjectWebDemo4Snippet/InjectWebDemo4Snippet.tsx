@@ -45,17 +45,25 @@ const InjectWebDemo4Snippet = (props: InjectWebDemo4SnippetProps) => {
               <div className="livesample-container">
                 <p>This sample shows a basic {snippetName}.</p>
                 <iframe
+                  title={`${env.webURL}/embeds/snippets/${snippetName}`}
                   src={`${env.webURL}/embeds/snippets/${snippetName}`}
                   scrolling="no"
                 ></iframe>
                 <footer>
-                  <a target="_blank" href="#">
+                  <a
+                    target="_blank"
+                    href={
+                      'https://github.com/leanflutter/leanflutter_snippets/'
+                    }
+                    rel="noopener noreferrer"
+                  >
                     Source
                   </a>
                   <span style={{ flex: 1 }}></span>
                   <a
                     target="_blank"
                     href={`${env.webURL}/widgets/${snippetName}`}
+                    rel="noopener noreferrer"
                   >
                     See more samples on Flutter Widget Livebook
                   </a>

@@ -40,6 +40,7 @@ const InjectWebDemo4Package = (props: InjectWebDemo4PackageProps) => {
         <>
           {pkg && (
             <iframe
+              title={`${env.webURL}/embeds/packages/${pkgName}`}
               src={`${env.webURL}/embeds/packages/${pkgName}`}
               scrolling="no"
             ></iframe>
