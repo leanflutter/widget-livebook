@@ -29,16 +29,17 @@ const EmbedPackageDetailPage = () => {
   }, [packageName]);
 
   return (
-    <div
-      id="embed_package_detail-page"
-    >
+    <div id="embed_package_detail-page">
       <div className="device device-google-pixel device-black">
         <div className="device-frame">
           <Spin spinning={loading}>
             <div className="webdemo">
               {pkg && (
                 <iframe
-                  src={`/3rd_package_examples/${pkg?.name}/index.html`}
+                  src={
+                    pkg?.demoUrl ||
+                    `/3rd_package_examples/${pkg?.name}/index.html`
+                  }
                   scrolling="no"
                   onLoad={(_) => {
                     setLoading(false);

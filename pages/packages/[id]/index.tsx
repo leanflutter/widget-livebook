@@ -88,7 +88,10 @@ const PackageDetailPage = () => {
                       width: '100%',
                       height: '100%',
                     }}
-                    src={`/3rd_package_examples/${pkg?.name}/index.html`}
+                    src={
+                      pkg?.demoUrl ||
+                      `/3rd_package_examples/${pkg?.name}/index.html`
+                    }
                     scrolling="no"
                   />
                 )}
