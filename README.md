@@ -26,8 +26,8 @@ Flutter Widget Livebook
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [Introduction](#introduction)
+  - [Chrome Extension](#chrome-extension)
 - [Quick Start](#quick-start)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -42,6 +42,16 @@ Flutter Widget Livebook
 ## Introduction
 
 [Flutter Widget Livebook](https://flutter-widget.live) is a website built with Flutter for web to live preview widget samples online.
+
+### Chrome Extension
+
+[![download](./public/images/chrome-web-store.svg)](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf)
+
+The Extension help you embed Package online samples in pub.dev, welcome to try and give feedback!
+
+- Supported packages: https://flutter-widget.live/packages
+
+![chrome-extension](./public/images/chrome-extension.png)
 
 ## Quick Start
 
