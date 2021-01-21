@@ -4,6 +4,7 @@ import { Typography } from 'antd';
 import { Ads } from '../';
 
 import './TableOfContents.less';
+import { useCurrentLanguage } from '../../utils';
 
 const { Text } = Typography;
 const chromePluginUrl = 'https://bit.ly/3e0hCXc';
@@ -14,6 +15,7 @@ interface TableOfContentsProps {
 
 const TableOfContents = ({ tocTree }: TableOfContentsProps) => {
   // const router = useRouter();
+  const { currentLanguage } = useCurrentLanguage();
 
   return (
     <div className="article-toc">
@@ -46,7 +48,7 @@ const TableOfContents = ({ tocTree }: TableOfContentsProps) => {
           </li>
         ))}
       </ol>
-      <Ads.CarbonAd />
+      {currentLanguage?.key == 'zh_CN' ? <Ads.WwAds /> : <Ads.CarbonAd />}
       <div className="copyright">
         <Text type="secondary">© 2020 LiJianying</Text>
       </div>
