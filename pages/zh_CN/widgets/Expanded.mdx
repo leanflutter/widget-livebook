@@ -11,24 +11,25 @@ A widget that expands a child of a Row, Column, or Flex so that the child fills 
 ```dart liveslice=Expanded
 Center(
   child: Column(
-  children: <Widget>[
-    Container(
-      color: Colors.red,
-      height: 100,
-      width: 100,
-    ),
-    Expanded(
-      child: Container(
-        color: Colors.blue,
+    children: <Widget>[
+      Container(
+        color: Colors.red,
+        height: 100,
         width: 100,
       ),
-    ),
-    Container(
-      color: Colors.red,
-      height: 100,
-      width: 100,
-    ),
-  ],
+      Expanded(
+        child: Container(
+          color: Colors.blue,
+          width: 100,
+        ),
+      ),
+      Container(
+        color: Colors.red,
+        height: 100,
+        width: 100,
+      ),
+    ],
+  ),
 )
 ```
 
