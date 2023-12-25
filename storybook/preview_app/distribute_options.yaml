@@ -1,0 +1,14 @@
+output: dist/
+variables:
+  FLUTTER_ROOT: ~/fvm/versions/3.16.0
+releases:
+  - name: prod
+    jobs:
+      - name: web-direct
+        package:
+          platform: web
+          target: direct
+          build_args:
+            base-href: /preview_app/
+            web-renderer: html
+            no-tree-shake-icons: true

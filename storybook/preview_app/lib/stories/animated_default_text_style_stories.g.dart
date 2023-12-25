@@ -1,0 +1,28 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'animated_default_text_style_stories.dart';
+
+// **************************************************************************
+// MetaGenerator
+// **************************************************************************
+
+mixin _$AnimatedDefaultTextStyleMeta on Meta {
+  @override
+  String get title => 'Material/AnimatedDefaultTextStyle';
+
+  @override
+  List<ArgType> get argTypes => [];
+}
+
+// **************************************************************************
+// StoryGenerator
+// **************************************************************************
+
+mixin _$AnimatedDefaultTextStyleDefaultStory
+    on StoryObj<AnimatedDefaultTextStyleMeta> {
+  @override
+  String get name => 'Default';
+
+  @override
+  AnimatedDefaultTextStyleMeta get meta => AnimatedDefaultTextStyleMeta();
+}
