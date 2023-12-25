@@ -1,6 +1,0 @@
-[submodule "leanflutter_snippets"]
-	path = leanflutter_snippets
-	url = git@github.com:leanflutter/leanflutter_snippets.git
-[submodule "leanflutter_3rd_snippets"]
-	path = leanflutter_3rd_snippets
-	url = git@github.com:leanflutter/leanflutter_3rd_snippets.git
