@@ -43,7 +43,7 @@ class _ListDemoState extends State<ReorderableListView> {
     return CheckboxListTile(
       key: Key(item.value),
       isThreeLine: true,
-      value: item.checkState ?? false,
+      value: item.checkState,
       onChanged: (bool? newValue) {
         setState(() {
           item.checkState = newValue!;
