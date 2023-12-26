@@ -1,3 +1,12 @@
+.dart_tool/
+
+# IntelliJ related
+*.iml
+.idea/
+
+**/test/**/failures/
+pubspec_overrides.yaml
+
 node_modules
 .next
 

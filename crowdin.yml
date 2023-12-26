@@ -1,7 +1,0 @@
-files:
-  - source: /pages/basics/*.mdx
-    translation: /pages/%locale_with_underscore%/basics/%original_file_name%
-  - source: /pages/flutter_flipperkit/*.mdx
-    translation: /pages/%locale_with_underscore%/flutter_flipperkit/%original_file_name%
-  - source: /pages/widgets/*.mdx
-    translation: /pages/%locale_with_underscore%/widgets/%original_file_name%
