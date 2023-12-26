@@ -67,6 +67,7 @@ import 'package:preview_app/stories/ink_well_stories.dart';
 import 'package:preview_app/stories/selectable_text_stories.dart';
 import 'package:preview_app/stories/flow_stories.dart';
 import 'package:preview_app/stories/form_stories.dart';
+import 'package:preview_app/stories/snack_bar_stories.dart';
 import 'package:preview_app/stories/decorated_box_stories.dart';
 import 'package:preview_app/stories/flexible_stories.dart';
 import 'package:preview_app/stories/overflow_box_stories.dart';
@@ -193,6 +194,7 @@ final StorybookConfig storybookConfig = StorybookConfig(
     SelectableTextDefaultStory(),
     FlowDefaultStory(),
     FormDefaultStory(),
+    SnackBarDefaultStory(),
     DecoratedBoxDefaultStory(),
     FlexibleDefaultStory(),
     OverflowBoxDefaultStory(),
