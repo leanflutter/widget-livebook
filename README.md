@@ -15,19 +15,16 @@ Flutter Widget Livebook
 
 <p align="center">
   <strong>
-    Visit <a href="https://flutter-widget.live">https://flutter-widget.live</a>
+    Visit <a href="https://widget-livebook.leanflutter.dev">https://widget-livebook.leanflutter.dev</a>
   </strong>
 </p>
 
 ---
 
-**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Introduction](#introduction)
-  - [Chrome Extension](#chrome-extension)
 - [Quick Start](#quick-start)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -43,36 +40,28 @@ Flutter Widget Livebook
 
 [Flutter Widget Livebook](https://flutter-widget.live) is a website built with Flutter for web to live preview widget samples online.
 
-### Chrome Extension
-
-[![download](./public/images/chrome-web-store.svg)](https://chrome.google.com/webstore/detail/flutter-widget-livebook/lnabimpogllgckbeoneoegflahpefomf)
-
-The Extension help you embed Package online samples in pub.dev, welcome to try and give feedback!
-
-- Supported packages: https://flutter-widget.live/packages
-
-![chrome-extension](./public/images/chrome-extension.png)
-
 ## Quick Start
 
 ### Prerequisites
 
 Before starting make sure you have:
 
-- Installed [Yarn](https://yarnpkg.com/)
+- Installed [pnpm](https://pnpm.io/)
 
 ### Installation
 
 ```bash
-$ yarn
-$ ./scripts/build_leanflutter_snippets.sh
-$ ./scripts/build_leanflutter_3rd_snippets.sh
+$ melos bootstrap
+$ cd storybook
+$ pnpm install
+$ pnpm build-preview-app
 ```
 
 ### Starting Development
 
 ```bash
-$ yarn dev
+$ cd storybook
+$ pnpm storybook
 ```
 
 ### Building for Production
@@ -92,26 +81,4 @@ If you have any suggestions or questions about this project, you can discuss it 
 
 ## License
 
-```text
-MIT License
-
-Copyright (c) 2020 LiJianying <lijy91@foxmail.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+[MIT](./LICENSE)
