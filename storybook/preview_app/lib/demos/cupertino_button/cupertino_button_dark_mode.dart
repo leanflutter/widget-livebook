@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
 class SnippetCupertinoButtonDarkMode extends StatelessWidget {
+  const SnippetCupertinoButtonDarkMode({super.key});
+
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
@@ -13,11 +15,11 @@ class SnippetCupertinoButtonDarkMode extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               CupertinoButton(
-                child: Text('Button'),
+                child: const Text('Button'),
                 onPressed: () {/** */},
               ),
               CupertinoButton.filled(
-                child: Text('Button'),
+                child: const Text('Button'),
                 onPressed: () {/** */},
               ),
             ],

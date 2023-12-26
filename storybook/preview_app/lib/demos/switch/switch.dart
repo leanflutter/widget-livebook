@@ -4,7 +4,7 @@ class SwitchDemo extends StatefulWidget {
   const SwitchDemo({super.key});
 
   @override
-  _SwitchDemoState createState() => _SwitchDemoState();
+  State<SwitchDemo> createState() => _SwitchDemoState();
 }
 
 class _SwitchDemoState extends State<SwitchDemo> {

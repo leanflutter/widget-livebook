@@ -21,7 +21,7 @@ class _AnimatedDefaultTextStyleDemoState
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Container(
+        SizedBox(
           height: 120,
           child: AnimatedDefaultTextStyle(
             duration: const Duration(milliseconds: 300),
@@ -30,7 +30,7 @@ class _AnimatedDefaultTextStyleDemoState
               color: _color,
               fontWeight: FontWeight.bold,
             ),
-            child: Text('Flutter'),
+            child: const Text('Flutter'),
           ),
         ),
         TextButton(
@@ -41,7 +41,7 @@ class _AnimatedDefaultTextStyleDemoState
               _first = !_first;
             });
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

@@ -4,7 +4,7 @@ class DecoratedBoxDemo extends StatefulWidget {
   const DecoratedBoxDemo({super.key});
 
   @override
-  _DecoratedBoxDemoState createState() => _DecoratedBoxDemoState();
+  State<DecoratedBoxDemo> createState() => _DecoratedBoxDemoState();
 }
 
 class _DecoratedBoxDemoState extends State<DecoratedBoxDemo> {
@@ -30,12 +30,10 @@ class _DecoratedBoxDemoState extends State<DecoratedBoxDemo> {
         ],
       ),
       child: Container(
-        child: Container(
-          width: 200,
-          height: 200,
-          padding: EdgeInsets.all(20),
-          child: FlutterLogo(),
-        ),
+        width: 200,
+        height: 200,
+        padding: const EdgeInsets.all(20),
+        child: const FlutterLogo(),
       ),
     );
   }

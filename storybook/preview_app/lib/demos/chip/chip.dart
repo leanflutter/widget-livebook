@@ -8,9 +8,9 @@ class ChipDemo extends StatelessWidget {
     return Chip(
       avatar: CircleAvatar(
         backgroundColor: Colors.grey.shade800,
-        child: Text('AB'),
+        child: const Text('AB'),
       ),
-      label: Text('Aaron Burr'),
+      label: const Text('Aaron Burr'),
     );
   }
 }

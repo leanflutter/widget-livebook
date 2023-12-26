@@ -4,7 +4,7 @@ class PhysicalModelDemo extends StatefulWidget {
   const PhysicalModelDemo({super.key});
 
   @override
-  _PhysicalModelDemoState createState() => _PhysicalModelDemoState();
+  State<PhysicalModelDemo> createState() => _PhysicalModelDemoState();
 }
 
 class _PhysicalModelDemoState extends State<PhysicalModelDemo> {
@@ -19,7 +19,7 @@ class _PhysicalModelDemoState extends State<PhysicalModelDemo> {
         height: 120.0,
         width: 120.0,
         color: Colors.blue[50],
-        child: FlutterLogo(
+        child: const FlutterLogo(
           size: 60,
         ),
       ),

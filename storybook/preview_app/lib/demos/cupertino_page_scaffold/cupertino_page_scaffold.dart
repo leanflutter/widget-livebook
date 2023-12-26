@@ -6,12 +6,11 @@ class CupertinoPageScaffoldDemo extends StatefulWidget {
   const CupertinoPageScaffoldDemo({super.key});
 
   @override
-  _CupertinoPageScaffoldDemoState createState() =>
+  State<CupertinoPageScaffoldDemo> createState() =>
       _CupertinoPageScaffoldDemoState();
 }
 
-class _CupertinoPageScaffoldDemoState
-    extends State<CupertinoPageScaffoldDemo> {
+class _CupertinoPageScaffoldDemoState extends State<CupertinoPageScaffoldDemo> {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -22,7 +21,7 @@ class _CupertinoPageScaffoldDemoState
         ),
         middle: const Text('Sample'),
       ),
-      child: Center(
+      child: const Center(
         child: Text('Hello!'),
       ),
     );

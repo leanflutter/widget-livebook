@@ -13,7 +13,7 @@ class _CupertinoDatePickerDemoState
     extends State<CupertinoDatePickerDemo> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 300,
       child: CupertinoDatePicker(
           mode: CupertinoDatePickerMode.dateAndTime,

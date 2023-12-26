@@ -45,10 +45,10 @@ class _DemoCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(label, style: TextStyle(fontSize: 12)),
+        Text(label, style: const TextStyle(fontSize: 12)),
         Container(
-          padding: EdgeInsets.all(12),
-          margin: EdgeInsets.only(top: 2),
+          padding: const EdgeInsets.all(12),
+          margin: const EdgeInsets.only(top: 2),
           color: Colors.blue[50],
           width: 200,
           child: child,

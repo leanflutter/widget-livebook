@@ -31,7 +31,7 @@ class _AnimatedListDemoState extends State<AnimatedListDemo> {
       mainAxisSize: MainAxisSize.max,
       children: <Widget>[
         Expanded(
-          child: Container(
+          child: SizedBox(
             height: double.infinity,
             child: AnimatedList(
               key: listKey,

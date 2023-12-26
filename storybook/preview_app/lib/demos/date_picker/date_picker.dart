@@ -4,7 +4,7 @@ class DatePickerDemo extends StatefulWidget {
   const DatePickerDemo({super.key});
 
   @override
-  _DatePickerDemoState createState() => _DatePickerDemoState();
+  State<DatePickerDemo> createState() => _DatePickerDemoState();
 }
 
 class _DatePickerDemoState extends State<DatePickerDemo> {
@@ -37,7 +37,7 @@ class _DatePickerDemoState extends State<DatePickerDemo> {
       onPressed: () {
         _handleClickMe();
       },
-      child: Text(
+      child: const Text(
         "CLICK ME!",
       ),
     );

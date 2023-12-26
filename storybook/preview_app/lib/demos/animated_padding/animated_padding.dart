@@ -12,9 +12,9 @@ class _AnimatedPaddingDemoState extends State<AnimatedPaddingDemo> {
   void _changePadding() {
     setState(() {
       if (_padding.top == 100) {
-        _padding = EdgeInsets.only(top: 100, bottom: 100);
+        _padding = const EdgeInsets.only(top: 100, bottom: 100);
       } else {
-        _padding = EdgeInsets.only(left: 100, right: 100);
+        _padding = const EdgeInsets.only(left: 100, right: 100);
       }
     });
   }
@@ -24,13 +24,13 @@ class _AnimatedPaddingDemoState extends State<AnimatedPaddingDemo> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Container(
+        SizedBox(
           height: 300.0,
           width: 300.0,
           child: AnimatedPadding(
             padding: _padding,
             curve: Curves.ease,
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             child: Container(
               color: Colors.blue,
             ),
@@ -40,7 +40,7 @@ class _AnimatedPaddingDemoState extends State<AnimatedPaddingDemo> {
           onPressed: () {
             _changePadding();
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

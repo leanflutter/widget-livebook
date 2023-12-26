@@ -5,7 +5,7 @@ class IconDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
+    return const Icon(
       Icons.add,
       color: Colors.pink,
       size: 30.0,

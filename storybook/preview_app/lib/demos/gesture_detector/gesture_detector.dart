@@ -4,7 +4,7 @@ class GestureDetectorDemo extends StatefulWidget {
   const GestureDetectorDemo({super.key});
 
   @override
-  _GestureDetectorDemoState createState() => _GestureDetectorDemoState();
+  State<GestureDetectorDemo> createState() => _GestureDetectorDemoState();
 }
 
 class _GestureDetectorDemoState extends State<GestureDetectorDemo> {

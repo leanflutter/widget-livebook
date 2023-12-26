@@ -4,7 +4,7 @@ class IconButtonDemo extends StatefulWidget {
   const IconButtonDemo({super.key});
 
   @override
-  _IconButtonDemoState createState() => _IconButtonDemoState();
+  State<IconButtonDemo> createState() => _IconButtonDemoState();
 }
 
 class _IconButtonDemoState extends State<IconButtonDemo> {
@@ -18,7 +18,7 @@ class _IconButtonDemoState extends State<IconButtonDemo> {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.volume_up),
+              icon: const Icon(Icons.volume_up),
               tooltip: 'Increase volume by 10',
               onPressed: () {
                 setState(() {

@@ -8,9 +8,8 @@ class CupertinoNavigationBarDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: kToolbarHeight +
-          (context != null ? MediaQuery.of(context).padding.top : 0),
+    return SizedBox(
+      height: kToolbarHeight + (MediaQuery.of(context).padding.top),
       child: CupertinoNavigationBar(
         leading: CupertinoNavigationBarBackButton(
           previousPageTitle: 'Home',

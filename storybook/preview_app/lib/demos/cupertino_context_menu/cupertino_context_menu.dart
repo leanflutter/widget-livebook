@@ -8,11 +8,6 @@ class CupertinoContextMenuDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: CupertinoContextMenu(
-        child: Container(
-          width: 100,
-          height: 60,
-          color: Colors.red,
-        ),
         actions: <Widget>[
           CupertinoContextMenuAction(
             child: const Text('Action one'),
@@ -27,6 +22,11 @@ class CupertinoContextMenuDemo extends StatelessWidget {
             },
           ),
         ],
+        child: Container(
+          width: 100,
+          height: 60,
+          color: Colors.red,
+        ),
       ),
     );
   }

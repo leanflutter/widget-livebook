@@ -18,7 +18,7 @@ class BannerDemo extends StatelessWidget {
             child: Container(
               color: Colors.yellow,
               height: 100,
-              child: Center(
+              child: const Center(
                 child: Text("Hello, banner!"),
               ),
             ),

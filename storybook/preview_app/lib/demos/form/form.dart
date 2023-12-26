@@ -36,7 +36,7 @@ class _FormDemoState extends State<FormDemo> {
                   // Process data.
                 }
               },
-              child: Text('Submit'),
+              child: const Text('Submit'),
             ),
           ),
         ],

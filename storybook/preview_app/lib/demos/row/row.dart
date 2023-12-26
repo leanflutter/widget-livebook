@@ -5,7 +5,7 @@ class RowDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: <Widget>[
         Expanded(
           child: Text('Deliver features faster', textAlign: TextAlign.center),
@@ -16,7 +16,7 @@ class RowDemo extends StatelessWidget {
         Expanded(
           child: FittedBox(
             fit: BoxFit.contain, // otherwise the logo will be tiny
-            child: const FlutterLogo(),
+            child: FlutterLogo(),
           ),
         ),
       ],

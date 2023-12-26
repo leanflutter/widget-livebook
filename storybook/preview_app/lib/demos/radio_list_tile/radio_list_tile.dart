@@ -6,7 +6,7 @@ class RadioListTileDemo extends StatefulWidget {
   const RadioListTileDemo({super.key});
 
   @override
-  _RadioListTileDemoState createState() => _RadioListTileDemoState();
+  State<RadioListTileDemo> createState() => _RadioListTileDemoState();
 }
 
 class _RadioListTileDemoState extends State<RadioListTileDemo> {

@@ -13,7 +13,7 @@ class _CupertinoTimerPickerDemoState
     extends State<CupertinoTimerPickerDemo> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 300,
       child: CupertinoTimerPicker(
         mode: CupertinoTimerPickerMode.hms,

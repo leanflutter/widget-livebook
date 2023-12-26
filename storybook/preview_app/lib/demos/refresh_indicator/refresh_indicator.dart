@@ -7,11 +7,11 @@ class RefreshIndicatorDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('RefreshIndicator Sample'),
+        title: const Text('RefreshIndicator Sample'),
       ),
       body: RefreshIndicator(
         onRefresh: () async {
-          return await Future.delayed(Duration(seconds: 3));
+          return await Future.delayed(const Duration(seconds: 3));
         },
         child: ListView(
           padding: const EdgeInsets.all(8.0),

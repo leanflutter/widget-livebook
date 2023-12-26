@@ -7,7 +7,7 @@ class ScrollbarDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Scrollbar Sample'),
+        title: const Text('Scrollbar Sample'),
       ),
       body: Scrollbar(
         child: ListView.builder(

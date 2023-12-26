@@ -31,7 +31,7 @@ class _AnimatedCrossFadeDemoState extends State<AnimatedCrossFadeDemo>
               _first = !_first;
             });
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

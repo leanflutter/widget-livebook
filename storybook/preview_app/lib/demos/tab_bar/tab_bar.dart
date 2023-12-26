@@ -8,7 +8,7 @@ class TabBarDemo extends StatefulWidget {
 }
 
 class _TabBarDemoState extends State<TabBarDemo> {
-  List<String> _tabs = ['One', 'Two', 'Three'];
+  final List<String> _tabs = ['One', 'Two', 'Three'];
 
   @override
   Widget build(BuildContext context) {

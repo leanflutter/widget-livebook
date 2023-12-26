@@ -11,11 +11,11 @@ class CupertinoButtonDemo extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         CupertinoButton(
-          child: Text('Button'),
+          child: const Text('Button'),
           onPressed: () { /** */ },
         ),
         CupertinoButton.filled(
-          child: Text('Button'),
+          child: const Text('Button'),
           onPressed: () { /** */ },
         ),
       ],

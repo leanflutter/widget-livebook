@@ -6,12 +6,13 @@ class RadioDemo extends StatefulWidget {
   const RadioDemo({super.key});
 
   @override
-  _RadioDemoState createState() => _RadioDemoState();
+  State<RadioDemo> createState() => _RadioDemoState();
 }
 
 class _RadioDemoState extends State<RadioDemo> {
   _SingingCharacter _character = _SingingCharacter.lafayette;
 
+  @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(

@@ -4,7 +4,7 @@ class RangeSliderDemo extends StatefulWidget {
   const RangeSliderDemo({super.key});
 
   @override
-  _RangeSliderDemoState createState() => _RangeSliderDemoState();
+  State<RangeSliderDemo> createState() => _RangeSliderDemoState();
 }
 
 class _RangeSliderDemoState extends State<RangeSliderDemo> {

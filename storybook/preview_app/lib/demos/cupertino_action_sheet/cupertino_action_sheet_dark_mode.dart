@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 
 class SnippetCupertinoActionSheetDarkMode extends StatefulWidget {
+  const SnippetCupertinoActionSheetDarkMode({super.key});
+
   @override
-  _SnippetCupertinoActionSheetDarkModeState createState() =>
+  State<SnippetCupertinoActionSheetDarkMode> createState() =>
       _SnippetCupertinoActionSheetDarkModeState();
 }
 
@@ -17,26 +19,26 @@ class _SnippetCupertinoActionSheetDarkModeState
       home: CupertinoPageScaffold(
         child: Center(
           child: CupertinoActionSheet(
-            title: Text('Favorite Dessert'),
-            message:
-                Text('Please select the best dessert from the options below.'),
+            title: const Text('Favorite Dessert'),
+            message: const Text(
+                'Please select the best dessert from the options below.'),
             actions: <Widget>[
               CupertinoActionSheetAction(
-                child: Text('Profiteroles'),
+                child: const Text('Profiteroles'),
                 onPressed: () {/** */},
               ),
               CupertinoActionSheetAction(
-                child: Text('Cannolis'),
+                child: const Text('Cannolis'),
                 onPressed: () {/** */},
               ),
               CupertinoActionSheetAction(
-                child: Text('Trifie'),
+                child: const Text('Trifie'),
                 onPressed: () {/** */},
               ),
             ],
             cancelButton: CupertinoActionSheetAction(
               isDefaultAction: true,
-              child: Text('Cancel'),
+              child: const Text('Cancel'),
               onPressed: () {/** */},
             ),
           ),

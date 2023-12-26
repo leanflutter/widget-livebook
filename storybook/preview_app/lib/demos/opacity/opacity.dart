@@ -4,7 +4,7 @@ class OpacityDemo extends StatefulWidget {
   const OpacityDemo({super.key});
 
   @override
-  _OpacityDemoState createState() => _OpacityDemoState();
+  State<OpacityDemo> createState() => _OpacityDemoState();
 }
 
 class _OpacityDemoState extends State<OpacityDemo> {
@@ -25,7 +25,7 @@ class _OpacityDemoState extends State<OpacityDemo> {
               _visible = !_visible;
             });
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

@@ -19,7 +19,7 @@ class _AnimatedSizeDemoState extends State<AnimatedSizeDemo>
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Container(
+        SizedBox(
           height: 300,
           child: Center(
             child: AnimatedSize(

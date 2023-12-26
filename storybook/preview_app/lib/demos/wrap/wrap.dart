@@ -12,30 +12,30 @@ class WrapDemo extends StatelessWidget {
         Chip(
           avatar: CircleAvatar(
             backgroundColor: Colors.blue.shade900,
-            child: Text('AH'),
+            child: const Text('AH'),
           ),
-          label: Text('Hamilton'),
+          label: const Text('Hamilton'),
         ),
         Chip(
           avatar: CircleAvatar(
             backgroundColor: Colors.blue.shade900,
-            child: Text('ML'),
+            child: const Text('ML'),
           ),
-          label: Text('Lafayette'),
+          label: const Text('Lafayette'),
         ),
         Chip(
           avatar: CircleAvatar(
             backgroundColor: Colors.blue.shade900,
-            child: Text('HM'),
+            child: const Text('HM'),
           ),
-          label: Text('Mulligan'),
+          label: const Text('Mulligan'),
         ),
         Chip(
           avatar: CircleAvatar(
             backgroundColor: Colors.blue.shade900,
-            child: Text('JL'),
+            child: const Text('JL'),
           ),
-          label: Text('Laurens'),
+          label: const Text('Laurens'),
         ),
       ],
     );

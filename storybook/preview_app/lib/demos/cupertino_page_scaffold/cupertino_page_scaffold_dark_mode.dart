@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 class SnippetCupertinoPageScaffoldDarkMode extends StatelessWidget {
+  const SnippetCupertinoPageScaffoldDarkMode({super.key});
+
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
@@ -16,7 +17,7 @@ class SnippetCupertinoPageScaffoldDarkMode extends StatelessWidget {
           ),
           middle: const Text('Sample'),
         ),
-        child: Center(
+        child: const Center(
           child: Text('Hello!'),
         ),
       ),

@@ -5,7 +5,7 @@ class TextFieldDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return const TextField(
       obscureText: true,
       decoration: InputDecoration(
         border: OutlineInputBorder(),

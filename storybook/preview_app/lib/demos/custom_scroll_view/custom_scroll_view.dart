@@ -15,7 +15,7 @@ class CustomScrollViewDemo extends StatelessWidget {
           ),
         ),
         SliverGrid(
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200.0,
             mainAxisSpacing: 10.0,
             crossAxisSpacing: 10.0,

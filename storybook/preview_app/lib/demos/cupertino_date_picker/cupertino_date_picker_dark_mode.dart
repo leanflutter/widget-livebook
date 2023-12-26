@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
 class SnippetCupertinoDatePickerDarkMode extends StatelessWidget {
+  const SnippetCupertinoDatePickerDarkMode({super.key});
+
   @override
   Widget build(BuildContext context) {
     return CupertinoApp(
@@ -8,7 +10,7 @@ class SnippetCupertinoDatePickerDarkMode extends StatelessWidget {
         brightness: Brightness.dark,
       ),
       home: Container(
-        color: Color(0xFF123456),
+        color: const Color(0xFF123456),
         alignment: Alignment.center,
         child: SizedBox(
           height: 300,

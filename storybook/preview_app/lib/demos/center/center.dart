@@ -9,7 +9,7 @@ class CenterDemo extends StatelessWidget {
       height: 120.0,
       width: 120.0,
       color: Colors.blue[50],
-      child: Center(
+      child: const Center(
         child: FlutterLogo(
           size: 60,
         ),

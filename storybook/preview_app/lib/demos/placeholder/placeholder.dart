@@ -4,7 +4,7 @@ class PlaceholderDemo extends StatefulWidget {
   const PlaceholderDemo({super.key});
 
   @override
-  _PlaceholderDemoState createState() => _PlaceholderDemoState();
+  State<PlaceholderDemo> createState() => _PlaceholderDemoState();
 }
 
 class _PlaceholderDemoState extends State<PlaceholderDemo> {

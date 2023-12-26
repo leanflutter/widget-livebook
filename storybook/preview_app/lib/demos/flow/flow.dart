@@ -54,7 +54,7 @@ class _FlowMenuState extends State<FlowMenu>
       child: RawMaterialButton(
         fillColor: lastTapped == icon ? Colors.amber[700] : Colors.blue,
         splashColor: Colors.amber[100],
-        shape: CircleBorder(),
+        shape: const CircleBorder(),
         constraints: BoxConstraints.tight(Size(buttonDiameter, buttonDiameter)),
         onPressed: () {
           _updateMenu(icon);
@@ -73,19 +73,17 @@ class _FlowMenuState extends State<FlowMenu>
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Flow(
-        delegate: FlowMenuDelegate(menuAnimation: menuAnimation),
-        children: menuItems
-            .map<Widget>((IconData icon) => flowMenuItem(icon))
-            .toList(),
-      ),
+    return Flow(
+      delegate: FlowMenuDelegate(menuAnimation: menuAnimation),
+      children:
+          menuItems.map<Widget>((IconData icon) => flowMenuItem(icon)).toList(),
     );
   }
 }
 
 class FlowMenuDelegate extends FlowDelegate {
-  FlowMenuDelegate({required this.menuAnimation}) : super(repaint: menuAnimation);
+  FlowMenuDelegate({required this.menuAnimation})
+      : super(repaint: menuAnimation);
 
   final Animation<double> menuAnimation;
 

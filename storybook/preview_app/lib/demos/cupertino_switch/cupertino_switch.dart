@@ -5,7 +5,7 @@ class CupertinoSwitchDemo extends StatefulWidget {
   const CupertinoSwitchDemo({super.key});
 
   @override
-  _CupertinoSwitchDemoState createState() => _CupertinoSwitchDemoState();
+  State<CupertinoSwitchDemo> createState() => _CupertinoSwitchDemoState();
 }
 
 class _CupertinoSwitchDemoState extends State<CupertinoSwitchDemo> {
@@ -15,12 +15,20 @@ class _CupertinoSwitchDemoState extends State<CupertinoSwitchDemo> {
   Widget build(BuildContext context) {
     return MergeSemantics(
       child: ListTile(
-        title: Text('Lights'),
+        title: const Text('Lights'),
         trailing: CupertinoSwitch(
           value: _lights,
-          onChanged: (bool value) { setState(() { _lights = value; }); },
+          onChanged: (bool value) {
+            setState(() {
+              _lights = value;
+            });
+          },
         ),
-        onTap: () { setState(() { _lights = !_lights; }); },
+        onTap: () {
+          setState(() {
+            _lights = !_lights;
+          });
+        },
       ),
     );
   }

@@ -11,7 +11,7 @@ class TooltipDemo extends StatelessWidget {
         Tooltip(
           message: 'High quality',
           child: IconButton(
-            icon: Icon(Icons.high_quality),
+            icon: const Icon(Icons.high_quality),
             onPressed: () {
               /** */
             },
@@ -20,7 +20,7 @@ class TooltipDemo extends StatelessWidget {
         Tooltip(
           message: 'Full screen',
           child: IconButton(
-            icon: Icon(Icons.fullscreen),
+            icon: const Icon(Icons.fullscreen),
             onPressed: () {
               /** */
             },
@@ -29,7 +29,7 @@ class TooltipDemo extends StatelessWidget {
         Tooltip(
           message: 'Filter',
           child: IconButton(
-            icon: Icon(Icons.filter),
+            icon: const Icon(Icons.filter),
             onPressed: () {
               /** */
             },

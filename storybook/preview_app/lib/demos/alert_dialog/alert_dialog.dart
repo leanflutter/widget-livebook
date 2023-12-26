@@ -27,7 +27,7 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
             child: ListBody(
               children: <Widget>[
                 Text('You will never be satisfied.'),
-                Text('You\’re like me. I’m never satisfied.'),
+                Text('You’re like me. I’m never satisfied.'),
               ],
             ),
           ),

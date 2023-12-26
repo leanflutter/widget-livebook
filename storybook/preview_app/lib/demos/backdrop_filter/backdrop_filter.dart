@@ -23,7 +23,7 @@ class BackdropFilterDemo extends StatelessWidget {
                 alignment: Alignment.center,
                 width: 200.0,
                 height: 200.0,
-                child: Text('Hello World'),
+                child: const Text('Hello World'),
               ),
             ),
           ),

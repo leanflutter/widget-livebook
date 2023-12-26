@@ -25,12 +25,11 @@ class ExpansionPanelListDemo extends StatefulWidget {
   const ExpansionPanelListDemo({super.key});
 
   @override
-  _ExpansionPanelListDemoState createState() =>
-      _ExpansionPanelListDemoState();
+  State<ExpansionPanelListDemo> createState() => _ExpansionPanelListDemoState();
 }
 
 class _ExpansionPanelListDemoState extends State<ExpansionPanelListDemo> {
-  List<Item> _data = generateItems(8);
+  final List<Item> _data = generateItems(8);
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +56,9 @@ class _ExpansionPanelListDemoState extends State<ExpansionPanelListDemo> {
           },
           body: ListTile(
               title: Text(item.expandedValue),
-              subtitle: Text('To delete this panel, tap the trash can icon'),
-              trailing: Icon(Icons.delete),
+              subtitle:
+                  const Text('To delete this panel, tap the trash can icon'),
+              trailing: const Icon(Icons.delete),
               onTap: () {
                 setState(() {
                   _data.removeWhere((currentItem) => item == currentItem);

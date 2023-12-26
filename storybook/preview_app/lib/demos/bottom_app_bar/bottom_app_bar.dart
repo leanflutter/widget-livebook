@@ -5,15 +5,13 @@ class BottomAppBarDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var bottomAppBarContents = Container(
-      child: Text('BottomAppBar'),
-    );
+    var bottomAppBarContents = const Text('BottomAppBar');
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
         child: bottomAppBarContents,
       ),
-      floatingActionButton: FloatingActionButton(onPressed: null),
+      floatingActionButton: const FloatingActionButton(onPressed: null),
     );
   }
 }

@@ -4,12 +4,11 @@ class DecoratedBoxTransitionDemo extends StatefulWidget {
   const DecoratedBoxTransitionDemo({super.key});
 
   @override
-  _DecoratedBoxTransitionDemoState createState() =>
+  State<DecoratedBoxTransitionDemo> createState() =>
       _DecoratedBoxTransitionDemoState();
 }
 
-class _DecoratedBoxTransitionDemoState
-    extends State<DecoratedBoxTransitionDemo>
+class _DecoratedBoxTransitionDemoState extends State<DecoratedBoxTransitionDemo>
     with SingleTickerProviderStateMixin {
   final DecorationTween decorationTween = DecorationTween(
     begin: BoxDecoration(
@@ -46,6 +45,7 @@ class _DecoratedBoxTransitionDemoState
 
   bool _first = true;
 
+  @override
   initState() {
     _controller = AnimationController(
       vsync: this,
@@ -63,15 +63,13 @@ class _DecoratedBoxTransitionDemoState
           position: DecorationPosition.background,
           decoration: decorationTween.animate(_controller),
           child: Container(
-            child: Container(
-              width: 200,
-              height: 200,
-              padding: EdgeInsets.all(20),
-              child: FlutterLogo(),
-            ),
+            width: 200,
+            height: 200,
+            padding: const EdgeInsets.all(20),
+            child: const FlutterLogo(),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         TextButton(
@@ -83,7 +81,7 @@ class _DecoratedBoxTransitionDemoState
             }
             _first = !_first;
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

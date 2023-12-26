@@ -4,7 +4,7 @@ class DismissibleDemo extends StatefulWidget {
   const DismissibleDemo({super.key});
 
   @override
-  _DismissibleDemoState createState() => _DismissibleDemoState();
+  State<DismissibleDemo> createState() => _DismissibleDemoState();
 }
 
 class _DismissibleDemoState extends State<DismissibleDemo> {
@@ -12,7 +12,7 @@ class _DismissibleDemoState extends State<DismissibleDemo> {
 
   @override
   Widget build(BuildContext context) {
-    final title = 'Dismissing Items';
+    const title = 'Dismissing Items';
 
     return MaterialApp(
       title: title,
@@ -21,7 +21,7 @@ class _DismissibleDemoState extends State<DismissibleDemo> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text(title),
+          title: const Text(title),
         ),
         body: ListView.builder(
           itemCount: items.length,
@@ -46,7 +46,7 @@ class _DismissibleDemoState extends State<DismissibleDemo> {
               },
               // Show a red background as the item is swiped away.
               background: Container(color: Colors.red),
-              child: ListTile(title: Text('$item')),
+              child: ListTile(title: Text(item)),
             );
           },
         ),

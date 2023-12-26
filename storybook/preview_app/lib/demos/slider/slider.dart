@@ -4,7 +4,7 @@ class SliderDemo extends StatefulWidget {
   const SliderDemo({super.key});
 
   @override
-  _SliderDemoState createState() => _SliderDemoState();
+  State<SliderDemo> createState() => _SliderDemoState();
 }
 
 class _SliderDemoState extends State<SliderDemo> {

@@ -5,7 +5,7 @@ class DefaultTextStyleDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return const SizedBox(
       height: 120,
       child: DefaultTextStyle(
         style: TextStyle(

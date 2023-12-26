@@ -4,7 +4,7 @@ class IndexedStackDemo extends StatefulWidget {
   const IndexedStackDemo({super.key});
 
   @override
-  _IndexedStackDemoState createState() => _IndexedStackDemoState();
+  State<IndexedStackDemo> createState() => _IndexedStackDemoState();
 }
 
 class _IndexedStackDemoState extends State<IndexedStackDemo> {
@@ -14,26 +14,26 @@ class _IndexedStackDemoState extends State<IndexedStackDemo> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Container(
+        SizedBox(
           height: 300,
           child: IndexedStack(
             index: _index,
             children: <Widget>[
               Container(
                 color: Colors.pink,
-                child: Center(
+                child: const Center(
                   child: Text('Page 1'),
                 ),
               ),
               Container(
                 color: Colors.cyan,
-                child: Center(
+                child: const Center(
                   child: Text('Page 2'),
                 ),
               ),
               Container(
                 color: Colors.deepPurple,
-                child: Center(
+                child: const Center(
                   child: Text('Page 3'),
                 ),
               ),
@@ -51,7 +51,7 @@ class _IndexedStackDemoState extends State<IndexedStackDemo> {
                   _index -= 1;
                 });
               },
-              child: Text(
+              child: const Text(
                 "Prev",
               ),
             ),
@@ -62,7 +62,7 @@ class _IndexedStackDemoState extends State<IndexedStackDemo> {
                   _index += 1;
                 });
               },
-              child: Text(
+              child: const Text(
                 "Next",
               ),
             )

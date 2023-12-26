@@ -5,12 +5,12 @@ class CustomPaintDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomPaint(
+    return const CustomPaint(
       // painter: Sky(),
       child: Center(
         child: Text(
           'Once upon a time...',
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 40.0,
             fontWeight: FontWeight.w900,
             color: Color(0xFFFFFFFF),

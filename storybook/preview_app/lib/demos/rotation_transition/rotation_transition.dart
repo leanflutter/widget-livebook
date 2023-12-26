@@ -4,8 +4,7 @@ class RotationTransitionDemo extends StatefulWidget {
   const RotationTransitionDemo({super.key});
 
   @override
-  _RotationTransitionDemoState createState() =>
-      _RotationTransitionDemoState();
+  State<RotationTransitionDemo> createState() => _RotationTransitionDemoState();
 }
 
 class _RotationTransitionDemoState extends State<RotationTransitionDemo>
@@ -19,7 +18,8 @@ class _RotationTransitionDemoState extends State<RotationTransitionDemo>
 
   bool _first = true;
 
-  initState() {
+  @override
+  void initState() {
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 1),
@@ -35,15 +35,13 @@ class _RotationTransitionDemoState extends State<RotationTransitionDemo>
         RotationTransition(
           turns: turnsTween.animate(_controller),
           child: Container(
-            child: Container(
-              width: 200,
-              height: 200,
-              padding: EdgeInsets.all(20),
-              child: FlutterLogo(),
-            ),
+            width: 200,
+            height: 200,
+            padding: const EdgeInsets.all(20),
+            child: const FlutterLogo(),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         TextButton(
@@ -55,7 +53,7 @@ class _RotationTransitionDemoState extends State<RotationTransitionDemo>
             }
             _first = !_first;
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

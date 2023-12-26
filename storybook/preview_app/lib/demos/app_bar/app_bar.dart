@@ -5,7 +5,7 @@ class AppBarDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: kToolbarHeight + (MediaQuery.of(context).padding.top),
       child: AppBar(
         title: const Text('AppBar Sample'),

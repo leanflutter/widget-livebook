@@ -13,11 +13,6 @@ class _ToggleButtonsDemoState extends State<ToggleButtonsDemo> {
   @override
   Widget build(BuildContext context) {
     return ToggleButtons(
-      children: <Widget>[
-        Icon(Icons.ac_unit),
-        Icon(Icons.call),
-        Icon(Icons.cake),
-      ],
       onPressed: (int index) {
         setState(() {
           for (int buttonIndex = 0;
@@ -32,6 +27,11 @@ class _ToggleButtonsDemoState extends State<ToggleButtonsDemo> {
         });
       },
       isSelected: isSelected,
+      children: const <Widget>[
+        Icon(Icons.ac_unit),
+        Icon(Icons.call),
+        Icon(Icons.cake),
+      ],
     );
   }
 }

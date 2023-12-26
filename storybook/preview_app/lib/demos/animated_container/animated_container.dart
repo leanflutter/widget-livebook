@@ -25,9 +25,9 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
           color: selected ? Colors.red : Colors.blue,
           alignment:
               selected ? Alignment.center : AlignmentDirectional.topCenter,
-          duration: Duration(seconds: 2),
+          duration: const Duration(seconds: 2),
           curve: Curves.fastOutSlowIn,
-          child: FlutterLogo(size: 75),
+          child: const FlutterLogo(size: 75),
         ),
       ),
     );

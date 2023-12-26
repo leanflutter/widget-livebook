@@ -8,7 +8,7 @@ class NestedScrollViewDemo extends StatefulWidget {
 }
 
 class _NestedScrollViewDemoState extends State<NestedScrollViewDemo> {
-  List<String> _tabs = ['One', 'Two', 'Three'];
+  final List<String> _tabs = ['One', 'Two', 'Three'];
 
   @override
   Widget build(BuildContext context) {

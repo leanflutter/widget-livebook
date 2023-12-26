@@ -5,9 +5,9 @@ class RotatedBoxDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RotatedBox(
+    return const RotatedBox(
       quarterTurns: 3,
-      child: const Text('Hello World!'),
+      child: Text('Hello World!'),
     );
   }
 }

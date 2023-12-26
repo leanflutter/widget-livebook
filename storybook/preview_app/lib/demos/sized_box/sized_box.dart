@@ -5,10 +5,10 @@ class SizedBoxDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
       width: 200.0,
       height: 300.0,
-      child: const Card(child: Text('Hello World!')),
+      child: Card(child: Text('Hello World!')),
     );
   }
 }

@@ -13,7 +13,7 @@ class CupertinoAlertDialogDemo extends StatefulWidget {
 class _CupertinoAlertDialogDemoState extends State<CupertinoAlertDialogDemo> {
   @override
   void initState() {
-    Future.delayed(Duration(milliseconds: 1)).then((_) {
+    Future.delayed(const Duration(milliseconds: 1)).then((_) {
       _handleClickMe();
     });
     super.initState();
@@ -25,17 +25,17 @@ class _CupertinoAlertDialogDemoState extends State<CupertinoAlertDialogDemo> {
       barrierDismissible: false, // user must tap button!
       builder: (BuildContext context) {
         return CupertinoAlertDialog(
-          title: Text('Allow "Maps" to access your location while you use the app?'),
-          content: Text('Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.'),
+          title: const Text('Allow "Maps" to access your location while you use the app?'),
+          content: const Text('Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.'),
           actions: <Widget>[
             CupertinoDialogAction(
-              child: Text('Don\'t Allow'),
+              child: const Text('Don\'t Allow'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
             ),
             CupertinoDialogAction(
-              child: Text('Allow'),
+              child: const Text('Allow'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -52,7 +52,7 @@ class _CupertinoAlertDialogDemoState extends State<CupertinoAlertDialogDemo> {
       onPressed: () {
         _handleClickMe();
       },
-      child: Text(
+      child: const Text(
         "CLICK ME!",
       ),
     );

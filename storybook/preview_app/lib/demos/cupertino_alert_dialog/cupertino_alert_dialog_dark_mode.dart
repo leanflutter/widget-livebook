@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
 class SnippetCupertinoAlertDialogDarkMode extends StatefulWidget {
+  const SnippetCupertinoAlertDialogDarkMode({super.key});
+
   @override
   State<StatefulWidget> createState() => _SnippetCupertinoAlertDialogDarkModeState();
 }
@@ -15,17 +17,17 @@ class _SnippetCupertinoAlertDialogDarkModeState extends State<SnippetCupertinoAl
       home: CupertinoPageScaffold(
         child: Center(
           child: CupertinoAlertDialog(
-            title: Text('Allow "Maps" to access your location while you use the app?'),
-            content: Text('Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.'),
+            title: const Text('Allow "Maps" to access your location while you use the app?'),
+            content: const Text('Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.'),
             actions: <Widget>[
               CupertinoDialogAction(
-                child: Text('Don\'t Allow'),
+                child: const Text('Don\'t Allow'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },
               ),
               CupertinoDialogAction(
-                child: Text('Allow'),
+                child: const Text('Allow'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },

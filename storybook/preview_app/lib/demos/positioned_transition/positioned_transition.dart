@@ -4,22 +4,22 @@ class PositionedTransitionDemo extends StatefulWidget {
   const PositionedTransitionDemo({super.key});
 
   @override
-  _PositionedTransitionDemoState createState() =>
+  State<PositionedTransitionDemo> createState() =>
       _PositionedTransitionDemoState();
 }
 
-class _PositionedTransitionDemoState
-    extends State<PositionedTransitionDemo>
+class _PositionedTransitionDemoState extends State<PositionedTransitionDemo>
     with SingleTickerProviderStateMixin {
   final RelativeRectTween relativeRectTween = RelativeRectTween(
-    begin: RelativeRect.fromLTRB(40, 40, 0, 0),
-    end: RelativeRect.fromLTRB(0, 0, 40, 40),
+    begin: const RelativeRect.fromLTRB(40, 40, 0, 0),
+    end: const RelativeRect.fromLTRB(0, 0, 40, 40),
   );
 
   late AnimationController _controller;
 
   bool _first = true;
 
+  @override
   initState() {
     _controller = AnimationController(
       vsync: this,
@@ -41,18 +41,16 @@ class _PositionedTransitionDemoState
               PositionedTransition(
                 rect: relativeRectTween.animate(_controller),
                 child: Container(
-                  child: Container(
-                    width: 200,
-                    height: 200,
-                    padding: EdgeInsets.all(20),
-                    child: FlutterLogo(),
-                  ),
+                  width: 200,
+                  height: 200,
+                  padding: const EdgeInsets.all(20),
+                  child: const FlutterLogo(),
                 ),
               ),
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         TextButton(
@@ -64,7 +62,7 @@ class _PositionedTransitionDemoState
             }
             _first = !_first;
           },
-          child: Text(
+          child: const Text(
             "CLICK ME!",
           ),
         )

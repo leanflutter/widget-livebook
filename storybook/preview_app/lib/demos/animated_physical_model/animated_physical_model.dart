@@ -30,12 +30,12 @@ class _AnimatedPhysicalModelDemoState extends State<AnimatedPhysicalModelDemo> {
             height: 120.0,
             width: 120.0,
             color: Colors.blue[50],
-            child: FlutterLogo(
+            child: const FlutterLogo(
               size: 60,
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ElevatedButton(

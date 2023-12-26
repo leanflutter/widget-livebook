@@ -5,18 +5,14 @@ class VerticalDividerDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Container(child: Text('Item1')),
+        Text('Item1'),
         VerticalDivider(),
-        Container(
-          child: Text('Item2'),
-        ),
+        Text('Item2'),
         VerticalDivider(),
-        Container(
-          child: Text('Item3'),
-        ),
+        Text('Item3'),
       ],
     );
   }

@@ -5,6 +5,6 @@ class LinearProgressIndicatorDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LinearProgressIndicator();
+    return const LinearProgressIndicator();
   }
 }

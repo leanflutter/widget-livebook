@@ -4,7 +4,7 @@ class ReorderableListViewDemo extends StatefulWidget {
   const ReorderableListViewDemo({Key? key}) : super(key: key);
 
   @override
-  _ListDemoState createState() => _ListDemoState();
+  State<ReorderableListView> createState() => _ListDemoState();
 }
 
 class _ListItem {

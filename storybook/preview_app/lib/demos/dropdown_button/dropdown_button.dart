@@ -4,7 +4,7 @@ class DropdownButtonDemo extends StatefulWidget {
   const DropdownButtonDemo({super.key});
 
   @override
-  _DropdownButtonDemoState createState() => _DropdownButtonDemoState();
+  State<DropdownButtonDemo> createState() => _DropdownButtonDemoState();
 }
 
 class _DropdownButtonDemoState extends State<DropdownButtonDemo> {

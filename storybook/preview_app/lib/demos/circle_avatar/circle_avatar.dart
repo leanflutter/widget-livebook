@@ -8,7 +8,7 @@ class CircleAvatarDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
+    return const CircleAvatar(
       backgroundImage: NetworkImage(_userAvatarUrl),
     );
   }

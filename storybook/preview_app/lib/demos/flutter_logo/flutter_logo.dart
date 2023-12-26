@@ -5,6 +5,6 @@ class FlutterLogoDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlutterLogo();
+    return const FlutterLogo();
   }
 }

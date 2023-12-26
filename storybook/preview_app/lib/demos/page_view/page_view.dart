@@ -9,19 +9,19 @@ class PageViewDemo extends StatelessWidget {
       children: <Widget>[
         Container(
           color: Colors.pink,
-          child: Center(
+          child: const Center(
             child: Text('Page 1'),
           ),
         ),
         Container(
           color: Colors.cyan,
-          child: Center(
+          child: const Center(
             child: Text('Page 2'),
           ),
         ),
         Container(
           color: Colors.deepPurple,
-          child: Center(
+          child: const Center(
             child: Text('Page 3'),
           ),
         ),

@@ -20,7 +20,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Container(
+        SizedBox(
           height: 300,
           child: Stack(
             children: <Widget>[
@@ -38,7 +38,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         ElevatedButton(

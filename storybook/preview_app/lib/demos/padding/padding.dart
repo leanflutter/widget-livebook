@@ -5,9 +5,9 @@ class PaddingDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.all(8.0),
-      child: const Card(child: Text('Hello World!')),
+      child: Card(child: Text('Hello World!')),
     );
   }
 }
