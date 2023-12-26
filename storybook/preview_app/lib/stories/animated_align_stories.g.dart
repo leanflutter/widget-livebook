@@ -8,7 +8,7 @@ part of 'animated_align_stories.dart';
 
 mixin _$AnimatedAlignMeta on Meta {
   @override
-  String get title => 'Material/AnimatedAlign';
+  String get title => 'Widgets/AnimatedAlign';
 
   @override
   List<ArgType> get argTypes => [];

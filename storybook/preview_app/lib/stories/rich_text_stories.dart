@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'rich_text_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/RichText',
+  title: 'Widgets/RichText',
 )
 class RichTextMeta extends Meta with _$RichTextMeta {
   @override

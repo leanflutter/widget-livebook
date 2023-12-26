@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Expanded } from "./Expanded";
 
 const meta = {
-  title: "Material/Expanded",
+  title: "Widgets/Expanded",
   component: Expanded,
   parameters: {
     layout: "centered",

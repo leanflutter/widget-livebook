@@ -8,7 +8,7 @@ part of 'animated_switcher_stories.dart';
 
 mixin _$AnimatedSwitcherMeta on Meta {
   @override
-  String get title => 'Material/AnimatedSwitcher';
+  String get title => 'Widgets/AnimatedSwitcher';
 
   @override
   List<ArgType> get argTypes => [];

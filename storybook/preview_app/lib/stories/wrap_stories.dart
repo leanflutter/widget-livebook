@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'wrap_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Wrap',
+  title: 'Widgets/Wrap',
 )
 class WrapMeta extends Meta with _$WrapMeta {
   @override

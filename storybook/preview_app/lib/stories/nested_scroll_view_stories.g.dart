@@ -8,7 +8,7 @@ part of 'nested_scroll_view_stories.dart';
 
 mixin _$NestedScrollViewMeta on Meta {
   @override
-  String get title => 'Material/NestedScrollView';
+  String get title => 'Widgets/NestedScrollView';
 
   @override
   List<ArgType> get argTypes => [];

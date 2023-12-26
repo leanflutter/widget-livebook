@@ -8,7 +8,7 @@ part of 'flow_stories.dart';
 
 mixin _$FlowMeta on Meta {
   @override
-  String get title => 'Material/Flow';
+  String get title => 'Widgets/Flow';
 
   @override
   List<ArgType> get argTypes => [];

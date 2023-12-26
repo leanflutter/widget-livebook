@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'gesture_detector_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/GestureDetector',
+  title: 'Widgets/GestureDetector',
 )
 class GestureDetectorMeta extends Meta with _$GestureDetectorMeta {
   @override

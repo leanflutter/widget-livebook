@@ -8,7 +8,7 @@ part of 'list_wheel_scroll_view_stories.dart';
 
 mixin _$ListWheelScrollViewMeta on Meta {
   @override
-  String get title => 'Material/ListWheelScrollView';
+  String get title => 'Widgets/ListWheelScrollView';
 
   @override
   List<ArgType> get argTypes => [];

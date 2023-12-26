@@ -8,7 +8,7 @@ part of 'baseline_stories.dart';
 
 mixin _$BaselineMeta on Meta {
   @override
-  String get title => 'Material/Baseline';
+  String get title => 'Widgets/Baseline';
 
   @override
   List<ArgType> get argTypes => [];

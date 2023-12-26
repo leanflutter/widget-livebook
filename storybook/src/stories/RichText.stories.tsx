@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { RichText } from "./RichText";
 
 const meta = {
-  title: "Material/RichText",
+  title: "Widgets/RichText",
   component: RichText,
   parameters: {
     layout: "centered",

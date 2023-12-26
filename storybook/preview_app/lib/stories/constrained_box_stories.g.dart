@@ -8,7 +8,7 @@ part of 'constrained_box_stories.dart';
 
 mixin _$ConstrainedBoxMeta on Meta {
   @override
-  String get title => 'Material/ConstrainedBox';
+  String get title => 'Widgets/ConstrainedBox';
 
   @override
   List<ArgType> get argTypes => [];

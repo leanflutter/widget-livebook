@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { ClipRRect } from "./ClipRRect";
 
 const meta = {
-  title: "Material/ClipRRect",
+  title: "Widgets/ClipRRect",
   component: ClipRRect,
   parameters: {
     layout: "centered",

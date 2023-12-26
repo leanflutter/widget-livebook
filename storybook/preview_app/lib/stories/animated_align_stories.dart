@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_align_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedAlign',
+  title: 'Widgets/AnimatedAlign',
 )
 class AnimatedAlignMeta extends Meta with _$AnimatedAlignMeta {
   @override

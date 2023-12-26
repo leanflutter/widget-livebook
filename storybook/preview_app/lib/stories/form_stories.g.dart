@@ -8,7 +8,7 @@ part of 'form_stories.dart';
 
 mixin _$FormMeta on Meta {
   @override
-  String get title => 'Material/Form';
+  String get title => 'Widgets/Form';
 
   @override
   List<ArgType> get argTypes => [];

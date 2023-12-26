@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Transform } from "./Transform";
 
 const meta = {
-  title: "Material/Transform",
+  title: "Widgets/Transform",
   component: Transform,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ part of 'rotation_transition_stories.dart';
 
 mixin _$RotationTransitionMeta on Meta {
   @override
-  String get title => 'Material/RotationTransition';
+  String get title => 'Widgets/RotationTransition';
 
   @override
   List<ArgType> get argTypes => [];

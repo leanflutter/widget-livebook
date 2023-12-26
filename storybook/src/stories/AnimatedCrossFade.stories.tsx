@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedCrossFade } from "./AnimatedCrossFade";
 
 const meta = {
-  title: "Material/AnimatedCrossFade",
+  title: "Widgets/AnimatedCrossFade",
   component: AnimatedCrossFade,
   parameters: {
     layout: "centered",

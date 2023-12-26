@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { DecoratedBox } from "./DecoratedBox";
 
 const meta = {
-  title: "Material/DecoratedBox",
+  title: "Widgets/DecoratedBox",
   component: DecoratedBox,
   parameters: {
     layout: "centered",

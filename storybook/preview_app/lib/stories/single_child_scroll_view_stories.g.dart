@@ -8,7 +8,7 @@ part of 'single_child_scroll_view_stories.dart';
 
 mixin _$SingleChildScrollViewMeta on Meta {
   @override
-  String get title => 'Material/SingleChildScrollView';
+  String get title => 'Widgets/SingleChildScrollView';
 
   @override
   List<ArgType> get argTypes => [];

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'list_wheel_scroll_view_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/ListWheelScrollView',
+  title: 'Widgets/ListWheelScrollView',
 )
 class ListWheelScrollViewMeta extends Meta with _$ListWheelScrollViewMeta {
   @override

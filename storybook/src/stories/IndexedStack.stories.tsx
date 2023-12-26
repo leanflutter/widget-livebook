@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { IndexedStack } from "./IndexedStack";
 
 const meta = {
-  title: "Material/IndexedStack",
+  title: "Widgets/IndexedStack",
   component: IndexedStack,
   parameters: {
     layout: "centered",

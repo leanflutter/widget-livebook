@@ -8,7 +8,7 @@ part of 'clip_oval_stories.dart';
 
 mixin _$ClipOvalMeta on Meta {
   @override
-  String get title => 'Material/ClipOval';
+  String get title => 'Widgets/ClipOval';
 
   @override
   List<ArgType> get argTypes => [];

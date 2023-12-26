@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_switcher_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedSwitcher',
+  title: 'Widgets/AnimatedSwitcher',
 )
 class AnimatedSwitcherMeta extends Meta with _$AnimatedSwitcherMeta {
   @override

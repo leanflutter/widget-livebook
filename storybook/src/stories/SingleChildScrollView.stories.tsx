@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { SingleChildScrollView } from "./SingleChildScrollView";
 
 const meta = {
-  title: "Material/SingleChildScrollView",
+  title: "Widgets/SingleChildScrollView",
   component: SingleChildScrollView,
   parameters: {
     layout: "centered",

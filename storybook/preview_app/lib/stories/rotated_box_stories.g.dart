@@ -8,7 +8,7 @@ part of 'rotated_box_stories.dart';
 
 mixin _$RotatedBoxMeta on Meta {
   @override
-  String get title => 'Material/RotatedBox';
+  String get title => 'Widgets/RotatedBox';
 
   @override
   List<ArgType> get argTypes => [];

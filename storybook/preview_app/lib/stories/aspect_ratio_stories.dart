@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'aspect_ratio_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AspectRatio',
+  title: 'Widgets/AspectRatio',
 )
 class AspectRatioMeta extends Meta with _$AspectRatioMeta {
   @override

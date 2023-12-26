@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { ConstrainedBox } from "./ConstrainedBox";
 
 const meta = {
-  title: "Material/ConstrainedBox",
+  title: "Widgets/ConstrainedBox",
   component: ConstrainedBox,
   parameters: {
     layout: "centered",

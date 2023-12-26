@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { ListWheelScrollView } from "./ListWheelScrollView";
 
 const meta = {
-  title: "Material/ListWheelScrollView",
+  title: "Widgets/ListWheelScrollView",
   component: ListWheelScrollView,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'expanded_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Expanded',
+  title: 'Widgets/Expanded',
 )
 class ExpandedMeta extends Meta with _$ExpandedMeta {
   @override

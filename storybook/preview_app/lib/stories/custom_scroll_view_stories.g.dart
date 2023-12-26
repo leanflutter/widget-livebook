@@ -8,7 +8,7 @@ part of 'custom_scroll_view_stories.dart';
 
 mixin _$CustomScrollViewMeta on Meta {
   @override
-  String get title => 'Material/CustomScrollView';
+  String get title => 'Widgets/CustomScrollView';
 
   @override
   List<ArgType> get argTypes => [];

@@ -8,7 +8,7 @@ part of 'default_text_style_stories.dart';
 
 mixin _$DefaultTextStyleMeta on Meta {
   @override
-  String get title => 'Material/DefaultTextStyle';
+  String get title => 'Widgets/DefaultTextStyle';
 
   @override
   List<ArgType> get argTypes => [];

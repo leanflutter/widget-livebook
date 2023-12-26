@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Banner } from "./Banner";
 
 const meta = {
-  title: "Material/Banner",
+  title: "Widgets/Banner",
   component: Banner,
   parameters: {
     layout: "centered",

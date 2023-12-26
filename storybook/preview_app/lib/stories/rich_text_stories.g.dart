@@ -8,7 +8,7 @@ part of 'rich_text_stories.dart';
 
 mixin _$RichTextMeta on Meta {
   @override
-  String get title => 'Material/RichText';
+  String get title => 'Widgets/RichText';
 
   @override
   List<ArgType> get argTypes => [];

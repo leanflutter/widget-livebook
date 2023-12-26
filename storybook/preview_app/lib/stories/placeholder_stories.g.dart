@@ -8,7 +8,7 @@ part of 'placeholder_stories.dart';
 
 mixin _$PlaceholderMeta on Meta {
   @override
-  String get title => 'Material/Placeholder';
+  String get title => 'Widgets/Placeholder';
 
   @override
   List<ArgType> get argTypes => [];

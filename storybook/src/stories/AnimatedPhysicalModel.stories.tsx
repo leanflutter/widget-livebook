@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedPhysicalModel } from "./AnimatedPhysicalModel";
 
 const meta = {
-  title: "Material/AnimatedPhysicalModel",
+  title: "Widgets/AnimatedPhysicalModel",
   component: AnimatedPhysicalModel,
   parameters: {
     layout: "centered",

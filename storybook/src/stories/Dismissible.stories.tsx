@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Dismissible } from "./Dismissible";
 
 const meta = {
-  title: "Material/Dismissible",
+  title: "Widgets/Dismissible",
   component: Dismissible,
   parameters: {
     layout: "centered",

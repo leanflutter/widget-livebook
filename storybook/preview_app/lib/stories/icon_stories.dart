@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'icon_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Icon',
+  title: 'Widgets/Icon',
 )
 class IconMeta extends Meta with _$IconMeta {
   @override

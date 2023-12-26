@@ -8,7 +8,7 @@ part of 'aspect_ratio_stories.dart';
 
 mixin _$AspectRatioMeta on Meta {
   @override
-  String get title => 'Material/AspectRatio';
+  String get title => 'Widgets/AspectRatio';
 
   @override
   List<ArgType> get argTypes => [];

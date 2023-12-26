@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_cross_fade_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedCrossFade',
+  title: 'Widgets/AnimatedCrossFade',
 )
 class AnimatedCrossFadeMeta extends Meta with _$AnimatedCrossFadeMeta {
   @override

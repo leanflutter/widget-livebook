@@ -8,7 +8,7 @@ part of 'container_stories.dart';
 
 mixin _$ContainerMeta on Meta {
   @override
-  String get title => 'Material/Container';
+  String get title => 'Widgets/Container';
 
   @override
   List<ArgType> get argTypes => [];

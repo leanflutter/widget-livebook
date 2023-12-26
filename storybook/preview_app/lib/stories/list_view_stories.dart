@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'list_view_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/ListView',
+  title: 'Widgets/ListView',
 )
 class ListViewMeta extends Meta with _$ListViewMeta {
   @override

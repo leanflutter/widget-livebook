@@ -8,7 +8,7 @@ part of 'expanded_stories.dart';
 
 mixin _$ExpandedMeta on Meta {
   @override
-  String get title => 'Material/Expanded';
+  String get title => 'Widgets/Expanded';
 
   @override
   List<ArgType> get argTypes => [];

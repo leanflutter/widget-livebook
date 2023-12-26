@@ -8,7 +8,7 @@ part of 'align_stories.dart';
 
 mixin _$AlignMeta on Meta {
   @override
-  String get title => 'Material/Align';
+  String get title => 'Widgets/Align';
 
   @override
   List<ArgType> get argTypes => [];

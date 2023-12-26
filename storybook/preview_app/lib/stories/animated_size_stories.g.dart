@@ -8,7 +8,7 @@ part of 'animated_size_stories.dart';
 
 mixin _$AnimatedSizeMeta on Meta {
   @override
-  String get title => 'Material/AnimatedSize';
+  String get title => 'Widgets/AnimatedSize';
 
   @override
   List<ArgType> get argTypes => [];

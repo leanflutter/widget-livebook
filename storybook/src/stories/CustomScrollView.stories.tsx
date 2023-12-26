@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { CustomScrollView } from "./CustomScrollView";
 
 const meta = {
-  title: "Material/CustomScrollView",
+  title: "Widgets/CustomScrollView",
   component: CustomScrollView,
   parameters: {
     layout: "centered",

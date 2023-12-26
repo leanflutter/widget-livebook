@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedPadding } from "./AnimatedPadding";
 
 const meta = {
-  title: "Material/AnimatedPadding",
+  title: "Widgets/AnimatedPadding",
   component: AnimatedPadding,
   parameters: {
     layout: "centered",

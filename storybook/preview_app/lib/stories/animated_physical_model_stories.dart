@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_physical_model_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedPhysicalModel',
+  title: 'Widgets/AnimatedPhysicalModel',
 )
 class AnimatedPhysicalModelMeta extends Meta with _$AnimatedPhysicalModelMeta {
   @override

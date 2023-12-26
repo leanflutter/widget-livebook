@@ -8,7 +8,7 @@ part of 'decorated_box_stories.dart';
 
 mixin _$DecoratedBoxMeta on Meta {
   @override
-  String get title => 'Material/DecoratedBox';
+  String get title => 'Widgets/DecoratedBox';
 
   @override
   List<ArgType> get argTypes => [];

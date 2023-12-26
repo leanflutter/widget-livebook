@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { BackdropFilter } from "./BackdropFilter";
 
 const meta = {
-  title: "Material/BackdropFilter",
+  title: "Widgets/BackdropFilter",
   component: BackdropFilter,
   parameters: {
     layout: "centered",

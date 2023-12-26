@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'rotation_transition_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/RotationTransition',
+  title: 'Widgets/RotationTransition',
 )
 class RotationTransitionMeta extends Meta with _$RotationTransitionMeta {
   @override

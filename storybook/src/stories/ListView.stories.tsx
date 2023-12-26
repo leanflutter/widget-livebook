@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { ListView } from "./ListView";
 
 const meta = {
-  title: "Material/ListView",
+  title: "Widgets/ListView",
   component: ListView,
   parameters: {
     layout: "centered",

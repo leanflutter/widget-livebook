@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Padding } from "./Padding";
 
 const meta = {
-  title: "Material/Padding",
+  title: "Widgets/Padding",
   component: Padding,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ part of 'positioned_transition_stories.dart';
 
 mixin _$PositionedTransitionMeta on Meta {
   @override
-  String get title => 'Material/PositionedTransition';
+  String get title => 'Widgets/PositionedTransition';
 
   @override
   List<ArgType> get argTypes => [];

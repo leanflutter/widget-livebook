@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedPositioned } from "./AnimatedPositioned";
 
 const meta = {
-  title: "Material/AnimatedPositioned",
+  title: "Widgets/AnimatedPositioned",
   component: AnimatedPositioned,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'form_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Form',
+  title: 'Widgets/Form',
 )
 class FormMeta extends Meta with _$FormMeta {
   @override

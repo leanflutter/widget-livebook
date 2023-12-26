@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { SizedBox } from "./SizedBox";
 
 const meta = {
-  title: "Material/SizedBox",
+  title: "Widgets/SizedBox",
   component: SizedBox,
   parameters: {
     layout: "centered",

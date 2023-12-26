@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedSwitcher } from "./AnimatedSwitcher";
 
 const meta = {
-  title: "Material/AnimatedSwitcher",
+  title: "Widgets/AnimatedSwitcher",
   component: AnimatedSwitcher,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'banner_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Banner',
+  title: 'Widgets/Banner',
 )
 class BannerMeta extends Meta with _$BannerMeta {
   @override

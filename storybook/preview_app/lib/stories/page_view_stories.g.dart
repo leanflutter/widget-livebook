@@ -8,7 +8,7 @@ part of 'page_view_stories.dart';
 
 mixin _$PageViewMeta on Meta {
   @override
-  String get title => 'Material/PageView';
+  String get title => 'Widgets/PageView';
 
   @override
   List<ArgType> get argTypes => [];

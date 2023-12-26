@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'baseline_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Baseline',
+  title: 'Widgets/Baseline',
 )
 class BaselineMeta extends Meta with _$BaselineMeta {
   @override

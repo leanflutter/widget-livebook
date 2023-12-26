@@ -8,7 +8,7 @@ part of 'table_stories.dart';
 
 mixin _$TableMeta on Meta {
   @override
-  String get title => 'Material/Table';
+  String get title => 'Widgets/Table';
 
   @override
   List<ArgType> get argTypes => [];

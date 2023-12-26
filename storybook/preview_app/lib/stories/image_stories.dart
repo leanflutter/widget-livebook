@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'image_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Image',
+  title: 'Widgets/Image',
 )
 class ImageMeta extends Meta with _$ImageMeta {
   @override

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'text_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Text',
+  title: 'Widgets/Text',
 )
 class TextMeta extends Meta with _$TextMeta {
   @override

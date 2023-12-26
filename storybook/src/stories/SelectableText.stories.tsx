@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { SelectableText } from "./SelectableText";
 
 const meta = {
-  title: "Material/SelectableText",
+  title: "Widgets/SelectableText",
   component: SelectableText,
   parameters: {
     layout: "centered",

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Baseline } from "./Baseline";
 
 const meta = {
-  title: "Material/Baseline",
+  title: "Widgets/Baseline",
   component: Baseline,
   parameters: {
     layout: "centered",

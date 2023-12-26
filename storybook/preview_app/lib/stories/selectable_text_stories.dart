@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'selectable_text_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/SelectableText',
+  title: 'Widgets/SelectableText',
 )
 class SelectableTextMeta extends Meta with _$SelectableTextMeta {
   @override

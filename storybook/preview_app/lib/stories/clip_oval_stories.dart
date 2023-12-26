@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'clip_oval_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/ClipOval',
+  title: 'Widgets/ClipOval',
 )
 class ClipOvalMeta extends Meta with _$ClipOvalMeta {
   @override

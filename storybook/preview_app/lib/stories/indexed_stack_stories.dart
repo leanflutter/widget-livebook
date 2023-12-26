@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'indexed_stack_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/IndexedStack',
+  title: 'Widgets/IndexedStack',
 )
 class IndexedStackMeta extends Meta with _$IndexedStackMeta {
   @override

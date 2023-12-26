@@ -8,7 +8,7 @@ part of 'transform_stories.dart';
 
 mixin _$TransformMeta on Meta {
   @override
-  String get title => 'Material/Transform';
+  String get title => 'Widgets/Transform';
 
   @override
   List<ArgType> get argTypes => [];

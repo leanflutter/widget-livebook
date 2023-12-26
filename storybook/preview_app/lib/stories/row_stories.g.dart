@@ -8,7 +8,7 @@ part of 'row_stories.dart';
 
 mixin _$RowMeta on Meta {
   @override
-  String get title => 'Material/Row';
+  String get title => 'Widgets/Row';
 
   @override
   List<ArgType> get argTypes => [];

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { NestedScrollView } from "./NestedScrollView";
 
 const meta = {
-  title: "Material/NestedScrollView",
+  title: "Widgets/NestedScrollView",
   component: NestedScrollView,
   parameters: {
     layout: "centered",

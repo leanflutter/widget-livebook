@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { CustomPaint } from "./CustomPaint";
 
 const meta = {
-  title: "Material/CustomPaint",
+  title: "Widgets/CustomPaint",
   component: CustomPaint,
   parameters: {
     layout: "centered",

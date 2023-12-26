@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Row } from "./Row";
 
 const meta = {
-  title: "Material/Row",
+  title: "Widgets/Row",
   component: Row,
   parameters: {
     layout: "centered",

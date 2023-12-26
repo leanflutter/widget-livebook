@@ -8,7 +8,7 @@ part of 'selectable_text_stories.dart';
 
 mixin _$SelectableTextMeta on Meta {
   @override
-  String get title => 'Material/SelectableText';
+  String get title => 'Widgets/SelectableText';
 
   @override
   List<ArgType> get argTypes => [];

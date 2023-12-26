@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'sized_overflow_box_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/SizedOverflowBox',
+  title: 'Widgets/SizedOverflowBox',
 )
 class SizedOverflowBoxMeta extends Meta with _$SizedOverflowBoxMeta {
   @override

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'dismissible_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Dismissible',
+  title: 'Widgets/Dismissible',
 )
 class DismissibleMeta extends Meta with _$DismissibleMeta {
   @override

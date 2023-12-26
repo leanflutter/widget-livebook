@@ -8,7 +8,7 @@ part of 'text_stories.dart';
 
 mixin _$TextMeta on Meta {
   @override
-  String get title => 'Material/Text';
+  String get title => 'Widgets/Text';
 
   @override
   List<ArgType> get argTypes => [];

@@ -7,9 +7,9 @@ class AspectRatioDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      child: new AspectRatio(
+      child: AspectRatio(
         aspectRatio: 4 / 3,
-        child: new Container(
+        child: Container(
           color: Colors.red,
         ),
       ),

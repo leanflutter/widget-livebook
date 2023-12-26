@@ -8,7 +8,7 @@ part of 'animated_cross_fade_stories.dart';
 
 mixin _$AnimatedCrossFadeMeta on Meta {
   @override
-  String get title => 'Material/AnimatedCrossFade';
+  String get title => 'Widgets/AnimatedCrossFade';
 
   @override
   List<ArgType> get argTypes => [];

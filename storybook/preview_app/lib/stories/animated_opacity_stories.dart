@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_opacity_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedOpacity',
+  title: 'Widgets/AnimatedOpacity',
 )
 class AnimatedOpacityMeta extends Meta with _$AnimatedOpacityMeta {
   @override

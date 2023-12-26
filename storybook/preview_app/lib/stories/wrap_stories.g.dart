@@ -8,7 +8,7 @@ part of 'wrap_stories.dart';
 
 mixin _$WrapMeta on Meta {
   @override
-  String get title => 'Material/Wrap';
+  String get title => 'Widgets/Wrap';
 
   @override
   List<ArgType> get argTypes => [];

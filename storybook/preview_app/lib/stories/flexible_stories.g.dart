@@ -8,7 +8,7 @@ part of 'flexible_stories.dart';
 
 mixin _$FlexibleMeta on Meta {
   @override
-  String get title => 'Material/Flexible';
+  String get title => 'Widgets/Flexible';
 
   @override
   List<ArgType> get argTypes => [];

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'overflow_box_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/OverflowBox',
+  title: 'Widgets/OverflowBox',
 )
 class OverflowBoxMeta extends Meta with _$OverflowBoxMeta {
   @override

@@ -8,7 +8,7 @@ part of 'dismissible_stories.dart';
 
 mixin _$DismissibleMeta on Meta {
   @override
-  String get title => 'Material/Dismissible';
+  String get title => 'Widgets/Dismissible';
 
   @override
   List<ArgType> get argTypes => [];

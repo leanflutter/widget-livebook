@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'stack_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Stack',
+  title: 'Widgets/Stack',
 )
 class StackMeta extends Meta with _$StackMeta {
   @override

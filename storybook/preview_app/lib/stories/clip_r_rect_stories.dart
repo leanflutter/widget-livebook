@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'clip_r_rect_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/ClipRRect',
+  title: 'Widgets/ClipRRect',
 )
 class ClipRRectMeta extends Meta with _$ClipRRectMeta {
   @override

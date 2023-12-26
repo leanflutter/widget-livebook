@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedDefaultTextStyle } from "./AnimatedDefaultTextStyle";
 
 const meta = {
-  title: "Material/AnimatedDefaultTextStyle",
+  title: "Widgets/AnimatedDefaultTextStyle",
   component: AnimatedDefaultTextStyle,
   parameters: {
     layout: "centered",

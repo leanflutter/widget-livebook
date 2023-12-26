@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Wrap } from "./Wrap";
 
 const meta = {
-  title: "Material/Wrap",
+  title: "Widgets/Wrap",
   component: Wrap,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'column_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Column',
+  title: 'Widgets/Column',
 )
 class ColumnMeta extends Meta with _$ColumnMeta {
   @override

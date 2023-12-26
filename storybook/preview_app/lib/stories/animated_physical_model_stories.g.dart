@@ -8,7 +8,7 @@ part of 'animated_physical_model_stories.dart';
 
 mixin _$AnimatedPhysicalModelMeta on Meta {
   @override
-  String get title => 'Material/AnimatedPhysicalModel';
+  String get title => 'Widgets/AnimatedPhysicalModel';
 
   @override
   List<ArgType> get argTypes => [];

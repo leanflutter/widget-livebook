@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { PositionedTransition } from "./PositionedTransition";
 
 const meta = {
-  title: "Material/PositionedTransition",
+  title: "Widgets/PositionedTransition",
   component: PositionedTransition,
   parameters: {
     layout: "centered",

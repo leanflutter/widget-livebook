@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'single_child_scroll_view_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/SingleChildScrollView',
+  title: 'Widgets/SingleChildScrollView',
 )
 class SingleChildScrollViewMeta extends Meta with _$SingleChildScrollViewMeta {
   @override

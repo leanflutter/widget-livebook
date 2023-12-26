@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { OverflowBox } from "./OverflowBox";
 
 const meta = {
-  title: "Material/OverflowBox",
+  title: "Widgets/OverflowBox",
   component: OverflowBox,
   parameters: {
     layout: "centered",

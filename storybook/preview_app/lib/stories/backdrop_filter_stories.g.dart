@@ -8,7 +8,7 @@ part of 'backdrop_filter_stories.dart';
 
 mixin _$BackdropFilterMeta on Meta {
   @override
-  String get title => 'Material/BackdropFilter';
+  String get title => 'Widgets/BackdropFilter';
 
   @override
   List<ArgType> get argTypes => [];

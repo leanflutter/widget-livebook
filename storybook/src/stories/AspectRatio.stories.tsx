@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AspectRatio } from "./AspectRatio";
 
 const meta = {
-  title: "Material/AspectRatio",
+  title: "Widgets/AspectRatio",
   component: AspectRatio,
   parameters: {
     layout: "centered",

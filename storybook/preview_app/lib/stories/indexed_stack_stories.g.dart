@@ -8,7 +8,7 @@ part of 'indexed_stack_stories.dart';
 
 mixin _$IndexedStackMeta on Meta {
   @override
-  String get title => 'Material/IndexedStack';
+  String get title => 'Widgets/IndexedStack';
 
   @override
   List<ArgType> get argTypes => [];

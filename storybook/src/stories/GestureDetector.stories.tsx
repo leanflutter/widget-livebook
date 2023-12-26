@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { GestureDetector } from "./GestureDetector";
 
 const meta = {
-  title: "Material/GestureDetector",
+  title: "Widgets/GestureDetector",
   component: GestureDetector,
   parameters: {
     layout: "centered",

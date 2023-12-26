@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'clip_path_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/ClipPath',
+  title: 'Widgets/ClipPath',
 )
 class ClipPathMeta extends Meta with _$ClipPathMeta {
   @override

@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { PageView } from "./PageView";
 
 const meta = {
-  title: "Material/PageView",
+  title: "Widgets/PageView",
   component: PageView,
   parameters: {
     layout: "centered",

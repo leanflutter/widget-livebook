@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { DefaultTextStyle } from "./DefaultTextStyle";
 
 const meta = {
-  title: "Material/DefaultTextStyle",
+  title: "Widgets/DefaultTextStyle",
   component: DefaultTextStyle,
   parameters: {
     layout: "centered",

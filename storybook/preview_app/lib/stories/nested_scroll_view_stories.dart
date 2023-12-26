@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'nested_scroll_view_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/NestedScrollView',
+  title: 'Widgets/NestedScrollView',
 )
 class NestedScrollViewMeta extends Meta with _$NestedScrollViewMeta {
   @override

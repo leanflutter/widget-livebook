@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'table_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Table',
+  title: 'Widgets/Table',
 )
 class TableMeta extends Meta with _$TableMeta {
   @override

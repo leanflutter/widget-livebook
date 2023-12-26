@@ -8,7 +8,7 @@ part of 'column_stories.dart';
 
 mixin _$ColumnMeta on Meta {
   @override
-  String get title => 'Material/Column';
+  String get title => 'Widgets/Column';
 
   @override
   List<ArgType> get argTypes => [];

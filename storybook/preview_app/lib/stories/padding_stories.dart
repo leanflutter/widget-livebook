@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'padding_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Padding',
+  title: 'Widgets/Padding',
 )
 class PaddingMeta extends Meta with _$PaddingMeta {
   @override

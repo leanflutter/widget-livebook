@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'flow_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Flow',
+  title: 'Widgets/Flow',
 )
 class FlowMeta extends Meta with _$FlowMeta {
   @override

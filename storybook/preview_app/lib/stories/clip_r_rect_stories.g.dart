@@ -8,7 +8,7 @@ part of 'clip_r_rect_stories.dart';
 
 mixin _$ClipRRectMeta on Meta {
   @override
-  String get title => 'Material/ClipRRect';
+  String get title => 'Widgets/ClipRRect';
 
   @override
   List<ArgType> get argTypes => [];

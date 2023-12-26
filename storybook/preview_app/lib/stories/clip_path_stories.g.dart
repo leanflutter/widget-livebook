@@ -8,7 +8,7 @@ part of 'clip_path_stories.dart';
 
 mixin _$ClipPathMeta on Meta {
   @override
-  String get title => 'Material/ClipPath';
+  String get title => 'Widgets/ClipPath';
 
   @override
   List<ArgType> get argTypes => [];

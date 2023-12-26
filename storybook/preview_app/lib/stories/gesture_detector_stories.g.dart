@@ -8,7 +8,7 @@ part of 'gesture_detector_stories.dart';
 
 mixin _$GestureDetectorMeta on Meta {
   @override
-  String get title => 'Material/GestureDetector';
+  String get title => 'Widgets/GestureDetector';
 
   @override
   List<ArgType> get argTypes => [];

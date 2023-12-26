@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { RotationTransition } from "./RotationTransition";
 
 const meta = {
-  title: "Material/RotationTransition",
+  title: "Widgets/RotationTransition",
   component: RotationTransition,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ part of 'image_stories.dart';
 
 mixin _$ImageMeta on Meta {
   @override
-  String get title => 'Material/Image';
+  String get title => 'Widgets/Image';
 
   @override
   List<ArgType> get argTypes => [];

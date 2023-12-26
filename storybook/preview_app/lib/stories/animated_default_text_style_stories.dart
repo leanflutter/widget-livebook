@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_default_text_style_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedDefaultTextStyle',
+  title: 'Widgets/AnimatedDefaultTextStyle',
 )
 class AnimatedDefaultTextStyleMeta extends Meta with _$AnimatedDefaultTextStyleMeta {
   @override

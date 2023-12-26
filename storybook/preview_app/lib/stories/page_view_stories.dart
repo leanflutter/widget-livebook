@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'page_view_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/PageView',
+  title: 'Widgets/PageView',
 )
 class PageViewMeta extends Meta with _$PageViewMeta {
   @override

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'positioned_transition_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/PositionedTransition',
+  title: 'Widgets/PositionedTransition',
 )
 class PositionedTransitionMeta extends Meta with _$PositionedTransitionMeta {
   @override

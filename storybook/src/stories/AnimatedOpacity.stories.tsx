@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { AnimatedOpacity } from "./AnimatedOpacity";
 
 const meta = {
-  title: "Material/AnimatedOpacity",
+  title: "Widgets/AnimatedOpacity",
   component: AnimatedOpacity,
   parameters: {
     layout: "centered",

@@ -8,7 +8,7 @@ part of 'banner_stories.dart';
 
 mixin _$BannerMeta on Meta {
   @override
-  String get title => 'Material/Banner';
+  String get title => 'Widgets/Banner';
 
   @override
   List<ArgType> get argTypes => [];

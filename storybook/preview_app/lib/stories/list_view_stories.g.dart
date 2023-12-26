@@ -8,7 +8,7 @@ part of 'list_view_stories.dart';
 
 mixin _$ListViewMeta on Meta {
   @override
-  String get title => 'Material/ListView';
+  String get title => 'Widgets/ListView';
 
   @override
   List<ArgType> get argTypes => [];

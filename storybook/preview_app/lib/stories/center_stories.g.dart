@@ -8,7 +8,7 @@ part of 'center_stories.dart';
 
 mixin _$CenterMeta on Meta {
   @override
-  String get title => 'Material/Center';
+  String get title => 'Widgets/Center';
 
   @override
   List<ArgType> get argTypes => [];

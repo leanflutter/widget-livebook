@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'container_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Container',
+  title: 'Widgets/Container',
 )
 class ContainerMeta extends Meta with _$ContainerMeta {
   @override

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'decorated_box_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/DecoratedBox',
+  title: 'Widgets/DecoratedBox',
 )
 class DecoratedBoxMeta extends Meta with _$DecoratedBoxMeta {
   @override

@@ -8,7 +8,7 @@ part of 'sized_box_stories.dart';
 
 mixin _$SizedBoxMeta on Meta {
   @override
-  String get title => 'Material/SizedBox';
+  String get title => 'Widgets/SizedBox';
 
   @override
   List<ArgType> get argTypes => [];

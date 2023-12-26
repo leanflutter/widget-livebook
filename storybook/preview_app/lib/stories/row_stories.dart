@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'row_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Row',
+  title: 'Widgets/Row',
 )
 class RowMeta extends Meta with _$RowMeta {
   @override

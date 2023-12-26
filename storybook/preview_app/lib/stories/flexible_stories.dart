@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'flexible_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Flexible',
+  title: 'Widgets/Flexible',
 )
 class FlexibleMeta extends Meta with _$FlexibleMeta {
   @override

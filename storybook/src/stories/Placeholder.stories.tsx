@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Placeholder } from "./Placeholder";
 
 const meta = {
-  title: "Material/Placeholder",
+  title: "Widgets/Placeholder",
   component: Placeholder,
   parameters: {
     layout: "centered",

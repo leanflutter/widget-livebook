@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'transform_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Transform',
+  title: 'Widgets/Transform',
 )
 class TransformMeta extends Meta with _$TransformMeta {
   @override

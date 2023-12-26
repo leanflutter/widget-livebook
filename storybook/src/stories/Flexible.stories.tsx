@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Flexible } from "./Flexible";
 
 const meta = {
-  title: "Material/Flexible",
+  title: "Widgets/Flexible",
   component: Flexible,
   parameters: {
     layout: "centered",

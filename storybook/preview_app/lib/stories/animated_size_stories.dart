@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'animated_size_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/AnimatedSize',
+  title: 'Widgets/AnimatedSize',
 )
 class AnimatedSizeMeta extends Meta with _$AnimatedSizeMeta {
   @override

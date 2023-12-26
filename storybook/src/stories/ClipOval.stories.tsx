@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { ClipOval } from "./ClipOval";
 
 const meta = {
-  title: "Material/ClipOval",
+  title: "Widgets/ClipOval",
   component: ClipOval,
   parameters: {
     layout: "centered",

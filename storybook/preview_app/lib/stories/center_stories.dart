@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'center_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Center',
+  title: 'Widgets/Center',
 )
 class CenterMeta extends Meta with _$CenterMeta {
   @override

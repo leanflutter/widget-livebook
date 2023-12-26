@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'custom_scroll_view_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/CustomScrollView',
+  title: 'Widgets/CustomScrollView',
 )
 class CustomScrollViewMeta extends Meta with _$CustomScrollViewMeta {
   @override

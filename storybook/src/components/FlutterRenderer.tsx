@@ -14,7 +14,7 @@ const FlutterRenderer = (_props: FlutterRendererProps): React.ReactElement => {
       title="flutter-app-embed"
       src={url}
       ref={iframeRef}
-      style={{ border: "0", width: "320px", height: "240px" }}
+      style={{ border: "0", width: "640px", height: "480px" }}
       id="flutter-renderer-iframe"
     />
   );

@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'backdrop_filter_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/BackdropFilter',
+  title: 'Widgets/BackdropFilter',
 )
 class BackdropFilterMeta extends Meta with _$BackdropFilterMeta {
   @override

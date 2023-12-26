@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'custom_paint_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/CustomPaint',
+  title: 'Widgets/CustomPaint',
 )
 class CustomPaintMeta extends Meta with _$CustomPaintMeta {
   @override

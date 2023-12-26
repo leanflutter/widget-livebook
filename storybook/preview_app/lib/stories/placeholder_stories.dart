@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'placeholder_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/Placeholder',
+  title: 'Widgets/Placeholder',
 )
 class PlaceholderMeta extends Meta with _$PlaceholderMeta {
   @override

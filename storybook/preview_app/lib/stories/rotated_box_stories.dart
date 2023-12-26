@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'rotated_box_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/RotatedBox',
+  title: 'Widgets/RotatedBox',
 )
 class RotatedBoxMeta extends Meta with _$RotatedBoxMeta {
   @override

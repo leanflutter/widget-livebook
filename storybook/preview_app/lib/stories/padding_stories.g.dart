@@ -8,7 +8,7 @@ part of 'padding_stories.dart';
 
 mixin _$PaddingMeta on Meta {
   @override
-  String get title => 'Material/Padding';
+  String get title => 'Widgets/Padding';
 
   @override
   List<ArgType> get argTypes => [];

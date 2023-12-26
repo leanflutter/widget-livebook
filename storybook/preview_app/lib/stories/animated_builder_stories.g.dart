@@ -8,7 +8,7 @@ part of 'animated_builder_stories.dart';
 
 mixin _$AnimatedBuilderMeta on Meta {
   @override
-  String get title => 'Material/AnimatedBuilder';
+  String get title => 'Widgets/AnimatedBuilder';
 
   @override
   List<ArgType> get argTypes => [];

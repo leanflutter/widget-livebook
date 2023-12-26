@@ -8,7 +8,7 @@ part of 'icon_stories.dart';
 
 mixin _$IconMeta on Meta {
   @override
-  String get title => 'Material/Icon';
+  String get title => 'Widgets/Icon';
 
   @override
   List<ArgType> get argTypes => [];

@@ -8,7 +8,7 @@ part of 'custom_paint_stories.dart';
 
 mixin _$CustomPaintMeta on Meta {
   @override
-  String get title => 'Material/CustomPaint';
+  String get title => 'Widgets/CustomPaint';
 
   @override
   List<ArgType> get argTypes => [];

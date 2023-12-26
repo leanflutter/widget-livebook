@@ -8,7 +8,7 @@ part of 'animated_positioned_stories.dart';
 
 mixin _$AnimatedPositionedMeta on Meta {
   @override
-  String get title => 'Material/AnimatedPositioned';
+  String get title => 'Widgets/AnimatedPositioned';
 
   @override
   List<ArgType> get argTypes => [];

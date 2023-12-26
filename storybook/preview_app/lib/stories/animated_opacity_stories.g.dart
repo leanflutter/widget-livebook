@@ -8,7 +8,7 @@ part of 'animated_opacity_stories.dart';
 
 mixin _$AnimatedOpacityMeta on Meta {
   @override
-  String get title => 'Material/AnimatedOpacity';
+  String get title => 'Widgets/AnimatedOpacity';
 
   @override
   List<ArgType> get argTypes => [];

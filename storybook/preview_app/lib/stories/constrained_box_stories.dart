@@ -8,7 +8,7 @@ import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
 part 'constrained_box_stories.g.dart';
 
 @storybook.Meta(
-  title: 'Material/ConstrainedBox',
+  title: 'Widgets/ConstrainedBox',
 )
 class ConstrainedBoxMeta extends Meta with _$ConstrainedBoxMeta {
   @override
