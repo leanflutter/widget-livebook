@@ -1,0 +1,38 @@
+name: widget_livebook_workspace
+repository: https://github.com/leanflutter/widget-livebook
+
+packages:
+  - packages/**
+  - storybook/**
+
+scripts:
+  analyze:
+    run: |
+      melos exec -c 10 -- \
+        flutter analyze --fatal-infos
+    description: Run `flutter analyze` for all packages.
+
+  format:
+    exec: dart format . --fix
+    description: Run `dart format` for all packages.
+
+  format-check:
+    exec: dart format . --fix --set-exit-if-changed
+    description: Run `dart format` checks for all packages.
+
+  fix:
+    exec: dart fix . --apply
+    description: Run `dart fix` for all packages.
+
+  test:
+    exec: flutter test
+    description: Run `flutter test` for all packages.
+
+  codegen:
+    run: dart run build_runner build --delete-conflicting-outputs
+    exec:
+      concurrency: 1
+      failFast: true
+    packageFilters:
+      dependsOn:
+        - build_runner
