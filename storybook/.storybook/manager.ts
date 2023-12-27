@@ -9,4 +9,5 @@ addons.setConfig({
     brandImage: '/images/brand.png',
     brandTarget: '_self',
   }),
+  panelPosition: 'right',
 });
