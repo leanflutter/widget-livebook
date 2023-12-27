@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as AspectRatioStories from '../stories/AspectRatio.stories';
+
+<Meta of={AspectRatioStories} />
+
+# AspectRatio
+
+A widget that attempts to size the child to a specific aspect ratio.
+
+<YouTubeVideoPlayer videoId="XcnP3_mO_Ms" />
+
+## Example
+
+```dart liveslice=AspectRatio
+Container(
+  height: 200,
+  child: new AspectRatio(
+    aspectRatio: 4 / 3,
+    child: new Container(
+      color: Colors.red,
+    ),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/AspectRatio-class.html
+- https://youtu.be/XcnP3_mO_Ms

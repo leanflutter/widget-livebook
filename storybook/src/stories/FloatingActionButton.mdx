@@ -1,0 +1,28 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as FloatingActionButtonStories from '../stories/FloatingActionButton.stories';
+
+<Meta of={FloatingActionButtonStories} />
+
+# FloatingActionButton
+
+A material design floating action button.
+
+<YouTubeVideoPlayer videoId="2uaoEDOgk_I" />
+
+## Example
+
+```dart liveslice=FloatingActionButton
+FloatingActionButton(
+  onPressed: () {
+    // Add your onPressed code here!
+  },
+  child: Icon(Icons.thumb_up),
+  backgroundColor: Colors.pink,
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/FloatingActionButton-class.html
+- https://youtu.be/2uaoEDOgk_I

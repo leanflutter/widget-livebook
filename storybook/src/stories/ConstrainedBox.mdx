@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as ConstrainedBoxStories from '../stories/ConstrainedBox.stories';
+
+<Meta of={ConstrainedBoxStories} />
+
+# ConstrainedBox
+
+A widget that imposes additional constraints on its child.
+
+<YouTubeVideoPlayer videoId="o2KveVr7adg" />
+
+## Example
+
+```dart liveslice=ConstrainedBox
+ConstrainedBox(
+  constraints: const BoxConstraints.expand(),
+  child: const Card(child: Text('Hello World!')),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/widgets/ConstrainedBox-class.html
+- https://youtu.be/o2KveVr7adg

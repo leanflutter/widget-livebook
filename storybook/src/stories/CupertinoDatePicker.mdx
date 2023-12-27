@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/blocks';
+
+import * as CupertinoDatePickerStories from '../stories/CupertinoDatePicker.stories';
+
+<Meta of={CupertinoDatePickerStories} />
+
+# CupertinoDatePicker
+
+A date picker widget in iOS style.
+
+## Example
+
+```dart liveslice=CupertinoDatePicker
+Container(
+  height: 300,
+  child: CupertinoDatePicker(
+    mode: CupertinoDatePickerMode.dateAndTime,
+    onDateTimeChanged: (dateTime) {
+
+    }
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoDatePicker-class.html

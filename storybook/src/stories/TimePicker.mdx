@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/blocks';
+
+import * as TimePickerStories from '../stories/TimePicker.stories';
+
+<Meta of={TimePickerStories} />
+
+# TimePicker
+
+Shows a dialog containing a material design time picker.
+
+## Example
+
+```dart liveslice=TimePicker height=400px
+Future<TimeOfDay> selectedTime = showTimePicker(
+  initialTime: TimeOfDay.now(),
+  context: context,
+);
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/showTimePicker.html

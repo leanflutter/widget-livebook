@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as CustomPaintStories from '../stories/CustomPaint.stories';
+
+<Meta of={CustomPaintStories} />
+
+# CustomPaint
+
+A widget that provides a canvas on which to draw during the paint phase.
+
+<YouTubeVideoPlayer videoId="kp14Y4uHpHs" />
+
+## Example
+
+```dart liveslice=CustomPaint
+CustomPaint(
+  painter: Sky(),
+  child: Center(
+    child: Text(
+      'Once upon a time...',
+      style: const TextStyle(
+        fontSize: 40.0,
+        fontWeight: FontWeight.w900,
+        color: Color(0xFFFFFFFF),
+      ),
+    ),
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/CustomPaint-class.html
+- https://youtu.be/kp14Y4uHpHs

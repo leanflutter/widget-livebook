@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as CupertinoSliderStories from '../stories/CupertinoSlider.stories';
+
+<Meta of={CupertinoSliderStories} />
+
+# CupertinoSlider
+
+An iOS-style slider.
+
+<YouTubeVideoPlayer videoId="ufb4gIPDmEs" />
+
+## Example
+
+```dart liveslice=CupertinoSlider
+CupertinoSlider(
+  value: _progress,
+  min: 0.0,
+  max: 100.0,
+  onChanged: (value){
+    setState(() {
+      _progress = value.roundToDouble();
+    });
+  },
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/cupertino/CupertinoSlider-class.html
+- https://youtu.be/ufb4gIPDmEs

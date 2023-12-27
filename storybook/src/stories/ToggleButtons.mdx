@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as ToggleButtonsStories from '../stories/ToggleButtons.stories';
+
+<Meta of={ToggleButtonsStories} />
+
+# ToggleButtons
+
+A horizontal set of toggle buttons.
+
+<YouTubeVideoPlayer videoId="kVEguaQWGAY" />
+
+## Example
+
+```dart liveslice=ToggleButtons
+ToggleButtons(
+  children: <Widget>[
+    Icon(Icons.ac_unit),
+    Icon(Icons.call),
+    Icon(Icons.cake),
+  ],
+  onPressed: (int index) {
+    setState(() {
+      isSelected[index] = !isSelected[index];
+    });
+  },
+  isSelected: isSelected,
+),
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/ToggleButtons-class.html
+- https://youtu.be/kVEguaQWGAY

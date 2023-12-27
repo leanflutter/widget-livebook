@@ -1,0 +1,24 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as RotatedBoxStories from '../stories/RotatedBox.stories';
+
+<Meta of={RotatedBoxStories} />
+
+# RotatedBox
+
+A widget that rotates its child by a integral number of quarter turns.
+
+<YouTubeVideoPlayer videoId="BFE6_UglLfQ"/>
+
+## Example
+
+```dart liveslice=RotatedBox
+RotatedBox(
+  quarterTurns: 3,
+  child: const Text('Hello World!'),
+)
+```
+
+## Related Links
+
+- [https://api.flutter.dev/flutter/widgets/RotatedBox-class.html](https://api.flutter.dev/flutter/widgets/RotatedBox-class.html)

@@ -1,0 +1,26 @@
+import { Meta } from '@storybook/blocks';
+
+import * as TextFieldStories from '../stories/TextField.stories';
+
+<Meta of={TextFieldStories} />
+
+# TextField
+
+A material design text field.
+
+## Example
+
+```dart liveslice=TextField
+TextField(
+  obscureText: true,
+  decoration: InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: 'Password',
+  ),
+)
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/TextField-class.html
+

@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/blocks';
+import YouTubeVideoPlayer from '@/components/YouTubeVideoPlayer';
+import * as SelectableTextStories from '../stories/SelectableText.stories';
+
+<Meta of={SelectableTextStories} />
+
+# SelectableText
+
+A run of selectable text with a single style.
+
+<YouTubeVideoPlayer videoId="ZSU3ZXOs6hc" />
+
+## Example
+
+```dart liveslice=SelectableText
+SelectableText(
+  'Hello! How are you?',
+  textAlign: TextAlign.center,
+  style: TextStyle(fontWeight: FontWeight.bold),
+)
+
+```
+
+## Related Links
+
+- https://api.flutter.dev/flutter/material/SelectableText-class.html
+- https://youtu.be/ZSU3ZXOs6hc
