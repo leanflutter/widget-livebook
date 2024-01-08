@@ -11,7 +11,9 @@ mixin _$BannerMeta on Meta {
   String get title => 'Widgets/Banner';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

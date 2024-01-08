@@ -11,7 +11,9 @@ mixin _$CupertinoContextMenuMeta on Meta {
   String get title => 'Cupertino/CupertinoContextMenu';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

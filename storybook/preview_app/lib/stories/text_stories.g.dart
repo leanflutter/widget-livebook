@@ -11,7 +11,9 @@ mixin _$TextMeta on Meta {
   String get title => 'Widgets/Text';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

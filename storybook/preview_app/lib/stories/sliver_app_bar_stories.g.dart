@@ -11,7 +11,9 @@ mixin _$SliverAppBarMeta on Meta {
   String get title => 'Material/SliverAppBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

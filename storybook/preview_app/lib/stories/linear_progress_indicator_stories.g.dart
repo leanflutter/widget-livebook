@@ -11,7 +11,9 @@ mixin _$LinearProgressIndicatorMeta on Meta {
   String get title => 'Material/LinearProgressIndicator';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

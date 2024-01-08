@@ -63,7 +63,7 @@ class _ExpansionPanelListDemoState extends State<ExpansionPanelListDemo> {
                 setState(() {
                   _data.removeWhere((currentItem) => item == currentItem);
                 });
-              }),
+              },),
           isExpanded: item.isExpanded,
         );
       }).toList(),

@@ -38,7 +38,7 @@ class _DatePickerDemoState extends State<DatePickerDemo> {
         _handleClickMe();
       },
       child: const Text(
-        "CLICK ME!",
+        'CLICK ME!',
       ),
     );
   }

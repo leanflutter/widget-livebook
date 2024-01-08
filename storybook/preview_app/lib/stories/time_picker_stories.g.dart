@@ -11,7 +11,9 @@ mixin _$TimePickerMeta on Meta {
   String get title => 'Material/TimePicker';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

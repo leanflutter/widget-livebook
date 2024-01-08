@@ -11,7 +11,9 @@ mixin _$OpacityMeta on Meta {
   String get title => 'Widgets/Opacity';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

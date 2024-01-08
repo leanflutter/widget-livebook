@@ -63,9 +63,9 @@ class _PositionedTransitionDemoState extends State<PositionedTransitionDemo>
             _first = !_first;
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

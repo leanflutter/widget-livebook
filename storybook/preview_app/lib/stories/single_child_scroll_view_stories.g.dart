@@ -11,7 +11,9 @@ mixin _$SingleChildScrollViewMeta on Meta {
   String get title => 'Widgets/SingleChildScrollView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

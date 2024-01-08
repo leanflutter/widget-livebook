@@ -61,14 +61,13 @@ class TextPropTextAlignDemo extends StatelessWidget {
 }
 
 class _DemoBox extends StatelessWidget {
-  final String label;
-  final Widget child;
 
   const _DemoBox({
-    Key? key,
     required this.label,
     required this.child,
-  }) : super(key: key);
+  });
+  final String label;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +81,7 @@ class _DemoBox extends StatelessWidget {
           width: 200,
           color: Colors.blue[50],
           child: child,
-        )
+        ),
       ],
     );
   }

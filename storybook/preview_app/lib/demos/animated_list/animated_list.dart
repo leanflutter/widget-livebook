@@ -57,7 +57,7 @@ class _AnimatedListDemoState extends State<AnimatedListDemo> {
                 });
               },
               child: const Text(
-                "Add item to first",
+                'Add item to first',
               ),
             ),
             TextButton(
@@ -65,15 +65,15 @@ class _AnimatedListDemoState extends State<AnimatedListDemo> {
                 if (_items.length <= 1) return;
                 listKey.currentState!.removeItem(
                     0, (_, animation) => _buildItem(context, 0, animation),
-                    duration: const Duration(milliseconds: 500));
+                    duration: const Duration(milliseconds: 500),);
                 setState(() {
                   _items.removeAt(0);
                 });
               },
               child: const Text(
-                "Remove first item",
+                'Remove first item',
               ),
-            )
+            ),
           ],
         ),
       ],

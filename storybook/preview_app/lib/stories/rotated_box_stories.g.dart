@@ -11,7 +11,9 @@ mixin _$RotatedBoxMeta on Meta {
   String get title => 'Widgets/RotatedBox';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

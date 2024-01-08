@@ -11,7 +11,9 @@ mixin _$IconMeta on Meta {
   String get title => 'Widgets/Icon';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$StackMeta on Meta {
   String get title => 'Widgets/Stack';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

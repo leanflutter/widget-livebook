@@ -14,7 +14,7 @@ class SnippetCupertinoActivityIndicatorDarkMode extends StatelessWidget {
         child: CupertinoActivityIndicator(
           radius: 32,
         ),
-      )),
+      ),),
     );
   }
 }

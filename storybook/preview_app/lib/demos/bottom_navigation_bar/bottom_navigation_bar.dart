@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BottomNavigationBarDemo extends StatefulWidget {
+
+  const BottomNavigationBarDemo({super.key});
   static const TextStyle optionStyle = TextStyle(
     fontSize: 30,
     fontWeight: FontWeight.bold,
@@ -19,8 +21,6 @@ class BottomNavigationBarDemo extends StatefulWidget {
       style: optionStyle,
     ),
   ];
-
-  const BottomNavigationBarDemo({super.key});
 
   @override
   State<BottomNavigationBarDemo> createState() =>

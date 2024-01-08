@@ -35,7 +35,7 @@ class _SnippetCupertinoAlertDialogDarkModeState extends State<SnippetCupertinoAl
             ],
           ),
         ),
-      )
+      ),
     );
   }
 }

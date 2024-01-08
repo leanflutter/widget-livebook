@@ -53,7 +53,7 @@ class _CupertinoAlertDialogDemoState extends State<CupertinoAlertDialogDemo> {
         _handleClickMe();
       },
       child: const Text(
-        "CLICK ME!",
+        'CLICK ME!',
       ),
     );
   }

@@ -11,7 +11,9 @@ mixin _$ChipMeta on Meta {
   String get title => 'Material/Chip';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

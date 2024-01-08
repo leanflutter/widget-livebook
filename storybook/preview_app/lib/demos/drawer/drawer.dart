@@ -33,7 +33,7 @@ class DrawerDemo extends StatelessWidget {
                 // change app state...
                 Navigator.pop(context); // close the drawer
               },
-            )
+            ),
           ],
         ),
       ),

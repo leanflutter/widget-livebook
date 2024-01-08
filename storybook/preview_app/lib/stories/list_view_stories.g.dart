@@ -11,7 +11,9 @@ mixin _$ListViewMeta on Meta {
   String get title => 'Widgets/ListView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

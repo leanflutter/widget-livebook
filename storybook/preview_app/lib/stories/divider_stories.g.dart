@@ -11,7 +11,9 @@ mixin _$DividerMeta on Meta {
   String get title => 'Material/Divider';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

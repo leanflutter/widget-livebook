@@ -11,7 +11,9 @@ mixin _$FormMeta on Meta {
   String get title => 'Widgets/Form';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$BottomSheetMeta on Meta {
   String get title => 'Material/BottomSheet';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

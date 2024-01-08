@@ -11,7 +11,9 @@ mixin _$CustomPaintMeta on Meta {
   String get title => 'Widgets/CustomPaint';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

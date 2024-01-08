@@ -11,7 +11,9 @@ mixin _$SliderMeta on Meta {
   String get title => 'Material/Slider';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

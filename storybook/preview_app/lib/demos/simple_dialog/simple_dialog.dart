@@ -42,7 +42,7 @@ class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
               ),
             ],
           );
-        })) {
+        },)) {
       case Department.treasury:
         // Let's go.
         // ...
@@ -63,7 +63,7 @@ class _SimpleDialogDemoState extends State<SimpleDialogDemo> {
         _askedToLead();
       },
       child: const Text(
-        "CLICK ME!",
+        'CLICK ME!',
       ),
     );
   }

@@ -11,7 +11,9 @@ mixin _$FloatingActionButtonMeta on Meta {
   String get title => 'Material/FloatingActionButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

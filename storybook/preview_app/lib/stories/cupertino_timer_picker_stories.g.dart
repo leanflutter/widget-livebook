@@ -11,7 +11,9 @@ mixin _$CupertinoTimerPickerMeta on Meta {
   String get title => 'Cupertino/CupertinoTimerPicker';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

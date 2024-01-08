@@ -11,7 +11,9 @@ mixin _$CupertinoAlertDialogMeta on Meta {
   String get title => 'Cupertino/CupertinoAlertDialog';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

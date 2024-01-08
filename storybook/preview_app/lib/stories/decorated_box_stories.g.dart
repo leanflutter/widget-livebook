@@ -11,7 +11,9 @@ mixin _$DecoratedBoxMeta on Meta {
   String get title => 'Widgets/DecoratedBox';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

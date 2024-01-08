@@ -11,7 +11,9 @@ mixin _$CupertinoSwitchMeta on Meta {
   String get title => 'Cupertino/CupertinoSwitch';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

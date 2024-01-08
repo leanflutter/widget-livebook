@@ -11,7 +11,9 @@ mixin _$SimpleDialogMeta on Meta {
   String get title => 'Material/SimpleDialog';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

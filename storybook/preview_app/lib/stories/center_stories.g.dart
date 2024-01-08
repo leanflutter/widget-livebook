@@ -11,7 +11,9 @@ mixin _$CenterMeta on Meta {
   String get title => 'Widgets/Center';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

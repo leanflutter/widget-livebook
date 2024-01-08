@@ -11,7 +11,9 @@ mixin _$RowMeta on Meta {
   String get title => 'Widgets/Row';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

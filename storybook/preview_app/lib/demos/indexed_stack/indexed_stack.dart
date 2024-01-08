@@ -18,22 +18,22 @@ class _IndexedStackDemoState extends State<IndexedStackDemo> {
           height: 300,
           child: IndexedStack(
             index: _index,
-            children: <Widget>[
-              Container(
+            children: const <Widget>[
+              ColoredBox(
                 color: Colors.pink,
-                child: const Center(
+                child: Center(
                   child: Text('Page 1'),
                 ),
               ),
-              Container(
+              ColoredBox(
                 color: Colors.cyan,
-                child: const Center(
+                child: Center(
                   child: Text('Page 2'),
                 ),
               ),
-              Container(
+              ColoredBox(
                 color: Colors.deepPurple,
-                child: const Center(
+                child: Center(
                   child: Text('Page 3'),
                 ),
               ),
@@ -52,7 +52,7 @@ class _IndexedStackDemoState extends State<IndexedStackDemo> {
                 });
               },
               child: const Text(
-                "Prev",
+                'Prev',
               ),
             ),
             TextButton(
@@ -63,11 +63,11 @@ class _IndexedStackDemoState extends State<IndexedStackDemo> {
                 });
               },
               child: const Text(
-                "Next",
+                'Next',
               ),
-            )
+            ),
           ],
-        )
+        ),
       ],
     );
   }

@@ -11,7 +11,9 @@ mixin _$PopupMenuButtonMeta on Meta {
   String get title => 'Material/PopupMenuButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$ClipPathMeta on Meta {
   String get title => 'Widgets/ClipPath';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

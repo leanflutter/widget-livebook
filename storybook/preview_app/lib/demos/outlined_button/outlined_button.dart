@@ -10,7 +10,7 @@ class OutlinedButtonDemo extends StatelessWidget {
         /*...*/
       },
       child: const Text(
-        "Outline Button",
+        'Outline Button',
       ),
     );
   }

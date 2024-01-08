@@ -11,7 +11,9 @@ mixin _$TextFormFieldMeta on Meta {
   String get title => 'Material/TextFormField';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

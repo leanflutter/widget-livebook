@@ -11,7 +11,9 @@ mixin _$TooltipMeta on Meta {
   String get title => 'Material/Tooltip';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

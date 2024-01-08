@@ -11,7 +11,9 @@ mixin _$FlexibleMeta on Meta {
   String get title => 'Widgets/Flexible';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

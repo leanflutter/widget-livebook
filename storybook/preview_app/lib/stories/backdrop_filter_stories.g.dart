@@ -11,7 +11,9 @@ mixin _$BackdropFilterMeta on Meta {
   String get title => 'Widgets/BackdropFilter';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

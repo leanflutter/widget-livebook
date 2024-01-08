@@ -11,7 +11,9 @@ mixin _$CupertinoActionSheetMeta on Meta {
   String get title => 'Cupertino/CupertinoActionSheet';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

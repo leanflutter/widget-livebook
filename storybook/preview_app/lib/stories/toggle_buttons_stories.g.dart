@@ -11,7 +11,9 @@ mixin _$ToggleButtonsMeta on Meta {
   String get title => 'Material/ToggleButtons';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$TextButtonMeta on Meta {
   String get title => 'Material/TextButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

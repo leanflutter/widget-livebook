@@ -11,7 +11,9 @@ mixin _$CupertinoSliderMeta on Meta {
   String get title => 'Cupertino/CupertinoSlider';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

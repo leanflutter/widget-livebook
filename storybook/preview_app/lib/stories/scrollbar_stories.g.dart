@@ -11,7 +11,9 @@ mixin _$ScrollbarMeta on Meta {
   String get title => 'Material/Scrollbar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

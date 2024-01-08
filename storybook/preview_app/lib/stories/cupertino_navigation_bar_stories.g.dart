@@ -11,7 +11,9 @@ mixin _$CupertinoNavigationBarMeta on Meta {
   String get title => 'Cupertino/CupertinoNavigationBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

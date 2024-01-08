@@ -30,7 +30,7 @@ class _TimePickerDemoState extends State<TimePickerDemo> {
         _handleClickMe();
       },
       child: const Text(
-        "CLICK ME!",
+        'CLICK ME!',
       ),
     );
   }

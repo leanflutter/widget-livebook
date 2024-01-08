@@ -11,7 +11,9 @@ mixin _$RadioMeta on Meta {
   String get title => 'Material/Radio';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

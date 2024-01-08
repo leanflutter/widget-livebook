@@ -11,7 +11,9 @@ mixin _$AlignMeta on Meta {
   String get title => 'Widgets/Align';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$SelectableTextMeta on Meta {
   String get title => 'Widgets/SelectableText';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

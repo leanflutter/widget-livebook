@@ -11,7 +11,9 @@ mixin _$OutlinedButtonMeta on Meta {
   String get title => 'Material/OutlinedButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

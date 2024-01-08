@@ -11,7 +11,9 @@ mixin _$SwitchMeta on Meta {
   String get title => 'Material/Switch';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

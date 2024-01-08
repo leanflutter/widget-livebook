@@ -41,9 +41,9 @@ class _AnimatedPaddingDemoState extends State<AnimatedPaddingDemo> {
             _changePadding();
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

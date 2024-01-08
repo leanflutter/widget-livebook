@@ -11,7 +11,9 @@ mixin _$ClipRRectMeta on Meta {
   String get title => 'Widgets/ClipRRect';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

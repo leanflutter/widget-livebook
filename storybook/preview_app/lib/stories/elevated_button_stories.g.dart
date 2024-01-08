@@ -11,7 +11,9 @@ mixin _$ElevatedButtonMeta on Meta {
   String get title => 'Material/ElevatedButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

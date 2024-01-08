@@ -11,7 +11,9 @@ mixin _$TransformMeta on Meta {
   String get title => 'Widgets/Transform';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$DefaultTextStyleMeta on Meta {
   String get title => 'Widgets/DefaultTextStyle';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$RichTextMeta on Meta {
   String get title => 'Widgets/RichText';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

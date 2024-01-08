@@ -11,7 +11,9 @@ mixin _$AnimatedBuilderMeta on Meta {
   String get title => 'Widgets/AnimatedBuilder';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

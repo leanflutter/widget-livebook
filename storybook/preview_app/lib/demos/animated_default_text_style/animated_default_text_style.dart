@@ -42,9 +42,9 @@ class _AnimatedDefaultTextStyleDemoState
             });
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

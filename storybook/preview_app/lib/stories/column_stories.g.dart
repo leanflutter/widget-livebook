@@ -11,7 +11,9 @@ mixin _$ColumnMeta on Meta {
   String get title => 'Widgets/Column';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

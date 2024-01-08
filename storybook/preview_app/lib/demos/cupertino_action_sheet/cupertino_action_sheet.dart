@@ -57,7 +57,7 @@ class _CupertinoActionSheetDemoState extends State<CupertinoActionSheetDemo> {
       onPressed: () {
         _handleClickMe();
       },
-      child: const Text("CLICK ME!"),
+      child: const Text('CLICK ME!'),
     );
   }
 }

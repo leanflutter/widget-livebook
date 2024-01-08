@@ -11,7 +11,9 @@ mixin _$AnimatedDefaultTextStyleMeta on Meta {
   String get title => 'Widgets/AnimatedDefaultTextStyle';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

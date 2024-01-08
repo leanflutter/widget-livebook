@@ -11,7 +11,9 @@ mixin _$AnimatedAlignMeta on Meta {
   String get title => 'Widgets/AnimatedAlign';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

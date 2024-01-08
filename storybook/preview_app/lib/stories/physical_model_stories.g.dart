@@ -11,7 +11,9 @@ mixin _$PhysicalModelMeta on Meta {
   String get title => 'Widgets/PhysicalModel';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$DropdownButtonMeta on Meta {
   String get title => 'Material/DropdownButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

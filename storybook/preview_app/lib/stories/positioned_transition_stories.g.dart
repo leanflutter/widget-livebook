@@ -11,7 +11,9 @@ mixin _$PositionedTransitionMeta on Meta {
   String get title => 'Widgets/PositionedTransition';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

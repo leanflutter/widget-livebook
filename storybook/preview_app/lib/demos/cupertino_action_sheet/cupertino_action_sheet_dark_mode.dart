@@ -21,7 +21,7 @@ class _SnippetCupertinoActionSheetDarkModeState
           child: CupertinoActionSheet(
             title: const Text('Favorite Dessert'),
             message: const Text(
-                'Please select the best dessert from the options below.'),
+                'Please select the best dessert from the options below.',),
             actions: <Widget>[
               CupertinoActionSheetAction(
                 child: const Text('Profiteroles'),

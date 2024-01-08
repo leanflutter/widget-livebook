@@ -18,7 +18,7 @@ class _GestureDetectorDemoState extends State<GestureDetectorDemo> {
           _lights = true;
         });
       },
-      child: Container(
+      child: ColoredBox(
         color: _lights ? Colors.yellow : Colors.grey,
         child: Text('TURN LIGHTS ${_lights ? 'ON' : 'OFF'}'),
       ),

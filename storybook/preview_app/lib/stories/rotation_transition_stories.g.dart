@@ -11,7 +11,9 @@ mixin _$RotationTransitionMeta on Meta {
   String get title => 'Widgets/RotationTransition';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

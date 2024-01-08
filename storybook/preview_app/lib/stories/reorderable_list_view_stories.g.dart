@@ -11,7 +11,9 @@ mixin _$ReorderableListViewMeta on Meta {
   String get title => 'Material/ReorderableListView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

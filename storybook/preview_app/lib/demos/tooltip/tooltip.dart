@@ -34,7 +34,7 @@ class TooltipDemo extends StatelessWidget {
               /** */
             },
           ),
-        )
+        ),
       ],
     );
   }

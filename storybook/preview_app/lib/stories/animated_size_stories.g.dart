@@ -11,7 +11,9 @@ mixin _$AnimatedSizeMeta on Meta {
   String get title => 'Widgets/AnimatedSize';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

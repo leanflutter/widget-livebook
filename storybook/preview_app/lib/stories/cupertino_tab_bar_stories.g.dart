@@ -11,7 +11,9 @@ mixin _$CupertinoTabBarMeta on Meta {
   String get title => 'Cupertino/CupertinoTabBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

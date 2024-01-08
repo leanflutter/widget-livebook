@@ -11,7 +11,9 @@ mixin _$ButtonBarMeta on Meta {
   String get title => 'Material/ButtonBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$PositionedMeta on Meta {
   String get title => 'Widgets/Positioned';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

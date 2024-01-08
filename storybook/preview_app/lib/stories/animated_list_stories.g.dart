@@ -11,7 +11,9 @@ mixin _$AnimatedListMeta on Meta {
   String get title => 'Widgets/AnimatedList';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

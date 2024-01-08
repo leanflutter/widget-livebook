@@ -41,9 +41,9 @@ class _AnimatedAlignDemoState extends State<AnimatedAlignDemo> {
             _changeAlignment();
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

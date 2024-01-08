@@ -73,7 +73,7 @@ class _NestedScrollViewDemoState extends State<NestedScrollViewDemo> {
                       SliverOverlapInjector(
                         // This is the flip side of the SliverOverlapAbsorber above.
                         handle: NestedScrollView.sliverOverlapAbsorberHandleFor(
-                            context),
+                            context,),
                       ),
                       SliverPadding(
                         padding: const EdgeInsets.all(8.0),

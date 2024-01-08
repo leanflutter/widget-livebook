@@ -10,4 +10,3 @@ class CupertinoActivityIndicatorDemo extends StatelessWidget {
     return const CupertinoActivityIndicator();
   }
 }
-

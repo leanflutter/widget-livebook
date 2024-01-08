@@ -11,7 +11,9 @@ mixin _$PlaceholderMeta on Meta {
   String get title => 'Widgets/Placeholder';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

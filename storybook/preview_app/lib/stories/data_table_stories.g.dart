@@ -11,7 +11,9 @@ mixin _$DataTableMeta on Meta {
   String get title => 'Material/DataTable';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$VerticalDividerMeta on Meta {
   String get title => 'Material/VerticalDivider';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

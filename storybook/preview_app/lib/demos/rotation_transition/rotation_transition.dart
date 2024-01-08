@@ -54,9 +54,9 @@ class _RotationTransitionDemoState extends State<RotationTransitionDemo>
             _first = !_first;
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

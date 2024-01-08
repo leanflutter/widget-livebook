@@ -6,7 +6,7 @@ class TransformDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return ColoredBox(
       color: Colors.black,
       child: Transform(
         alignment: Alignment.topRight,

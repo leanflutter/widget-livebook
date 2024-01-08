@@ -11,7 +11,9 @@ mixin _$ExpandedMeta on Meta {
   String get title => 'Widgets/Expanded';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

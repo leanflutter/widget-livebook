@@ -11,7 +11,9 @@ mixin _$AlertDialogMeta on Meta {
   String get title => 'Material/AlertDialog';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

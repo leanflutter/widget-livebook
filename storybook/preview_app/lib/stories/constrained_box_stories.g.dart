@@ -11,7 +11,9 @@ mixin _$ConstrainedBoxMeta on Meta {
   String get title => 'Widgets/ConstrainedBox';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

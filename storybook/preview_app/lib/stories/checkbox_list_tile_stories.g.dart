@@ -11,7 +11,9 @@ mixin _$CheckboxListTileMeta on Meta {
   String get title => 'Material/CheckboxListTile';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

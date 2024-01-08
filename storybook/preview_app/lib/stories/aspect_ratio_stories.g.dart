@@ -11,7 +11,9 @@ mixin _$AspectRatioMeta on Meta {
   String get title => 'Widgets/AspectRatio';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

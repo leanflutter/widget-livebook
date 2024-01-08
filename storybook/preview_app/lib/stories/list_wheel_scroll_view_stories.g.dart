@@ -11,7 +11,9 @@ mixin _$ListWheelScrollViewMeta on Meta {
   String get title => 'Widgets/ListWheelScrollView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

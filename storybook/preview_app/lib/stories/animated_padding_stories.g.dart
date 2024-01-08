@@ -11,7 +11,9 @@ mixin _$AnimatedPaddingMeta on Meta {
   String get title => 'Widgets/AnimatedPadding';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

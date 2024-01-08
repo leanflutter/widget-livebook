@@ -11,7 +11,9 @@ mixin _$AnimatedCrossFadeMeta on Meta {
   String get title => 'Widgets/AnimatedCrossFade';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

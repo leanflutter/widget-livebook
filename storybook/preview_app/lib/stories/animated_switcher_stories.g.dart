@@ -11,7 +11,9 @@ mixin _$AnimatedSwitcherMeta on Meta {
   String get title => 'Widgets/AnimatedSwitcher';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

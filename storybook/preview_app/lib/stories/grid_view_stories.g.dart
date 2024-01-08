@@ -11,7 +11,9 @@ mixin _$GridViewMeta on Meta {
   String get title => 'Material/GridView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

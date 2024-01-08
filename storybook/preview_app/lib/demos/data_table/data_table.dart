@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Dessert {
   Dessert(this.name, this.calories, this.fat, this.carbs, this.protein,
-      this.sodium, this.calcium, this.iron);
+      this.sodium, this.calcium, this.iron,);
 
   final String name;
   final int calories;
@@ -38,7 +38,7 @@ class _DataTableDemoState extends State<DataTableDemo> {
   final List<String> log = <String>[];
 
   Widget _buildTable(
-      {required int sortColumnIndex, bool sortAscending = true}) {
+      {required int sortColumnIndex, bool sortAscending = true,}) {
     return DataTable(
       sortColumnIndex: sortColumnIndex,
       sortAscending: sortAscending,

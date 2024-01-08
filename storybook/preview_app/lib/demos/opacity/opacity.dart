@@ -26,9 +26,9 @@ class _OpacityDemoState extends State<OpacityDemo> {
             });
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

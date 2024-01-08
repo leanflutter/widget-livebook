@@ -11,7 +11,9 @@ mixin _$GestureDetectorMeta on Meta {
   String get title => 'Widgets/GestureDetector';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

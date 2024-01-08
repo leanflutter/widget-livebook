@@ -11,7 +11,9 @@ mixin _$WrapMeta on Meta {
   String get title => 'Widgets/Wrap';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

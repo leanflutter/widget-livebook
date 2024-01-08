@@ -11,7 +11,9 @@ mixin _$CupertinoPageScaffoldMeta on Meta {
   String get title => 'Cupertino/CupertinoPageScaffold';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

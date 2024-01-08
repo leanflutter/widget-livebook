@@ -11,7 +11,9 @@ mixin _$CustomScrollViewMeta on Meta {
   String get title => 'Widgets/CustomScrollView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

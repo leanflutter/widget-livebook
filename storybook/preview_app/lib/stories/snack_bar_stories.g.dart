@@ -11,7 +11,9 @@ mixin _$SnackBarMeta on Meta {
   String get title => 'Material/SnackBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

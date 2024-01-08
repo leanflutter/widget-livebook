@@ -11,7 +11,9 @@ mixin _$FlutterLogoMeta on Meta {
   String get title => 'Material/FlutterLogo';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

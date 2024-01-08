@@ -11,7 +11,9 @@ mixin _$CupertinoButtonMeta on Meta {
   String get title => 'Cupertino/CupertinoButton';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -11,7 +11,9 @@ mixin _$PageViewMeta on Meta {
   String get title => 'Widgets/PageView';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

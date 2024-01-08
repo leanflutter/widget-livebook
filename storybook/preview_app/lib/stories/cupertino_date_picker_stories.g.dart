@@ -11,7 +11,9 @@ mixin _$CupertinoDatePickerMeta on Meta {
   String get title => 'Cupertino/CupertinoDatePicker';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

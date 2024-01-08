@@ -11,7 +11,9 @@ mixin _$TableMeta on Meta {
   String get title => 'Widgets/Table';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

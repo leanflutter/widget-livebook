@@ -11,7 +11,9 @@ mixin _$BaselineMeta on Meta {
   String get title => 'Widgets/Baseline';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

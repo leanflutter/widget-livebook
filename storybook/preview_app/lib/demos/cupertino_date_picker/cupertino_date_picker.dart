@@ -17,7 +17,7 @@ class _CupertinoDatePickerDemoState
       height: 300,
       child: CupertinoDatePicker(
           mode: CupertinoDatePickerMode.dateAndTime,
-          onDateTimeChanged: (dateTime) {}),
+          onDateTimeChanged: (dateTime) {},),
     );
   }
 }

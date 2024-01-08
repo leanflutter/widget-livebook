@@ -25,7 +25,7 @@ class _DecoratedBoxTransitionDemoState extends State<DecoratedBoxTransitionDemo>
           color: Color(0x66000000),
           blurRadius: 10.0,
           spreadRadius: 4.0,
-        )
+        ),
       ],
     ),
     end: BoxDecoration(
@@ -82,9 +82,9 @@ class _DecoratedBoxTransitionDemoState extends State<DecoratedBoxTransitionDemo>
             _first = !_first;
           },
           child: const Text(
-            "CLICK ME!",
+            'CLICK ME!',
           ),
-        )
+        ),
       ],
     );
   }

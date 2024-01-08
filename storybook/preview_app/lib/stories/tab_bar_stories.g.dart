@@ -11,7 +11,9 @@ mixin _$TabBarMeta on Meta {
   String get title => 'Material/TabBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

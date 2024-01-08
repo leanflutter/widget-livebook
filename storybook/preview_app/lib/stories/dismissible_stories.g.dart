@@ -11,7 +11,9 @@ mixin _$DismissibleMeta on Meta {
   String get title => 'Widgets/Dismissible';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

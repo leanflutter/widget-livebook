@@ -11,7 +11,9 @@ mixin _$ClipOvalMeta on Meta {
   String get title => 'Widgets/ClipOval';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

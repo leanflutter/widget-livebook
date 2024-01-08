@@ -11,7 +11,9 @@ mixin _$CircleAvatarMeta on Meta {
   String get title => 'Material/CircleAvatar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

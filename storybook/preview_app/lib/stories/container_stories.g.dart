@@ -11,7 +11,9 @@ mixin _$ContainerMeta on Meta {
   String get title => 'Widgets/Container';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

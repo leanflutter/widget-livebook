@@ -51,7 +51,7 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
         _neverSatisfied();
       },
       child: const Text(
-        "CLICK ME!",
+        'CLICK ME!',
       ),
     );
   }

@@ -6,22 +6,22 @@ class PageViewDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageView(
-      children: <Widget>[
-        Container(
+      children: const <Widget>[
+        ColoredBox(
           color: Colors.pink,
-          child: const Center(
+          child: Center(
             child: Text('Page 1'),
           ),
         ),
-        Container(
+        ColoredBox(
           color: Colors.cyan,
-          child: const Center(
+          child: Center(
             child: Text('Page 2'),
           ),
         ),
-        Container(
+        ColoredBox(
           color: Colors.deepPurple,
-          child: const Center(
+          child: Center(
             child: Text('Page 3'),
           ),
         ),

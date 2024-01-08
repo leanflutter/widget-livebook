@@ -11,7 +11,9 @@ mixin _$IndexedStackMeta on Meta {
   String get title => 'Widgets/IndexedStack';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

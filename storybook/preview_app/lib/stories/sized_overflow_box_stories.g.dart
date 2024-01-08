@@ -11,7 +11,9 @@ mixin _$SizedOverflowBoxMeta on Meta {
   String get title => 'Widgets/SizedOverflowBox';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

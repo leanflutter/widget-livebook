@@ -11,7 +11,9 @@ mixin _$AppBarMeta on Meta {
   String get title => 'Material/AppBar';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

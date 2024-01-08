@@ -26,7 +26,7 @@ class _IconButtonDemoState extends State<IconButtonDemo> {
                 });
               },
             ),
-            Text('Volume : $_volume')
+            Text('Volume : $_volume'),
           ],
         ),
       ),

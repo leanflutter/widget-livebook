@@ -11,7 +11,9 @@ mixin _$PaddingMeta on Meta {
   String get title => 'Widgets/Padding';
 
   @override
-  List<ArgType> get argTypes => [];
+  List<ArgType> get argTypes {
+    return [];
+  }
 }
 
 // **************************************************************************

@@ -26,7 +26,7 @@ class _DecoratedBoxDemoState extends State<DecoratedBoxDemo> {
             color: Color(0x66000000),
             blurRadius: 10.0,
             spreadRadius: 4.0,
-          )
+          ),
         ],
       ),
       child: Container(
