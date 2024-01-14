@@ -27,3 +27,12 @@ mixin _$CupertinoListSectionDefaultStory on StoryObj<CupertinoListSectionMeta> {
   @override
   CupertinoListSectionMeta get meta => CupertinoListSectionMeta();
 }
+
+mixin _$CupertinoListSectionInsetGroupedStory
+    on StoryObj<CupertinoListSectionMeta> {
+  @override
+  String get name => 'InsetGrouped';
+
+  @override
+  CupertinoListSectionMeta get meta => CupertinoListSectionMeta();
+}

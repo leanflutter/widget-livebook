@@ -172,6 +172,7 @@ final StorybookConfig storybookConfig = StorybookConfig(
     CupertinoContextMenuDefaultStory(),
     CupertinoDatePickerDefaultStory(),
     CupertinoListSectionDefaultStory(),
+    CupertinoListSectionInsetGroupedStory(),
     CupertinoListTileDefaultStory(),
     CupertinoNavigationBarDefaultStory(),
     CupertinoPageScaffoldDefaultStory(),
