@@ -1,14 +1,14 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'cupertino_list_section_stories.dart';
+part of 'cupertino_picker_stories.dart';
 
 // **************************************************************************
 // MetaGenerator
 // **************************************************************************
 
-mixin _$CupertinoListSectionMeta on Meta {
+mixin _$CupertinoPickerMeta on Meta {
   @override
-  String get title => 'Cupertino/CupertinoListSection';
+  String get title => 'Cupertino/CupertinoPicker';
 
   @override
   List<ArgType> get argTypes {
@@ -20,19 +20,10 @@ mixin _$CupertinoListSectionMeta on Meta {
 // StoryGenerator
 // **************************************************************************
 
-mixin _$CupertinoListSectionDefaultStory on StoryObj<CupertinoListSectionMeta> {
+mixin _$CupertinoPickerDefaultStory on StoryObj<CupertinoPickerMeta> {
   @override
   String get name => 'Default';
 
   @override
-  CupertinoListSectionMeta get meta => CupertinoListSectionMeta();
-}
-
-mixin _$CupertinoListSectionInsetGroupedStory
-    on StoryObj<CupertinoListSectionMeta> {
-  @override
-  String get name => 'Inset Grouped';
-
-  @override
-  CupertinoListSectionMeta get meta => CupertinoListSectionMeta();
+  CupertinoPickerMeta get meta => CupertinoPickerMeta();
 }

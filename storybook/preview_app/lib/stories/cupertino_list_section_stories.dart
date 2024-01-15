@@ -22,10 +22,10 @@ class CupertinoListSectionDefaultStory
     extends StoryObj<CupertinoListSectionMeta>
     with _$CupertinoListSectionDefaultStory {}
 
-@storybook.Story('InsetGrouped')
+@storybook.Story('Inset Grouped')
 class CupertinoListSectionInsetGroupedStory
     extends StoryObj<CupertinoListSectionMeta>
-    with _$CupertinoListSectionDefaultStory {
+    with _$CupertinoListSectionInsetGroupedStory {
   @override
   Widget build(BuildContext context, List<Arg> args) {
     return const CupertinoListSectionInsetGroupedDemo();

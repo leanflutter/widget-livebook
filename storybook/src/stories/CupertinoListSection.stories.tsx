@@ -19,6 +19,6 @@ export const Default: Story = {
   args: {},
 };
 
-export const InsetGrouped: Story = {
+export const Inset_Grouped: Story = {
   args: {},
 };
