@@ -206,6 +206,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_api_samples:
+    dependency: "direct main"
+    description:
+      path: "examples/api"
+      ref: stable
+      resolved-ref: ef1af02aead6fe2414f3aafa5a61087b610e1332
+      url: "git@github.com:flutter/flutter.git"
+    source: git
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -543,3 +552,4 @@ packages:
     version: "3.1.2"
 sdks:
   dart: ">=3.2.0 <4.0.0"
+  flutter: ">=2.5.0-6.0.pre.30"

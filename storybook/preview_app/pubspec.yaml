@@ -10,6 +10,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_api_samples:
+    git:
+      url: git@github.com:flutter/flutter.git
+      ref: stable
+      path: examples/api
   storybook_dart: ^0.1.0
   storybook_dart_annotation: ^0.1.0
 

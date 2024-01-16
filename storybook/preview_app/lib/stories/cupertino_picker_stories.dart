@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:preview_app/demos/cupertino_picker/cupertino_picker.dart';
+import 'package:flutter_api_samples/cupertino/picker/cupertino_picker.0.dart'
+    as sample0;
 import 'package:storybook_dart/storybook_dart.dart';
 import 'package:storybook_dart_annotation/storybook_dart_annotation.dart'
     as storybook;
@@ -12,7 +13,7 @@ part 'cupertino_picker_stories.g.dart';
 class CupertinoPickerMeta extends Meta with _$CupertinoPickerMeta {
   @override
   Widget buildWidget(BuildContext context, List<Arg> args) {
-    return const CupertinoPickerDemo();
+    return const sample0.CupertinoPickerApp();
   }
 }
 

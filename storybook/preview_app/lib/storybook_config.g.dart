@@ -47,6 +47,7 @@ import 'package:preview_app/stories/cupertino_navigation_bar_stories.dart';
 import 'package:preview_app/stories/cupertino_page_scaffold_stories.dart';
 import 'package:preview_app/stories/cupertino_picker_stories.dart';
 import 'package:preview_app/stories/cupertino_slider_stories.dart';
+import 'package:preview_app/stories/cupertino_sliver_refresh_control_stories.dart';
 import 'package:preview_app/stories/cupertino_switch_stories.dart';
 import 'package:preview_app/stories/cupertino_tab_bar_stories.dart';
 import 'package:preview_app/stories/cupertino_timer_picker_stories.dart';
@@ -172,13 +173,14 @@ final StorybookConfig storybookConfig = StorybookConfig(
     CupertinoButtonDefaultStory(),
     CupertinoContextMenuDefaultStory(),
     CupertinoDatePickerDefaultStory(),
-    CupertinoListSectionInsetGroupedStory(),
     CupertinoListSectionDefaultStory(),
+    CupertinoListSectionInsetGroupedStory(),
     CupertinoListTileDefaultStory(),
     CupertinoNavigationBarDefaultStory(),
     CupertinoPageScaffoldDefaultStory(),
     CupertinoPickerDefaultStory(),
     CupertinoSliderDefaultStory(),
+    CupertinoSliverRefreshControlDefaultStory(),
     CupertinoSwitchDefaultStory(),
     CupertinoTabBarDefaultStory(),
     CupertinoTimerPickerDefaultStory(),
